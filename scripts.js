@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    var learnMoreButton = document.getElementById('learnMore');
+
+    learnMoreButton.addEventListener('click', function() {
+        page.classList.add('blurFade');
+    });
+
     // Event listener to remove the sticky class when the button is clicked
     openMenuButton.addEventListener('click', function() {
         header.classList.remove('sticky');
