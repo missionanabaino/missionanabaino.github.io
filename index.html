@@ -7,12 +7,14 @@
 
 <header id="myHeader" class="">
 
-    <img class="glass-image" src="./assets/ma-logo-2.png">    <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
-</svg>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <img class="glass-image" src="./assets/ma-logo-2.png">
+    </div>
 	<nav>
-		<a href="#vision">Vision</a>
-		<a href="#knowledge">What is Ma?</a>
-		<a href="#space">Space</a>
+		<a href="#vision">Our Vision</a>
+		<a href="#what">Our board</a>
+		<a href="#space">Church Planters
+		</a>
 		<a href="#future">Contact</a>
 		<button id="openmenu">
 			<span></span>
@@ -20,17 +22,7 @@
 		</button>
 	</nav>
 </header>
-<style>
-    #knowledge {
-        display:flex;
-        flex-direction:column;
-    }
 
-    #vision {
-        display:flex;
-        flex-direction: column;
-    }
-</style>
 <div id="page" class="">
 	<!-- SLIDE 1-->
 	<section id="vision" style="background-image:url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg)">
@@ -60,17 +52,43 @@ As far back as the Acts of the Apostles, history has shown that the best way to 
 The Spirit operates by creating out of the word a body, which St. Paul calls the Body of Christ…. As such this body becomes matched to Christ as His vis-à-vis in history and as the instrument of His saving purpose in the Gospel.  It is the sphere where through the presence of the Spirit the salvation-events of the birth, life, death, resurrection, and ascension are operative here and now in history, the sphere where within the old creation the new creation has broken in with power.
         </p>
 	</section>
-	<section id="knowledge" style="background-image:url(https://assets.codepen.io/214624/knowledge.jpg)">
-		<h1>What?</h1>
-        <p>
-            Mission Anabaino is mission “I am ascending” (Greek anabaino, cf. Jn. 20:17). As both a church planting network and theological collaborative, we exist in pursuit of  the “greater things” that Christ envisioned for his ascension ministry wherein Christ's saving presence is mediated through the church in every place at the same time where a Total Christ church exists.     
-        </p>
-	</section>
-	<section id="space" style="background-image:url(https://assets.codepen.io/214624/space.jpg)">
-		<h1>participate</h1>
-		<button id="learnMore" class="glassy-button">Learn More</button>
-	
-	</section>
+
+
+	<!-- SLIDE 2 -->
+<section id="what" style="background-image:url(https://images.pexels.com/photos/4175054/pexels-photo-4175054.jpeg)">
+    <h1>our board</h1>
+    <button class="glassy-button" id="showPopup">Learn More</button>
+    <div id="popupWhat" class="popup">
+        <!-- Content of the popup goes here -->
+        <div class="board-members">
+            <div class="member">Board Member 1</div>
+            <div class="member">Board Member 2</div>
+            <div class="member">Board Member 3</div>
+            <div class="member">Board Member 4</div>
+            <div class="member">Board Member 5</div>
+            <div class="member">Board Member 6</div>
+            <div class="member">Board Member 7</div>
+            <div class="member">Board Member 8</div>
+            <div class="member">Board Member 9</div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showPopup').addEventListener('click', function() {
+            document.getElementById('popupWhat').style.display = 'flex';
+        });
+
+        // Hide popup when user clicks outside of it
+        window.addEventListener('click', function(event) {
+            var popup = document.getElementById('popupWhat');
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+    <p>
+        Mission Anabaino is mission “I am ascending” (Greek anabaino, cf. Jn. 20:17). As both a church planting network and theological collaborative, we exist in pursuit of  the “greater things” that Christ envisioned for his ascension ministry wherein Christ's saving presence is mediated through the church in every place at the same time where a Total Christ church exists.     
+    </p>
+</section>
 		<style>
 			.popup {
     display: none;

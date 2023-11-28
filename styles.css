@@ -179,6 +179,8 @@ header.sticky nav a {
 }
 
 #vision {
+  display:flex;
+  flex-direction: column;
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
@@ -192,6 +194,18 @@ header.sticky nav a {
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
+
+}
+
+#what {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-size:cover;
+  color: white;
+  min-height:100vh;
+
 
 }
 
@@ -247,3 +261,19 @@ section {
   z-index: 1;
 }
 
+
+
+.board-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.member {
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  overflow: hidden;
+}
