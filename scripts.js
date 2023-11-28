@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var page = document.getElementById('page');
     var openMenuButton = document.getElementById('openmenu');
     var learnMoreButton = document.getElementById('learnMore');
+    var openPopupButton = document.getElementById('learnMore-4'); // Updated this line
+    var popup = document.querySelector('.popup');
 
     window.addEventListener('scroll', function() {
         page.classList.remove('menuopen');
@@ -22,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
     openMenuButton.addEventListener('click', function() {
         header.classList.remove('sticky');
         page.classList.add('menuopen');
+    });
+
+    openPopupButton.addEventListener('click', function() { // Add this block
+        popup.classList.add('open');
     });
 
     var links = document.querySelectorAll('a[href^="#"]');

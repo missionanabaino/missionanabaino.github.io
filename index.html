@@ -10,8 +10,8 @@
     <img class="glass-image" src="./assets/ma-logo-2.png">    <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
 </svg>
 	<nav>
-		<a href="#vision">Vision</a>
-		<a href="#knowledge">What is Ma?</a>
+		<a href="#vision">Our Vision</a>
+		<a href="#knowledge">Our Board</a>
 		<a href="#space">Space</a>
 		<a href="#future">Contact</a>
 		<button id="openmenu">
@@ -61,29 +61,95 @@ The Spirit operates by creating out of the word a body, which St. Paul calls the
         </p>
 	</section>
 	<section id="knowledge" style="background-image:url(https://assets.codepen.io/214624/knowledge.jpg)">
-		<h1>What?</h1>
-        <p>
-            Mission Anabaino is mission “I am ascending” (Greek anabaino, cf. Jn. 20:17). As both a church planting network and theological collaborative, we exist in pursuit of  the “greater things” that Christ envisioned for his ascension ministry wherein Christ's saving presence is mediated through the church in every place at the same time where a Total Christ church exists.     
-        </p>
+		<h1>Our Board</h1>
+		<p>The MA community is comprised of the Staff, MA Board, Anchor churches and their pastors,   church planters, interns, prayer and financial supporters, as well as others by invitation from outside entities who are collaborating partners committed to a Total Christ vision in church planting both locally and globally.</p>
+
+		<button class="glassy-button" id="learnMore-knowledge">Learn More</button>
+		<div id="popup-knowledge" class="popup">
+			<!-- Content of the popup goes here -->
+			<p>The MA community is comprised of the Staff, MA Board, Anchor churches and their pastors,   church planters, interns, prayer and financial supporters, as well as others by invitation from outside entities who are collaborating partners committed to a Total Christ vision in church planting both locally and globally.</p>
+
+			<table class="glassy-table">
+				
+				<tbody>
+					<tr>
+						<td colspan="2"><strong>Our Anchor Churches:</strong></td>
+					</tr>
+					<tr>
+						<td>Christ Presbyterian Church, New Haven</td>
+						<td>Sr. Pastor Craig Lukens</td>
+					</tr>
+					<tr>
+						<td>Faith Presbyterian Church, Gainesville</td>
+						<td>Sr. Pastor Kevin Nelson</td>
+					</tr>
+					<tr>
+						<td>The Ponce Church, Atlanta GA</td>
+						<td>Sr. Pastor Toliver Wills</td>
+					</tr>
+					<tr>
+						<td colspan="2"><strong>Our Board:</strong></td>
+					</tr>
+					<tr>
+						<td>Toliver Wills</td>
+						<td>Sr. Pastor of The Ponce Church Atlanta, GA</td>
+					</tr>
+					<tr>
+						<td>Kevin Nelson</td>
+						<td>Sr. Pastor of Faith Presbyterian Church, Gainsville FL</td>
+					</tr>
+					<tr>
+						<td>Danny Jang</td>
+						<td>Sr Pastor of Grace Church, Stamford CT</td>
+					</tr>
+					<tr>
+						<td>Mike Brunjes</td>
+						<td>Church Planter of CPC Wallingford, CT</td>
+					</tr>
+					<tr>
+						<td>Preston Graham (Mission Anabaino, Chairman)</td>
+						<td>James Kessler, In Transition.</td>
+					</tr>
+			
+					<tr>
+						<td colspan="2"><strong>Our Staff:</strong></td>
+					</tr>
+					<tr>
+						<td>Preston Graham</td>
+						<td>Executive Director</td>
+					</tr>
+					<tr>
+						<td>Alex Gonzales</td>
+						<td>Director of Digital Communications</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script>
+			var popup = document.getElementById('popup-knowledge');
+			var button = document.getElementById('learnMore-knowledge');
+	
+			button.addEventListener('click', function(event) {
+				event.stopPropagation();
+				popup.style.display = 'block';
+			});
+	
+			document.addEventListener('click', function(event) {
+				popup.style.display = 'none';
+			});
+		</script>
+	
 	</section>
 	<section id="space" style="background-image:url(https://assets.codepen.io/214624/space.jpg)">
 		<h1>participate</h1>
+		<p>
+			Mission Anabaino is mission “I am ascending” (Greek anabaino, cf. Jn. 20:17). As both a church planting network and theological collaborative, we exist in pursuit of  the “greater things” that Christ envisioned for his ascension ministry wherein Christ's saving presence is mediated through the church in every place at the same time where a Total Christ church exists.     
+		</p>
 		<button id="learnMore" class="glassy-button">Learn More</button>
 	
 	</section>
 		<style>
-			.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(21, 21, 21, 0.7);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    /* Add additional styling as needed */
-}
+
 		</style>
 
 		<style>

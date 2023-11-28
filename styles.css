@@ -229,7 +229,7 @@ header.sticky nav a {
   transition: all 0.3s ease;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-z-index: 5000;
+z-index: 3;
 }
 
 .glassy-button:hover {
@@ -247,3 +247,56 @@ section {
   z-index: 1;
 }
 
+
+
+
+.glassy-table {
+  background-color: transparent; /* Removes the background */
+  border-collapse: collapse;
+  width: 50%; /* Adjusts the width */
+  margin: 0 auto; /* Centers the table */
+  border: none; /* Removes the border */
+}
+
+.glassy-table th, .glassy-table td {
+  border: none; /* Removes the cell borders */
+  padding: 8px;
+  color: #ffffff; /* Adjusts the text color */
+  font-size: 16px; /* Adjusts the font size */
+}
+
+.glassy-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: black;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  background: rgba(0, 0, 0, 0.97);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+
+
+
+
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+}
