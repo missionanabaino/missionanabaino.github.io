@@ -2,24 +2,36 @@
 	<head>
         <title>Mission Anabaino</title>
         <link rel="stylesheet" href="./styles.css">
+        <style>
+            #myHeader {
+                position: relative;
+                background-image: url('https://images.pexels.com/photos/3101527/pexels-photo-3101527.jpeg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            #myHeader::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index:-10;
+                background-color: rgba(0, 0, 0, 0.935); /* golden color with 50% opacity */
+                backdrop-filter: blur(6px); /* blur effect */
+            }
+        </style>
 	</head>
 	<body>
 
 <header id="myHeader" class="">
-    <style>
-        .glass-image {
-    position: absolute;
-    top: 0; /* Adjust this value to position the image above the SVG */
-    left: 0; /* Adjust this value to center the image */
-    width: 100px; /* Adjust this value to fit the image size */
-    height: auto;
-    border-radius: 10px; /* This will make the image corners rounded */
-    filter: brightness(0.5) blur(5px); /* This will make the image look "glassy" */
-    z-index: 1; /* This will make the image appear above the SVG */
-}
-    </style>
-    <img class="glass-image" src="./assets/ma-logo-2.png">    <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
-</svg>
+
+<img class="glass-image" src="./assets/ma-logo-2.png"> 
 	<nav>
 		<a href="#vision">Vision</a>
 		<a href="#knowledge">Our Board</a>
