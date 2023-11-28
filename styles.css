@@ -182,3 +182,38 @@ header.sticky nav a {
   display:flex;
   flex-direction: column;
 }
+
+#space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index:30;
+}
+
+#space h1 {
+  margin-bottom: 20px;
+}
+
+#space ul {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+#space ul li a {
+  font-size: 1.2em; /* Adjusts the text size */
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s;
+  z-index:30;
+}
+
+#space ul li a:hover {
+  color: #555; /* Changes text color on hover */
+}
