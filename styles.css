@@ -177,3 +177,8 @@ header.sticky nav a {
   letter-spacing: 1px;
   padding: 20px;
 }
+
+#future {
+  display:flex;
+  flex-direction: column;
+}
