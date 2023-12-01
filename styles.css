@@ -47,6 +47,13 @@ section h1 {
   margin: 0;
   z-index: 2;
   position: relative;
+  line-height:85%;
+}
+
+section p {
+  color:white;
+  position:relative;
+  z-index: 2;
 }
 
 header {
@@ -162,7 +169,39 @@ header.sticky nav a {
   transform: scale(0.3);
   transition-delay: 0.2s;
 }
+#myHeader {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/3101527/pexels-photo-3101527.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#myHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index:-10;
+  background-color: rgba(0, 0, 0, 0.935); /* golden color with 50% opacity */
+  backdrop-filter: blur(6px); /* blur effect */
+}    #knowledge {
+  display:flex;
+  flex-direction:column;
+}
+p {
+  color: #ffffff;
+  font-weight: bold;
+}
+#vision {
+  display:flex;
+  flex-direction: column;
+}
 #fixedlink {
   position: fixed;
   bottom: 0;
@@ -242,3 +281,5 @@ header.sticky nav a {
   background-color: rgba(0, 0, 0, 0.679);
   z-index: -2;
 }
+
+
