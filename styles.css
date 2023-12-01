@@ -55,7 +55,16 @@ section p {
   position:relative;
   z-index: 2;
 }
+#myHeader {
+  background-image: url(./assets/mal2.png);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
 
+}
+
+.glass-image {
+  opacity: 0.8; /* Make the image a bit transparent */
+}
 header {
   z-index: 99999;
   position: relative;
