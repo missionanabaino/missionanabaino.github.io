@@ -190,18 +190,14 @@ header.sticky nav a {
   z-index:-10;
   background-color: rgba(0, 0, 0, 0.935); /* golden color with 50% opacity */
   backdrop-filter: blur(6px); /* blur effect */
-}    #knowledge {
-  display:flex;
-  flex-direction:column;
-}
+}   
+
+
 p {
   color: #ffffff;
   font-weight: bold;
 }
-#vision {
-  display:flex;
-  flex-direction: column;
-}
+
 #fixedlink {
   position: fixed;
   bottom: 0;
@@ -217,9 +213,48 @@ p {
   padding: 20px;
 }
 
+#vision, #future, #space, #knowledge
+{
+  margin:20px;
+  padding: 50px;
+}
+#knowledge {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  z-index:30;
+}
+
+#vision {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  z-index:30;
+}
+
+
 #future {
   display:flex;
   flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index:30;
 }
 
 #space {
@@ -231,7 +266,6 @@ p {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   z-index:30;
 }
@@ -283,3 +317,16 @@ p {
 }
 
 
+.innerText {
+  max-width:700px;
+  color:rgb(255, 255, 255);
+  font-weight:300;
+  text-align:left;
+}
+
+
+/*BOTTOM PADS*/
+
+#vision {
+  padding-bottom: 200px;
+}
