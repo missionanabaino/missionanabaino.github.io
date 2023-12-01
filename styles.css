@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 body.stop {
   overflow: hidden;
 }
@@ -16,6 +17,13 @@ body.stop {
   position: relative;
   transition: 1s all ease-in-out;
 }
+
+#board {
+  display:flex;
+  flex-direction:column;
+}
+
+
 #page.menuopen {
   opacity: 0.6;
   filter: blur(20px);
@@ -32,6 +40,7 @@ section {
   color: #fff;
   position: relative;
 }
+
 section:after {
   content: "";
   position: absolute;
@@ -42,33 +51,63 @@ section:after {
   height: 100%;
   width: 100%;
 }
+
 section h1 {
   font-size: 120px;
   margin: 0;
   z-index: 2;
   position: relative;
-  line-height:85%;
+  line-height: 85%;
 }
 
 section p {
-  color:white;
-  position:relative;
+  color: white;
+  position: relative;
   z-index: 2;
 }
+
 #myHeader {
   background-image: url(./assets/mal2.png);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
 
+}
+
+/* Add this CSS to your head section */
+#future ul {
+  list-style-type: none;
+  /* Removes bullets */
+  padding: 0;
+}
+
+#future ul li a {
+  font-size: 1.5em;
+  /* Makes the text larger */
+  color: #000;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
+  border-radius: 10px;
+  padding: 10px;
+  transition: background 0.5s;
+}
+
+#future ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  /* Changes background on hover */
 }
 
 .glass-image {
-  opacity: 0.8; /* Make the image a bit transparent */
+  opacity: 0.8;
+  /* Make the image a bit transparent */
 }
+
 header {
   z-index: 99999;
   position: relative;
 }
+
 header #logo {
   position: fixed;
   top: 30px;
@@ -80,6 +119,7 @@ header #logo {
   opacity: 1;
   transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 }
+
 header nav {
   display: flex;
   height: 100px;
@@ -96,10 +136,11 @@ header nav {
   border-radius: 200px;
   z-index: 9;
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 }
+
 header nav a {
   color: #fff;
   text-decoration: none;
@@ -112,11 +153,12 @@ header nav a {
   text-transform: lowercase;
   transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 }
+
 header nav button {
   -webkit-appearance: none;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: absolute;
   z-index: 99;
@@ -134,6 +176,7 @@ header nav button {
   transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
   transform: scale(0);
 }
+
 header nav button span {
   width: 40%;
   background: #fff;
@@ -143,9 +186,11 @@ header nav button span {
   transform: scalex(0);
   transition: 0.6s transform cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s margin ease-in 0s;
 }
+
 header nav button:hover {
   border-color: rgba(255, 255, 255, 0.5);
 }
+
 header nav button:hover span {
   margin: 10px auto;
 }
@@ -156,6 +201,7 @@ header.sticky #logo {
   opacity: 0;
   transition-delay: 0.5s;
 }
+
 header.sticky nav {
   top: 20px;
   padding: 0;
@@ -163,14 +209,17 @@ header.sticky nav {
   height: 90px;
   transition-delay: 0.5s;
 }
+
 header.sticky nav button {
   transform: scale(1);
   transition-delay: 0.6s;
 }
+
 header.sticky nav button span {
   transform: scalex(1);
   transition: 0.6s transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s, 0.3s margin ease-in 0s;
 }
+
 header.sticky nav a {
   padding: 0;
   opacity: 0;
@@ -178,6 +227,7 @@ header.sticky nav a {
   transform: scale(0.3);
   transition-delay: 0.2s;
 }
+
 #myHeader {
   position: relative;
   background-image: url('https://images.pexels.com/photos/3101527/pexels-photo-3101527.jpeg');
@@ -196,10 +246,12 @@ header.sticky nav a {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index:-10;
-  background-color: rgba(0, 0, 0, 0.935); /* golden color with 50% opacity */
-  backdrop-filter: blur(6px); /* blur effect */
-}   
+  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.935);
+  /* golden color with 50% opacity */
+  backdrop-filter: blur(6px);
+  /* blur effect */
+}
 
 
 p {
@@ -222,48 +274,54 @@ p {
   padding: 20px;
 }
 
-#vision, #future, #space, #knowledge
-{
-  margin:20px;
+#vision,
+#future,
+#space,
+#knowledge {
+  margin: 20px;
   padding: 50px;
 }
-#knowledge {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
-  z-index:30;
-}
 
-#vision {
-  display:flex;
+#knowledge {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
-  z-index:30;
+  z-index: 30;
+}
+
+#vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 30;
 }
 
 
 #future {
-  display:flex;
+  display: flex;
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  z-index:30;
+  z-index: 30;
 }
 
 #space {
@@ -271,12 +329,13 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  z-index:30;
+  z-index: 30;
 }
 
 #space h1 {
@@ -284,20 +343,23 @@ p {
 }
 
 #space ul {
-  list-style-type: none; /* Removes bullets */
+  list-style-type: none;
+  /* Removes bullets */
   padding: 0;
 }
 
 #space ul li a {
-  font-size: 1.2em; /* Adjusts the text size */
+  font-size: 1.2em;
+  /* Adjusts the text size */
   color: #ffffff;
   text-decoration: none;
   transition: color 0.5s;
-  z-index:30;
+  z-index: 30;
 }
 
 #space ul li a:hover {
-  color: #555; /* Changes text color on hover */
+  color: #555;
+  /* Changes text color on hover */
 }
 
 #vision {
@@ -306,6 +368,7 @@ p {
   background-image: url('https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg');
 
 }
+
 .superSlide {
   background-position: center;
   background-repeat: no-repeat;
@@ -327,10 +390,10 @@ p {
 
 
 .innerText {
-  max-width:700px;
-  color:rgb(255, 255, 255);
-  font-weight:300;
-  text-align:left;
+  max-width: 700px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-align: left;
 }
 
 
