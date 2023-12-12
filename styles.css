@@ -369,6 +369,13 @@ p {
 
 }
 
+#what-is-ma {
+
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+
 .superSlide {
   background-position: center;
   background-repeat: no-repeat;
