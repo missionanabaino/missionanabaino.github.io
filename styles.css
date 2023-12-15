@@ -432,3 +432,121 @@ mce-responses {
   position: relative;
   z-index: 30;
 }
+
+.topMain__container {
+  width: 100%;
+  position: fixed;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(60px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.topLeft__container img {
+  width: 120px;
+  height: auto;
+}
+
+.topTop__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.topLeft__container,
+.topRight__container {
+  display: flex;
+  justify-content: center;
+  height: 50px; /* Set the height */
+  overflow: hidden; /* Hide the overflow */
+}
+
+.topLeft__container {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topRight__container {
+  justify-content: flex-end;
+  width: 600px;
+  padding-right: 10px;
+}
+
+.topRight__menu a {
+  display: inline-block;
+  margin: 10px;
+  padding: 2.5px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.098);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.topRight__menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.topBottom__container-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.topBottom__container-menu a {
+  margin: 10px;
+}
+
+.topBottom__container-menu button {
+  position: relative;
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+.topBottom__container-menu button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+
+  z-index: -1;
+  animation: pulse;
+}
+
+.topBottom__container-menu button:hover {
+  color: black;
+  background-color: white;
+}
+
+.topBottom__container-menu button:hover::before {
+  transform: scaleX(1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
