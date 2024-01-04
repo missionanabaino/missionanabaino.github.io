@@ -59,3 +59,15 @@ li {
   position: relative;
   z-index: 1;
 }
+
+#classes {
+  flex-direction: column;
+  background-image: url("https://www.csmedia1.com/anabaino.org/dsuxwdiumaag3da.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Add this line */
+  background-position: center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-size: cover; /* Change this line */
+  object-fit: contain;
+}

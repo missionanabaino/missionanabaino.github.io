@@ -46,15 +46,3 @@
 
 #howTo-getinvolved button {
 }
-
-#resources {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 3000;
-}
-
-#resources button {
-  position: relative;
-  z-index: inherit;
-}
