@@ -1,0 +1,61 @@
+.glass-image {
+  position: absolute;
+  top: 0; /* Adjust this value to position the image above the SVG */
+  left: 0; /* Adjust this value to center the image */
+  width: 100px; /* Adjust this value to fit the image size */
+  height: auto;
+  border-radius: 10px; /* This will make the image corners rounded */
+  filter: brightness(0.5) blur(5px); /* This will make the image look "glassy" */
+  z-index: 1; /* This will make the image appear above the SVG */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 12px;
+}
+
+section {
+  position: relative;
+  z-index: 10;
+}
+
+#toc-resources {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  background-image: url("https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Add this line */
+  background-position: center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-size: cover; /* Change this line */
+  object-fit: contain;
+}
+
+#toc-resources h1 {
+  font-size: 152px;
+}
+
+#toc-resources ul,
+li {
+  text-decoration: none;
+}
+
+#toc-resources a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  position: relative;
+  z-index: 1;
+}
