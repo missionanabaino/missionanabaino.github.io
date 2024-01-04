@@ -295,6 +295,22 @@ p {
   z-index: 30;
 }
 
+#whatMA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 30;
+  margin: 20px;
+  padding: 100px;
+  background-image: url(https://images.pexels.com/photos/3577348/pexels-photo-3577348.jpeg);
+}
+
 #vision {
   display: flex;
   flex-direction: column;
