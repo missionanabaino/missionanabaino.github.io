@@ -296,6 +296,7 @@ p {
 }
 
 #whatMA {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,7 +309,28 @@ p {
   z-index: 30;
   margin: 20px;
   padding: 100px;
-  background-image: url(https://images.pexels.com/photos/3577348/pexels-photo-3577348.jpeg);
+  background-image: url(https://i.gifer.com/3M27.gif);
+  background-attachment: fixed; /* Add this line */
+  background-position: center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-size: cover; /* Change this line */
+  object-fit: contain;
+}
+
+#whatMA::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* white overlay with 50% opacity */
+  z-index: -10;
+}
+
+#whatMA p {
+  font-weight: 300;
+  font-size: 32px;
 }
 
 #vision {
