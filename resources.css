@@ -29,6 +29,7 @@ section {
 }
 
 #toc-resources {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -44,7 +45,7 @@ section {
 }
 
 #toc-resources h1 {
-  font-size: 152px;
+  font-size: clamp(92px, 4vw, 152px);
 }
 
 #toc-resources ul,

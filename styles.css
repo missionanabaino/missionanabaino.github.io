@@ -598,3 +598,101 @@ mce-responses {
   position: relative;
   z-index: 1;
 }
+
+#resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Gives a glass-like appearance */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 30;
+}
+
+#resources {
+  background-image: url(https://images.pexels.com/photos/19360509/pexels-photo-19360509/free-photo-of-coniferous-forest-in-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  #resources h1 {
+    font-size: clamp(102px, 2vw, 120px);
+  }
+  #resources h2 {
+    font-size: clamp(12px, 2vw, 63px);
+  }
+
+#resources h1, h2 {
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+#resources a {
+  margin: 10px;
+}
+
+#resources button {
+  position: relative;
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+#resources button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  z-index: -1;
+  animation: pulse;
+}
+
+#resources button:hover {
+  color: black;
+  background-color: white;
+}
+
+#resources button:hover::before {
+  transform: scaleX(1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
