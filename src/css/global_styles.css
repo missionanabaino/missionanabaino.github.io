@@ -1,8 +1,28 @@
 /* Style the hamburger icon */
+.header {
+    background-color: white;
+}
+
 #hamburger {
     display: inline-block;
     cursor: pointer;
+    right: 0;
+    padding: 10px;
+    /* Adjust as needed */
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
+
+#logo {
+    left: 0;
+    padding: 10px;
+    /* Adjust as needed */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
 
 .bar1,
 .bar2,
@@ -27,7 +47,8 @@
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 50px;
+    /* Adjust based on the height of the logo and hamburger */
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
@@ -41,6 +62,7 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    z-index: 20000;
 }
 
 .overlay a {
@@ -97,18 +119,7 @@ section {
     /* Ensures the section takes at least the height of the viewport */
 }
 
-#home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('path-to-your-background-image.jpg') no-repeat center center;
-    background-size: cover;
-    z-index: 1;
-    /* Places the background below the content */
-}
+
 
 #home h1 {
     font-size: 4em;
@@ -130,46 +141,46 @@ section {
     /* Adjusts the spacing between lines of text */
 }
 
-/* Style for the input box assuming it's an input field */
-#home input[type="text"] {
-    padding: 10px;
-    /* Adds padding inside the input box */
-    font-size: 1em;
-    /* Sets the font size inside the input box */
-    margin-top: 20px;
-    /* Adds space above the input box */
-    width: 200px;
-    /* Sets the width of the input box */
-    border: 2px solid #333;
-    /* Sets the border of the input box */
-    border-radius: 5px;
-    /* Rounds the corners of the input box */
+
+
+.content-container {
+    max-width: 100%;
+    /* Adjusted to take full width */
+    margin: 0 auto;
+    /* Keeps centering */
+    padding: 0;
+    /* Removes padding */
+    background-color: rgba(255, 255, 255, 0);
+    /* Makes background fully transparent */
+    border-radius: 0;
+    /* Removes rounded corners */
+    box-shadow: none;
+    /* Removes shadow */
+    display: flex;
+    /* Keeps flexbox */
+    flex-direction: row;
+    /* Changes direction to horizontal */
+    justify-content: space-between;
+    /* Spaces children evenly */
+    align-items: center;
+    /* Keeps vertical alignment */
+    min-height: 100vh;
+    /* Ensures minimum height of 100vh */
 }
 
-/* Add this new style for the content container */
-.content-container {
-    max-width: 600px;
-    /* Adjust the max-width as needed */
-    margin: 0 auto;
-    /* Centers the container */
-    padding: 50px;
-    /* Adds padding around the content */
-    background-color: rgba(255, 255, 255, 0.9);
-    /* Semi-transparent white background */
-    border-radius: 10px;
-    /* Rounds the corners of the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Adds a subtle shadow */
-    display: flex;
-    /* Enables flexbox */
-    flex-direction: column;
-    /* Stacks children vertically */
-    justify-content: center;
-    /* Centers children vertically */
-    align-items: flex-start;
-    /* Aligns children to the start of the cross axis */
-    position: relative;
-    /* Needed for absolute positioning of elements inside */
-    z-index: 2;
-    /* Ensures the content is above the background graphic */
+/* New styles for content-left and content-right */
+.content-left,
+.content-right {
+    flex: 1;
+    /* Allows both sides to grow equally */
+    padding: 20px;
+    /* Adds some padding */
+}
+
+/* Responsive image */
+.content-right img {
+    width: 100%;
+    /* Makes the image responsive */
+    height: auto;
+    /* Keeps the aspect ratio */
 }
