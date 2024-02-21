@@ -1,0 +1,120 @@
+/* Style the hamburger icon */
+#hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* The Overlay */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Overlay content */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+
+/* BODY STYLES *
+
+/* Style each section to be full width and at least 100vh */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    text-align: left;
+    /* Aligns text to the left */
+    padding: 50px;
+    /* Adds padding around the content */
+    background-color: #fff;
+    /* Sets background color to white */
+    color: #000;
+    /* Sets text color to black */
+}
+
+#home h1 {
+    font-size: 4em;
+    /* Sets the size of the main heading */
+    margin-bottom: 0.5em;
+    /* Adds space below the heading */
+    font-weight: bold;
+    /* Makes the heading text bold */
+    line-height: 1.1;
+    /* Adjusts the spacing between lines of text */
+}
+
+#home p {
+    font-size: 1.5em;
+    /* Sets the size of the paragraph text */
+    max-width: 600px;
+    /* Restricts the width of the paragraph */
+    line-height: 1.6;
+    /* Adjusts the spacing between lines of text */
+}
+
+/* Style for the input box assuming it's an input field */
+#home input[type="text"] {
+    padding: 10px;
+    /* Adds padding inside the input box */
+    font-size: 1em;
+    /* Sets the font size inside the input box */
+    margin-top: 20px;
+    /* Adds space above the input box */
+    width: 200px;
+    /* Sets the width of the input box */
+    border: 2px solid #333;
+    /* Sets the border of the input box */
+    border-radius: 5px;
+    /* Rounds the corners of the input box */
+}

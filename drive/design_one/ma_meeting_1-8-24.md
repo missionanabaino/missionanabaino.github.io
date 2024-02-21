@@ -1,7 +1,7 @@
 
 
 
-Quarterly- in two months
+## Quarterly- in two months
 
 
 4 Updates 
@@ -124,3 +124,95 @@ More on portsmith in the next upcoming updates
 
 EM
 - PG 
+
+
+AG will populate the CALENDAR - of when the calendar 
+
+Quaretly
+Annual
+180
+
+# Action Items
+1. 180 Week Template
+2. Put forth stuff for PG 
+3. Come up with a communication plan 
+4. Reach out to Mike about Web Commitee - DONE - MET WITH HIM - WE're Going to Meet 1x a week
+5. Rethink name "God Speaks" - Prep it to release on Ash Wednesday - and 
+
+
+
+### MA WEBSITE
+
+1. 
+2 or 3 
+
+Content MGMT - PG
+Designer - AG 
+
+Each of us would have someone to interact with - if i'm doing design - and content - 
+
+mike - 
+
+This is not targeting lay people
+not even a core group member
+
+Two groups of people
+1. church planter - looking for a home
+2. anchor church - and a pastor + mission 
+
+
+GOD SPEAKS
+- outline + Easter Type of Thing 
+- release them on to podcasts + anchor fm 
+- mae them blogs
+
+
+- ASH Wednesday 
+
+
+Mission Communities
+Sesshion
+
+Purpsose is ambitious 
+
+Not a program oriented thing
+
+
+
+It is for recurite 
+90% of it is for recruitment
+
+70% Re - 30% resources 
+
+
+# Content Rich 
+
+I don't need the fulff 
+
+Target your heart - not the brian? 
+
+Both and And 
+
+Get there because of theology
+
+Covenant and Temple
+
+Flesh - and temple 
+
+and keep the convenant
+
+CONTNET
+
+work with james
+
+ARE YOU TIRED OF A BEST PRACTICES 
+
+MA wants to go beyond best practices
+and rethink church
+from the very core
+
+^^ BOOM - something like that
+
+
+
+

@@ -1,142 +1,76 @@
-<html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Mission Anabaino</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+      content="A unique network offering resources, support, and community for church planters and their initiatives.">
+    <meta name="keywords"
+      content="Church Planting, Community Support, Resources, Networking">
+    <title>Your Network for Church Planting</title>
+    <link rel="stylesheet" href="./src/css/global_styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
-
   <body>
-    <!-- 
-		1. What is MA?
-		2. Who is MA?
-		3. Join MA?
-		4. Resources
-	-->
 
-    <!-- <header id="myHeader" class="">
-      <nav>
-        <a href="#what-is-ma">what is ma?</a>
-        <a href="#board">Who is MA?</a>
-        <a href="#future">join ma</a>
-        <a href="./resources.html">Resources</a> -->
-    <!-- a href="./resources.html">give</a
-        <a href="#"></a>
+    <!-- TOP NAV -->
+    <div id="hamburger" onclick="toggleOverlay()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
 
-        <button id="openmenu">
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
-    </header> -->
-
-    <div class="topMain__container">
-      <div class="topTop__container">
-        <div class="topLeft__container">
-          <a href="./index.html"><img src="assets/mal2.png" /></a>
-        </div>
-        <div class="topRight__container">
-          <div class="topRight__menu">
-            <a href="contact-us.html">Contact Us</a>
-            <a href="https://secure.acceptiva.com/?cst=364ba0"
-              >Online Donations</a
-            >
-            <a href="https://www.anabaino.org/login">Collaborator Login</a>
-          </div>
-        </div>
-      </div>
-      <div class="topBottom__container">
-        <div class="topBottom__container-menu">
-          <a href="what.html"><button>WHAT IS MA?</button></a>
-          <a href="who.html"><button>WHO ARE WE?</button></a>
-          <a href="join.html"><button>GET INVOLVED</button></a>
-          <a href="resources.html"><button>RESOURCES</button></a>
-          <a href="local.html"><button>MA LOCAL COLLABORATIVES</button></a>
-        </div>
+    <div id="overlayMenu" class="overlay">
+      <a href="javascript:void(0)" class="closebtn"
+        onclick="toggleOverlay()">&times;</a>
+      <div class="overlay-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
 
-    <div id="page" class="">
-      <section
-        id="space"
-        style="
-          background-image: url(https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg);
-        "
-      >
-        <img src="./assets/ma-welcome-banner-bigger.jpg" />
-      </section>
-<style>
-  #brief-update {
-    flex-direction: column;
-  }
-  #brief-join-ma-team {
-    flex-direction: column;
-  }
-  #homepage-featured-media {
-    flex-direction: column;
-  }
-  #prayer-warriors {
-    flex-direction: column;
-  }
-</style>
-<section id="brief-update">
-  <h1>2024</h1>
-  <h2>Mission Anabaino 2.0</h2>
-  <p>The gist of the 2.0 plan is to continue the MA function as both a Church Planting Network and a Theological collaborative concerning the “Missional Church In The Post Christian Context ”or “Missional Ecclesiology”.</p>
+    <!-- BODY -->
 
+    <section id="home">
+      <div class="content-container">
+        <h1>Not Your Typical Network</h1>
+        <p>Set up perciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam.</p>
+        <input type="text" placeholder="magic word">
+      </div>
+    </section>
 
-</section>
+    <section id="about">
+      <h2>Get Some Skin in the Game</h2>
+      <p>Description of the Post Christendom Church Planting initiative...</p>
+    </section>
 
+    <section id="support">
+      <h2>Our 2024 Plan</h2>
+      <!-- Content related to the plan for 2024 -->
+    </section>
 
-<section id="prayer-warriors">
-  <h2>Join us in prayer and support</h2>
-  <p>
-    Asking God to give us 200 prayer warriors who will devote themselves to pray regularly for MA generally and for an assigned MA church plant specifically. You will receive both the MA Quarterly Report and regular Update from the specific church plant that has been assigned to you. If there is a particular MA plant that interests you, let us know.
-  </p>
-  <p>
-    Asking God to give us $360k dollars toward two new MA Church plants in 2024. Towards this end, we already have a matching grant of $180! In other words, whatever you give will be doubled up to $180k! NOTE: We currently already have a very strong candidate in the final stage of our candidacy process targeting a very strategic location related to MA’s vision. (Hopefully more on this in our next MA REPORT.) Another potential planter is in the initial stages of candidacy as well. More often than not, our reputation as “the gold standard” church planting network (a planter’s words, not mine) precedes us such that most of our recruits are contacting us! But pray for this as well, the harvest is plentiful and the laborers in comparison are few!
-  </p>
-</section>
-<section id="homepage-featured-media">
-  <h2>Watch Our Campaign Video</h2>
-  <div class="responsive-iframe">
-    <iframe src="https://www.youtube.com/embed/xQ2GITSXyKM?si=bFCZ5gaQRmGdhxCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div></section>
+    <section id="updates">
+      <h2>Updates from our Church Planters</h2>
+      <!-- Content for updates -->
+    </section>
 
-  <section id="brief-join-ma-team">
-    <h2>To join the MA team:</h2>
-    <p>If you would like to become a prayer partner only for now with MA—please just email preston@anabaino.org and you will be added to our Quarterly Report.</p>
-    <p>If you would like to become a prayer partner and invest financially in MA, you may do this in one of three ways:</p>
-    <ul>
-      <li>If you are a member of a church that is sponsoring a designated gift to MA, you can give this directly to your church as a collection offering with the Memo to apply to MA</li>
-      <li>Donate Directly To Mission Anabaino via MA website located (upper right hand corner of anabaino.org)</li>
-      <li>Donate directly through <a href="https://secure.acceptiva.com/?cst=364ba0">https://secure.acceptiva.com/?cst=364ba0</a></li>
-    </ul>
-  </section>
-<style>
+    <section id="resources">
+      <h2>Resources</h2>
+      <!-- Links to resources -->
+    </section>
 
-</style>
-      <section id="resources">
-        <h1>Resources</h1>
-        <h2>Access Classes, Readings, Collaborator Papers, and more</h2>
+    <footer>
+      <p>&copy; 2024 Mission Anabaino</p>
+    </footer>
 
-        <a href="resources.html"
-          ><button>Access Full Resource Library</button></a
-        >
-        <a href="contact-us.html"><button>Contact Us</button></a>
-      </section>
+    <!-- SCRIPTS -->
 
-
-
-
-    </div>
-
-    <a
-      id="fixedlink"
-      target="_blank"
-      rel="nofollow noopener"
-      href="./resources.html"
-      ><button>Mission Anabaino Resources</button></a
-    >
-
-    <script src="./scripts.js"></script>
+    <script src="./src/scripts/function_navigation.js"></script>
   </body>
 </html>
