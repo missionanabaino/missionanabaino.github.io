@@ -14,6 +14,13 @@
     transition: 0.4s;
 }
 
+.fixed-top-right {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* Ensures it stays above other content */
+}
+
 /* The Overlay */
 .overlay {
     height: 100%;
@@ -73,14 +80,34 @@ section {
 }
 
 #home {
+    position: relative;
+    /* Establishes a positioning context */
     text-align: left;
-    /* Aligns text to the left */
     padding: 50px;
-    /* Adds padding around the content */
-    background-color: #fff;
-    /* Sets background color to white */
+    background-color: transparent;
+    /* Makes the background transparent */
     color: #000;
-    /* Sets text color to black */
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    min-height: 100vh;
+    /* Ensures the section takes at least the height of the viewport */
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path-to-your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    /* Places the background below the content */
 }
 
 #home h1 {
@@ -117,4 +144,32 @@ section {
     /* Sets the border of the input box */
     border-radius: 5px;
     /* Rounds the corners of the input box */
+}
+
+/* Add this new style for the content container */
+.content-container {
+    max-width: 600px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Centers the container */
+    padding: 50px;
+    /* Adds padding around the content */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    border-radius: 10px;
+    /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    display: flex;
+    /* Enables flexbox */
+    flex-direction: column;
+    /* Stacks children vertically */
+    justify-content: center;
+    /* Centers children vertically */
+    align-items: flex-start;
+    /* Aligns children to the start of the cross axis */
+    position: relative;
+    /* Needed for absolute positioning of elements inside */
+    z-index: 2;
+    /* Ensures the content is above the background graphic */
 }
