@@ -24,6 +24,7 @@ h1 {
 h2 {
     font-size: 2rem;
     line-height: 1.3;
+    font-family: 'Barlow', sans-serif;
 }
 
 h3 {
@@ -37,6 +38,7 @@ p {
     line-height: 1.6;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* Links */
@@ -240,4 +242,31 @@ section {
     /* Makes the image responsive */
     height: auto;
     /* Keeps the aspect ratio */
+}
+
+.dynamic-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Provides comfortable padding around the content */
+    text-align: center;
+}
+
+.dynamic-display h2 {
+    font-size: 2.25rem;
+    /* Sets a fixed, readable font size for the heading */
+    margin-bottom: 1rem;
+    /* Provides space between the heading and the paragraph */
+}
+
+.dynamic-display p {
+    font-size: 1rem;
+    /* Sets a fixed, readable font size for the paragraph */
+    max-width: 80ch;
+    /* Limits line length to around 60 characters for readability */
+    margin-bottom: 1rem;
+    /* Spaces out paragraphs */
+    text-align: left;
 }
