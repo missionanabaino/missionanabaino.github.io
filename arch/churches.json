@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Christ Presbyterian Church",
+        "region": "North America",
+        "description": "A vibrant community in New Haven.",
+        "website": "https://cpcnewhaven.org"
+    },
+    {
+        "name": "Grace Church",
+        "region": "Europe",
+        "description": "An ancient community with modern values.",
+        "website": "https://gracechurch.example.com"
+    }
+]

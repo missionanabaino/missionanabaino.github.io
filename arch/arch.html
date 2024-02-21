@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Global Church Media Archive</title>
+        <link rel="stylesheet" href="arch-styles.css">
+    </head>
+    <body>
+        <div id="dashboard">
+            <header>
+                <h1>Global Church Media Archive</h1>
+                <input type="text" id="searchInput" onkeyup="filterChurches()"
+                    placeholder="Search for churches...">
+            </header>
+            <nav>
+                <!-- Add dashboard links here -->
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <!-- More links as needed -->
+            </nav>
+        </div>
+        <main>
+            <table id="churchCollection">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Churches will be populated here -->
+                </tbody>
+            </table>
+        </main>
+        <script src="arch-core-filter.js"></script>
+    </body>
+</html>
