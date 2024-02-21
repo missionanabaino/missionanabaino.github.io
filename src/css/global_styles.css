@@ -270,3 +270,31 @@ section {
     /* Spaces out paragraphs */
     text-align: left;
 }
+
+/* Parallax Section Styles for Map of Churches */
+#churches-map-parallax {
+    height: 500px;
+    /* Adjust the height as needed */
+    background-image: url(/src/assets/mapOfChurches.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dynamic Grid for Church Logos */
+#churches-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#churches-logo-grid .logo-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    /* Makes the image a perfect square */
+    object-fit: cover;
+    /* Adjust this as needed to control how the images fit within their boxes */
+}
