@@ -2,13 +2,15 @@
     {
         "name": "Christ Presbyterian Church",
         "region": "North America",
-        "description": "A vibrant community in New Haven.",
+        "location": "New Haven, CT, USA",
+        "yearFounded": "Year",
         "website": "https://cpcnewhaven.org"
     },
     {
         "name": "Grace Church",
         "region": "Europe",
-        "description": "An ancient community with modern values.",
+        "location": "City, Country",
+        "yearFounded": "Year",
         "website": "https://gracechurch.example.com"
     }
 ]
