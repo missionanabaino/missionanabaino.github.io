@@ -147,32 +147,6 @@
     /* Further adjustments can be made here if needed */
 }
 
-/* Unique styles for the #total-christ-theovision section */
-#total-christ-theovision {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-    background-color: #f8f8f8;
-    /* Slightly different background for distinction */
-}
 
-#total-christ-theovision h2 {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    color: #333;
-    /* Slightly darker color for distinction */
-}
-
-#total-christ-theovision p {
-    font-size: 1rem;
-    max-width: 80ch;
-    margin-bottom: 1rem;
-    text-align: left;
-    color: #555;
-    /* Slightly darker text color for distinction */
-}
 
 /* You can add more unique styles here if needed */
