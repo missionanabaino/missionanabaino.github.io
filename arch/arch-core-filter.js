@@ -12,7 +12,9 @@ function populateChurches(churches) {
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${church.name}</td>
-            <td>${church.description}</td>
+            <td>${church.region}</td>
+            <td>${church.location}</td>
+            <td>${church.yearFounded}</td>
             <td><a href="${church.website}" target="_blank">Website</a></td>
         `;
         tableBody.appendChild(tr);
@@ -22,14 +24,20 @@ function populateChurches(churches) {
 function filterChurches() {
     const input = document.getElementById('searchInput');
     const filter = input.value.toUpperCase();
-    const churches = document.getElementsByClassName('church');
+    const table = document.getElementById('churchCollection');
+    const tr = table.getElementsByTagName('tr');
 
-    for (let i = 0; i < churches.length; i++) {
-        let h2 = churches[i].getElementsByTagName('h2')[0];
-        if (h2.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            churches[i].style.display = "";
-        } else {
-            churches[i].style.display = "none";
-        }
+    // Loop through all table rows, and hide those who don't match the search query
+    for (let i = 0; i < tr.length; i++) {
+        // Assuming the church name is in the first <td> of each row
+        let td = tr[i].getElementsByTagName('td')[0];
+        if (td) {
+            let txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }       
     }
 }

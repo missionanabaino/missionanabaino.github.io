@@ -1,0 +1,148 @@
+/* Update styles for the updates section */
+#updates {
+    background-color: #fff;
+    /* Assuming a white background */
+    padding: 50px 0;
+    /* Add padding above and below the content */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#updates h2 {
+    margin-bottom: 2rem;
+    /* Add some space below the heading */
+}
+
+/* Create a grid layout for the update items */
+.update-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    grid-gap: 30px;
+    /* Space between grid items */
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 1200px;
+    /* Maximum width of the grid */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+.update-item {
+    border: 1px solid #ccc;
+    /* Border for the items */
+    padding: 20px;
+    /* Padding inside the items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    /* Light background for each item */
+}
+
+.update-item img {
+    width: 100%;
+    /* Full width of the container */
+    height: 200px;
+    /* Fixed height for all images */
+    object-fit: cover;
+    /* Cover the area without losing aspect ratio */
+    margin-bottom: 1rem;
+    /* Space below the image */
+}
+
+.update-item p {
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 1rem;
+    /* Space below the paragraph */
+    height: 4.5em;
+    /* Fixed height for all descriptions */
+    overflow: hidden;
+    /* Hide overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines of text */
+    -webkit-box-orient: vertical;
+}
+
+.update-item button {
+    padding: 10px 20px;
+    /* Padding inside the button */
+    background-color: #000;
+    /* Button color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    /* No border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-top: auto;
+    /* Push the button to the bottom */
+}
+
+.update-item button:hover {
+    background-color: #333;
+    /* Darker button color on hover */
+}
+
+/* ... existing styles ... */
+
+/* Responsive styles for the updates section */
+@media (max-width: 768px) {
+
+    /* Adjust the grid to stack items vertically on smaller screens */
+    .update-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        grid-gap: 20px;
+        /* Reduced gap for smaller screens */
+        width: 90%;
+        /* Increase width to use more space on small screens */
+    }
+
+    /* Adjust the heading size for smaller screens */
+    #updates h2 {
+        font-size: 1.5rem;
+        /* Smaller font size for the heading */
+        text-align: center;
+        /* Center align the heading */
+        padding: 0 20px;
+        /* Add padding for better spacing */
+    }
+
+    /* Adjust the update item padding for smaller screens */
+    .update-item {
+        padding: 15px;
+        /* Reduced padding inside the items */
+    }
+
+    /* Adjust the button size for easier interaction on touch devices */
+    .update-item button {
+        padding: 12px 24px;
+        /* Larger padding for the button */
+        font-size: 1rem;
+        /* Increase font size for better readability */
+    }
+
+    /* Adjust the image height for a better aspect ratio on smaller screens */
+    .update-item img {
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+    }
+
+    /* Adjust the description height to accommodate different text lengths */
+    .update-item p {
+        height: auto;
+        /* Auto height to fit content */
+        -webkit-line-clamp: unset;
+        /* Remove line clamping */
+    }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+    /* Further adjustments can be made here if needed */
+}
