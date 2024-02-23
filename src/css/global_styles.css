@@ -298,3 +298,69 @@ section {
     object-fit: cover;
     /* Adjust this as needed to control how the images fit within their boxes */
 }
+
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Dark background to match the image */
+    color: #fff;
+    /* White text for contrast */
+    padding: 1rem;
+    /* Some padding */
+    text-align: center;
+    /* Center the text */
+    border-radius: 12px;
+    border-color: white;
+    font-size: 1rem;
+    /* Standard font size for the text */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    height: auto;
+    /* Adjust the size as needed */
+    width: 200px;
+    filter: invert(1);
+}
+
+.footer-buttons button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+}
+
+.footer-buttons button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.account-button {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.account-button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+footer p {
+    margin-top: 1rem;
+    /* Add space above the copyright text */
+    font-family: 'Barlow', sans-serif;
+    /* Maintain the font consistency */
+    letter-spacing: 0.05em;
+    /* Slight letter spacing for a modern touch */
+}
