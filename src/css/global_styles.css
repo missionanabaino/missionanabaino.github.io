@@ -150,32 +150,24 @@ nav {
 
 /* BODY STYLES *
 
-/* Style each section to be full width and at least 100vh */
-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #home {
     position: relative;
     /* Establishes a positioning context */
-    text-align: left;
-    padding: 50px;
-    background-color: transparent;
-    /* Makes the background transparent */
-    color: #000;
-    display: flex;
-    /* Enables flexbox */
-    justify-content: center;
-    /* Centers the content horizontally */
-    align-items: center;
-    /* Centers the content vertically */
-    min-height: 100vh;
-    /* Ensures the section takes at least the height of the viewport */
+text-align: left;
+padding: 50px;
+background-color: transparent;
+/* Makes the background transparent */
+color: #000;
+display: flex;
+/* Enables flexbox */
+justify-content: center;
+/* Centers the content horizontally */
+align-items: center;
+/* Centers the content vertically */
+min-height: 100vh;
+/* Ensures the section takes at least the height of the viewport */
 }
 
 
@@ -353,7 +345,7 @@ footer {
 .account-button:hover {
     background-color: transparent;
     color: #fff;
- 
+
 }
 
 footer p {

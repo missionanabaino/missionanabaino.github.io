@@ -1,4 +1,15 @@
-/* Update styles for the updates section */
+/* Style each section to be full width and at least 100vh */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #updates {
     background-color: #fff;
     /* Assuming a white background */
