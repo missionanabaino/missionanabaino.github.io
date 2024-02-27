@@ -356,3 +356,41 @@ footer p {
     letter-spacing: 0.05em;
     /* Slight letter spacing for a modern touch */
 }
+
+/* Existing styles... */
+
+/* Resource Splash Section */
+#resource-splash {
+    width: 100%;
+    background: url('https://via.placeholder.com/1500') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resource Splash Buttons */
+#resource-splash button {
+    margin: 20px 10px 0 10px;
+    /* Adjusts the margin for spacing */
+    padding: 10px 20px;
+    /* Adds padding for a larger click area */
+    background-color: #007bff;
+    /* Example button color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Removes the border */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#resource-splash button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+/* Add this at the end of your existing global_styles.css content */
