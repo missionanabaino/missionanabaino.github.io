@@ -1,8 +1,35 @@
+/* Set the font family to Barlow for the entire body or specific container as needed */
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Assuming the left dashboard and the blog posts container are siblings in your HTML structure */
+.container {
+    display: flex;
+}
+
+.dashboard {
+    /* Keep your existing styles and ensure it's the left part */
+    width: 250px;
+    /* Adjust as necessary */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    /* Added for visual separation, adjust as needed */
+    /* Other styles remain unchanged */
+}
+
 #blog-posts {
+    /* Adjustments to ensure it takes the remaining space */
+    flex-grow: 1;
+    /* Allows the blog posts container to take up the remaining space */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 20px;
+    /* Optional: Adds some space between the dashboard and the posts */
 }
+
+/* Keep the rest of your styles unchanged */
 
 .blog-post {
     border: 1px solid #ccc;
@@ -51,4 +78,74 @@
     height: 600px;
     display: flex;
     background-color: #ccc;
+}
+
+.dashboard {
+    /* Adjust width, padding, and other properties as needed */
+    width: 250px;
+    padding: 20px;
+    border-right: solid;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    /* Example color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters h3 {
+    margin-bottom: 5px;
+}
+
+.filter-category,
+.filter-topic,
+.filter-speaker {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Add additional styles for the rest of the elements */
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard,
+.content {
+    flex: 1;
+}
+
+/* Optional: Add some padding or margin for better spacing */
+.dashboard {
+    margin-right: 20px;
+    /* Adjust the spacing between the two columns */
+}
+
+.content {
+    margin-left: 20px;
+    /* Adjust the spacing between the two columns */
 }

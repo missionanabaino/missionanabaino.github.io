@@ -53,22 +53,60 @@
             </div>
         </header>
 
-        <main>
-            <!-- Table of All Articles -->
-            <section class="articles-table">
-                <div class="table-header">
-                    <h2>All Articles</h2>
+        <main class="flex-container">
+            <div class="dashboard" id="left">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search..."
+                        class="search-input">
+                    <button class="search-btn">🔍</button>
                 </div>
 
-            </section>
-            <section id="blog-posts" class="blog-posts">
-                <!-- Blog posts will be dynamically inserted here -->
-                <!-- Example blog post with square image -->
+                <!-- Filters -->
+                <div class="filters">
+                    <!-- Categories -->
+                    <div class="filter-category">
+                        <h3>Types</h3>
+                        <label><input type="checkbox" name="type"
+                                value="sermon"> Sermon</label>
+                        <label><input type="checkbox" name="type"
+                                value="series"> Series</label>
+                    </div>
 
-                <!-- Additional blog posts... -->
-            </section>
+                    <!-- Topics -->
+                    <div class="filter-topic">
+                        <h3>Topics</h3>
+                        <label><input type="checkbox" name="topic"
+                                value="salvation"> Salvation</label>
+                        <label><input type="checkbox" name="topic" value="sin">
+                            Sin</label>
+                        <label><input type="checkbox" name="topic"
+                                value="gospel"> Understanding the Gospel</label>
+                    </div>
 
-            <!-- Add other sections for types, topics, and speakers as per the design -->
+                    <!-- Speakers -->
+                    <div class="filter-speaker">
+                        <h3>Speakers</h3>
+                        <label><input type="checkbox" name="speaker"
+                                value="preston_graham"> Preston Graham</label>
+                        <label><input type="checkbox" name="speaker"
+                                value="mike_bruises"> Mike Bruises</label>
+                    </div>
+                </div>
+
+                <!-- Additional Menus -->
+                <div class="additional-menus">
+                    <!-- Placeholder for additional menu items -->
+                </div>
+            </div>
+            <div class="content" id="right">
+                <section id="blog-posts" class="blog-posts">
+                    <!-- Blog posts will be dynamically inserted here -->
+                    <!-- Example blog post with square image -->
+
+                    <!-- Additional blog posts... -->
+                </section>
+            </div>
         </main>
 
         <footer>
