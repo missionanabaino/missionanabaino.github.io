@@ -1,6 +1,6 @@
 #blog-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -9,7 +9,6 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .post-header h2 {
@@ -44,3 +43,12 @@
 }
 
 /* Rest of the styles remain the same */
+
+
+#q1_featured_container {
+    margin-top: 300px;
+    border-style: solid;
+    height: 600px;
+    display: flex;
+    background-color: #ccc;
+}

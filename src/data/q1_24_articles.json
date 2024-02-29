@@ -3,7 +3,35 @@
         "title": "The Church Question: Is the Church an Essential Element of the Gospel?",
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         "author": "Preston Graham",
-        "url": "../data/articles/article_1.html"
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150"
+    },
+    {
+        "title": "Exploring the Depths of Grace in Modern Theology",
+        "summary": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices...",
+        "author": "Anna Schmidt",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150"
+    },
+    {
+        "title": "The Intersection of Faith and Science in the 21st Century",
+        "summary": "Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...",
+        "author": "John Doe",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150"
+    },
+    {
+        "title": "Rediscovering Ancient Practices in Contemporary Worship",
+        "summary": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero...",
+        "author": "Maria Gonzalez",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150"
+    },
+    {
+        "title": "The Role of Community in Spiritual Growth",
+        "summary": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante...",
+        "author": "Ahmed Al-Farsi",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150"
     }
-
 ]
