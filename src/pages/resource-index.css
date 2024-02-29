@@ -1,0 +1,46 @@
+#blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.post-summary p {
+    color: #666;
+}
+
+.post-footer .button {
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    /* Ensures that the text inside the link has the default text color */
+}
+
+.post-link:hover,
+.post-link:focus {
+    background-color: #f8f9fa;
+    /* Optional: Change background on hover/focus for visual feedback */
+}
+
+/* Rest of the styles remain the same */
