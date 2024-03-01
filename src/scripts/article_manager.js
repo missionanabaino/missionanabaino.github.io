@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const typeCheckboxes = document.querySelectorAll('input[name="type"]');
     const topicCheckboxes = document.querySelectorAll('input[name="topic"]');
     const speakerCheckboxes = document.querySelectorAll('input[name="speaker"]');
+    const searchInput = document.querySelector('.search-input'); // Fetch the search input
 
     function fetchAndDisplayArticles() {
         fetch('../data/q1_24_articles.json')
             .then(response => response.json())
             .then(data => {
-                const filteredData = data.filter(article => {
+                let filteredData = data.filter(article => {
                     // Adjusting for case-insensitive comparison and matching JSON structure
                     const typeMatch = Array.from(typeCheckboxes).filter(cb => cb.checked).map(cb => cb.value).some(type => article.types.map(t => t.toLowerCase()).includes(type.toLowerCase()));
                     const topicMatch = Array.from(topicCheckboxes).filter(cb => cb.checked).map(cb => cb.value).some(topic => article.topics.map(t => t.toLowerCase()).includes(topic.toLowerCase()));
@@ -17,6 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
                            (topicMatch || !Array.from(topicCheckboxes).some(cb => cb.checked)) &&
                            (speakerMatch || !Array.from(speakerCheckboxes).some(cb => cb.checked));
                 });
+
+                // Search functionality
+                const searchQuery = searchInput.value.toLowerCase();
+                if (searchQuery) {
+                    filteredData = filteredData.filter(article => 
+                        article.title.toLowerCase().includes(searchQuery) ||
+                        article.summary.toLowerCase().includes(searchQuery) ||
+                        article.author.toLowerCase().includes(searchQuery) ||
+                        article.topics.some(topic => topic.toLowerCase().includes(searchQuery))
+                    );
+                }
 
                 displayArticles(filteredData);
             })
@@ -53,8 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial fetch and display
     fetchAndDisplayArticles();
 
-    // Add event listeners to checkboxes to refetch and display articles on change
+    // Add event listeners to checkboxes and search input to refetch and display articles on change
     [...typeCheckboxes, ...topicCheckboxes, ...speakerCheckboxes].forEach(checkbox => {
         checkbox.addEventListener('change', fetchAndDisplayArticles);
     });
+
+    // Event listener for the search input
+    searchInput.addEventListener('input', fetchAndDisplayArticles);
 });
