@@ -13,7 +13,7 @@
     /* These flex properties center the content (text) vertically and horizontally */
     color: #ff9393;
     /* Change the text color if needed */
-    font-size: 2em;
+    font-size: 32px;
     /* Adjust the text size as needed */
     text-align: center;
     /* Ensures the text is centered */
@@ -42,11 +42,15 @@
     border: none;
     /* Remove border */
     padding: 10px 20px;
+    font-size: 32px;
+    min-width: 100%;
     /* Add some padding */
     margin: 5px;
     /* Add some space around the buttons */
     cursor: pointer;
     /* Change cursor to pointer on hover */
+    font-family: 'Barlow', sans-serif;
+    /* Set the font to Barlow */
 }
 
 .sub-nav .sub-header-nav a button:hover {

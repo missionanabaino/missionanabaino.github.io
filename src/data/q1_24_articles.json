@@ -48,5 +48,35 @@
         "types": ["Sermon"],
         "topics": ["Community", "Spiritual Growth"],
         "speakers": []
+    },
+    {
+        "title": "Innovative Approaches to Modern Preaching",
+        "summary": "Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi...",
+        "author": "Mike Brunjes",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Workshop"],
+        "topics": ["Preaching", "Innovation"],
+        "speakers": ["Mike Brunjes"]
+    },
+    {
+        "title": "The Dynamics of Church Leadership in the Digital Age",
+        "summary": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus...",
+        "author": "Tolivar Williams",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Conference"],
+        "topics": ["Leadership", "Digital Transformation"],
+        "speakers": ["Tolivar Williams"]
+    },
+    {
+        "title": "Documenting Faith: A Cinematic Journey",
+        "summary": "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula...",
+        "author": "Ken Burns",
+        "url": "../data/articles/article_1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Documentary"],
+        "topics": ["Faith", "Cinema"],
+        "speakers": ["Ken Burns"]
     }
 ]
