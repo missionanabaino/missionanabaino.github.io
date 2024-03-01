@@ -82,7 +82,7 @@ body {
 
 .dashboard {
     /* Adjust width, padding, and other properties as needed */
-    width: 250px;
+    width: 150px;
     padding: 20px;
     border-right: solid;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .search-input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -141,11 +141,13 @@ input[type="checkbox"] {
 
 /* Optional: Add some padding or margin for better spacing */
 .dashboard {
+    flex: 1;
     margin-right: 20px;
     /* Adjust the spacing between the two columns */
 }
 
 .content {
-    margin-left: 20px;
+    flex: 3;
+    margin-left: 10px;
     /* Adjust the spacing between the two columns */
 }
