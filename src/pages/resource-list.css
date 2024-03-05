@@ -1,0 +1,48 @@
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.resource-column {
+    background-color: #f9f9f9;
+    /* Light grey background */
+    border: 1px solid #ddd;
+    /* Light grey border */
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.resource-column h3 {
+    color: #333;
+    /* Dark grey color for titles */
+    margin-bottom: 10px;
+}
+
+.resource-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-column ul li a {
+    color: #007bff;
+    /* Bootstrap primary blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-column ul li a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.resource-header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+}
