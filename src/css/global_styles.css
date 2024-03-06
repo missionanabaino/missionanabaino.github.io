@@ -329,4 +329,17 @@ min-height: 100vh;
     /* Darker shade on hover */
 }
 
-/* Add this at the end of your existing global_styles.css content */
+
+.infographic-container {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust based on your design preference */
+    margin: auto;
+    /* Centers the image */
+}
+
+.responsive-infographic {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
