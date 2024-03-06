@@ -347,3 +347,23 @@ button:active {
     height: auto;
     /* Maintain aspect ratio */
 }
+
+/* Add to your CSS file */
+.blog-header-splash {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Adjust based on your layout */
+}
+
+.splash-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* Adjust for desired roundness */
+    object-fit: cover;
+    /* Ensures the image covers the area well */
+}
