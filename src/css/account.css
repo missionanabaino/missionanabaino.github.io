@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard {
+    width: 25%;
+    /* 1/4th of the screen */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    min-height: 50vh;
+    /* Visual separation between dashboard and content */
+}
+
+.content {
+    width: 75%;
+    /* 3/4ths of the screen */
+    padding: 20px;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+
+    .dashboard,
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dashboard {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        /* Visual separation in a stacked layout */
+    }
+}

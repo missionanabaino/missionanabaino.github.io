@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="../css/global_styles.css">
         <link rel="stylesheet" href="../css/top-nav.css">
         <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/resource-index.css">
+        <link rel="stylesheet" href="../css/resource-list.css">
+        <link rel="stylesheet" href="../css/account.css">
+        <!-- Ensure the path to CSS files is correct -->
     </head>
     <body>
         <!-- TOP NAV -->
@@ -37,45 +41,49 @@
             </div>
         </nav>
 
-        <main class="dynamic-display">
-            <h2>Welcome, [User Name]!</h2>
-            <p>Your support is helping us make a difference. Here's what you can
-                access as a part of the Mission Anabaino community:</p>
-
-            <section class="exclusive-content">
-                <h3>Exclusive Classes & Lectures</h3>
-                <div class="exclusive-items">
-                    <article class="exclusive-item">
-                        <h4>Class Title 1</h4>
-                        <p>Short description of the class. This class covers
-                            topics on...</p>
-                        <button
-                            onclick="window.location.href='class1.html';">Access
-                            Class</button>
-                    </article>
-                    <article class="exclusive-item">
-                        <h4>Lecture Series Title 1</h4>
-                        <p>Introduction to the lecture series. This series will
-                            explore...</p>
-                        <button
-                            onclick="window.location.href='lecture1.html';">Watch
-                            Lectures</button>
-                    </article>
-                    <!-- Add more exclusive items as needed -->
+        <div class="container">
+            <div class="dashboard">
+                <h3>Dashboard</h3>
+                <div class="search-container">
+                    <input type="text" class="search-input"
+                        placeholder="Search...">
+                    <button class="search-btn">Search</button>
                 </div>
-            </section>
-
-            <section class="account-settings">
-                <h3>Account Settings</h3>
-                <button onclick="window.location.href='edit_profile.html';">Edit
-                    Profile</button>
-                <button
-                    onclick="window.location.href='change_password.html';">Change
-                    Password</button>
-                <button onclick="window.location.href='logout.html';">Log
-                    Out</button>
-            </section>
-        </main>
+                <div class="filters">
+                    <h3>Access</h3>
+                    <label><input type="radio" name="dashboard" value="classes"
+                            onclick="showClasses()"> Classes</label>
+                    <label><input type="radio" name="dashboard" value="lectures"
+                            onclick="showLectures()"> Lectures</label>
+                </div>
+            </div>
+            <div class="content">
+                <section id="classes-content">
+                    <h2>Exclusive Classes</h2>
+                    <div class="resource-grid">
+                        <div class="resource-column">
+                            <h3>Class Title 1</h3>
+                            <p>Short description of the class. This class covers
+                                topics on...</p>
+                            <a href="class1.html">Access Class</a>
+                        </div>
+                        <!-- Add more classes as needed -->
+                    </div>
+                </section>
+                <section id="lectures-content" style="display: none;">
+                    <h2>Exclusive Lectures</h2>
+                    <div class="resource-grid">
+                        <div class="resource-column">
+                            <h3>Lecture Series Title 1</h3>
+                            <p>Introduction to the lecture series. This series
+                                will explore...</p>
+                            <a href="lecture1.html">Watch Lecture</a>
+                        </div>
+                        <!-- Add more lectures as needed -->
+                    </div>
+                </section>
+            </div>
+        </div>
 
         <footer>
             <div class="footer-container">
@@ -93,6 +101,15 @@
             </div>
         </footer>
 
-        <script src="../scripts/function_navigation.js"></script>
+        <script>
+        function showClasses() {
+            document.getElementById('classes-content').style.display = 'block';
+            document.getElementById('lectures-content').style.display = 'none';
+        }
+
+        function showLectures() {
+            document.getElementById('classes-content').style.display = 'none';
+            document.getElementById('lectures-content').style }
+    </script>
     </body>
 </html>
