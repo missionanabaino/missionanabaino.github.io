@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Anabaino - Your Account</title>
+        <link rel="stylesheet" href="../css/global_styles.css">
+        <link rel="stylesheet" href="../css/top-nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo">
+                </a>
+            </div>
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../../index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./support.html">Support</a>
+                    <a href="./resources.html">Resources</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./account.html">Account</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="dynamic-display">
+            <h2>Welcome, [User Name]!</h2>
+            <p>Your support is helping us make a difference. Here's what you can
+                access as a part of the Mission Anabaino community:</p>
+
+            <section class="exclusive-content">
+                <h3>Exclusive Classes & Lectures</h3>
+                <div class="exclusive-items">
+                    <article class="exclusive-item">
+                        <h4>Class Title 1</h4>
+                        <p>Short description of the class. This class covers
+                            topics on...</p>
+                        <button
+                            onclick="window.location.href='class1.html';">Access
+                            Class</button>
+                    </article>
+                    <article class="exclusive-item">
+                        <h4>Lecture Series Title 1</h4>
+                        <p>Introduction to the lecture series. This series will
+                            explore...</p>
+                        <button
+                            onclick="window.location.href='lecture1.html';">Watch
+                            Lectures</button>
+                    </article>
+                    <!-- Add more exclusive items as needed -->
+                </div>
+            </section>
+
+            <section class="account-settings">
+                <h3>Account Settings</h3>
+                <button onclick="window.location.href='edit_profile.html';">Edit
+                    Profile</button>
+                <button
+                    onclick="window.location.href='change_password.html';">Change
+                    Password</button>
+                <button onclick="window.location.href='logout.html';">Log
+                    Out</button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo" class="footer-logo">
+                </a>
+                <div class="footer-buttons">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                    <button>Button 4</button>
+                </div>
+                <button class="account-button">Account</button>
+            </div>
+        </footer>
+
+        <script src="../scripts/function_navigation.js"></script>
+    </body>
+</html>
