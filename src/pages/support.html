@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Anabaino - Support</title>
+        <link rel="stylesheet" href="../css/global_styles.css">
+        <link rel="stylesheet" href="../css/top-nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo">
+                </a>
+            </div>
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../../index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./support.html">Support</a>
+                    <a href="./resources.html">Resources</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="dynamic-display">
+            <h2>Support Our Mission</h2>
+            <p>Join us in supporting the growth and development of church
+                communities worldwide. Your support makes a difference.</p>
+            <div class="support-dropdown">
+                <label for="church-dropdown">Choose a church to support:</label>
+                <select id="church-dropdown" name="church">
+                    <option value="church1">Church 1</option>
+                    <option value="church2">Church 2</option>
+                    <option value="church3">Church 3</option>
+                    <option value="church4">Church 4</option>
+                    <option value="church5">Church 5</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="support-info">
+                <p>After selecting a church, you can contribute through various
+                    means such as direct donations, volunteering, or
+                    participating in fundraising events. Every bit of help is
+                    greatly appreciated.</p>
+            </div>
+            <button type="button"
+                onclick="window.location.href='https://example.com/donate';">Donate
+                Now</button>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo" class="footer-logo">
+                </a>
+                <div class="footer-buttons">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                    <button>Button 4</button>
+                </div>
+                <button class="account-button">Account</button>
+            </div>
+        </footer>
+
+        <script src="../scripts/function_navigation.js"></script>
+    </body>
+</html>

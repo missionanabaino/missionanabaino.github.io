@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Anabaino - Contact Us</title>
+        <link rel="stylesheet" href="../css/global_styles.css">
+        <link rel="stylesheet" href="../css/top-nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo">
+                </a>
+            </div>
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../../index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./support.html">Support</a>
+                    <a href="./resources.html">Resources</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="dynamic-display">
+            <h2>Contact Us</h2>
+            <p>We're here to help and answer any question you might have. We
+                look forward to hearing from you.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"
+                    required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <a href="../../index.html">
+                    <img src="../../src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo" class="footer-logo">
+                </a>
+                <div class="footer-buttons">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                    <button>Button 4</button>
+                </div>
+                <button class="account-button">Account</button>
+            </div>
+        </footer>
+
+        <script src="../scripts/function_navigation.js"></script>
+    </body>
+</html>
