@@ -4,26 +4,64 @@
     font-family: 'Georgia', serif;
 }
 
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #e2e2e2;
+}
+
 .article-header h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .article-meta {
     display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #666;
+}
+
+.article-meta>span,
+.article-meta .author-info,
+.article-meta .social-share {
+    margin-right: 15px;
+    display: flex;
     align-items: center;
-    margin-bottom: 2em;
+}
+
+.author-info {
+    gap: 10px;
+}
+
+.author-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.social-share {
+    margin-left: auto;
+    gap: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #333;
 }
 
 .read-time {
     font-style: italic;
     margin-right: 1em;
-}
-
-.author-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
 }
 
 .article-image {
