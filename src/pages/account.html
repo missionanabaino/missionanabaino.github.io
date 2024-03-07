@@ -97,11 +97,16 @@
                     <button>Button 3</button>
                     <button>Button 4</button>
                 </div>
-                <button class="account-button">Account</button>
+                <a href="#"><button class="account-button">Account</button></a>
             </div>
         </footer>
 
         <script>
+        function toggleOverlay() {
+            var overlay = document.getElementById('overlayMenu');
+            overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+        }
+
         function showClasses() {
             document.getElementById('classes-content').style.display = 'block';
             document.getElementById('lectures-content').style.display = 'none';
@@ -109,7 +114,19 @@
 
         function showLectures() {
             document.getElementById('classes-content').style.display = 'none';
-            document.getElementById('lectures-content').style }
+            document.getElementById('lectures-content').style.display = 'block';
+        }
     </script>
+        <script>
+        function toggleOverlay() {
+            var overlay = document.getElementById('overlayMenu');
+            if (overlay.style.width === '100%') {
+                overlay.style.width = '0%';
+            } else {
+                overlay.style.width = '100%';
+            }
+        }
+        </script>
+        <script src="../scripts/function_navigation.js"></script>
     </body>
 </html>
