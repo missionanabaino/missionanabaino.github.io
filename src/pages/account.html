@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="../css/resource-index.css">
         <link rel="stylesheet" href="../css/resource-list.css">
         <link rel="stylesheet" href="../css/account.css">
-        <!-- Ensure the path to CSS files is correct -->
     </head>
     <body>
         <!-- TOP NAV -->
@@ -64,25 +63,13 @@
                 <section id="classes-content">
                     <h2>Exclusive Classes</h2>
                     <div class="resource-grid">
-                        <div class="resource-column">
-                            <h3>Class Title 1</h3>
-                            <p>Short description of the class. This class covers
-                                topics on...</p>
-                            <a href="class1.html">Access Class</a>
-                        </div>
-                        <!-- Add more classes as needed -->
+                        <!-- Classes will be dynamically added here -->
                     </div>
                 </section>
                 <section id="lectures-content" style="display: none;">
                     <h2>Exclusive Lectures</h2>
                     <div class="resource-grid">
-                        <div class="resource-column">
-                            <h3>Lecture Series Title 1</h3>
-                            <p>Introduction to the lecture series. This series
-                                will explore...</p>
-                            <a href="lecture1.html">Watch Lecture</a>
-                        </div>
-                        <!-- Add more lectures as needed -->
+                        <!-- Lectures can also be dynamically added in a similar manner if needed -->
                     </div>
                 </section>
             </div>
@@ -104,32 +91,8 @@
             </div>
         </footer>
 
-        <script>
-        function toggleOverlay() {
-            var overlay = document.getElementById('overlayMenu');
-            overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
-        }
-
-        function showClasses() {
-            document.getElementById('classes-content').style.display = 'block';
-            document.getElementById('lectures-content').style.display = 'none';
-        }
-
-        function showLectures() {
-            document.getElementById('classes-content').style.display = 'none';
-            document.getElementById('lectures-content').style.display = 'block';
-        }
-    </script>
-        <script>
-        function toggleOverlay() {
-            var overlay = document.getElementById('overlayMenu');
-            if (overlay.style.width === '100%') {
-                overlay.style.width = '0%';
-            } else {
-                overlay.style.width = '100%';
-            }
-        }
-        </script>
         <script src="../scripts/function_navigation.js"></script>
+        <!-- FETCH CLASSES DYNAMICALLY -->
+        <script src="../scripts/fetch_class-data.js"></script>
     </body>
 </html>

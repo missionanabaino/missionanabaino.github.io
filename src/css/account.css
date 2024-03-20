@@ -41,3 +41,22 @@
     background-size: cover;
     background-position: center;
 }
+
+/* Styling for the "Access Class" button to match the "Search" button */
+.resource-column a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    /* Assuming the Search button has a blue background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.resource-column a:hover {
+    background-color: #0056b3;
+    /* Darker shade of blue for hover effect */
+}
