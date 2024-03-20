@@ -73,7 +73,7 @@ body {
 
 
 #q1_featured_container {
-    margin-top: 300px;
+    margin-top: 20px;
     border-style: solid;
     height: 600px;
     display: flex;
@@ -150,4 +150,46 @@ input[type="checkbox"] {
     flex: 3;
     margin-left: 10px;
     /* Adjust the spacing between the two columns */
+}
+
+.call-to-action {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.call-to-action h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.call-to-action form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.call-to-action input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.call-to-action .cta-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #004494;
 }
