@@ -34,11 +34,16 @@
 }
 
 #unique-cta .cta-button:hover {
-    background-color: #a777e3;
+    background-color: #7785e3;
     color: #fff;
 }
 
 @media (max-width: 768px) {
+    #unique-cta {
+        flex-direction: column;
+        /* Adjusts layout to stack elements vertically */
+    }
+
     #unique-cta h2 {
         font-size: 2rem;
     }
@@ -49,5 +54,12 @@
 
     #unique-cta .cta-button {
         padding: 8px 16px;
+        margin-bottom: 10px;
+        /* Adds space between buttons */
+    }
+
+    #unique-cta .cta-content {
+        max-width: 100%;
+        /* Adjusts content width for mobile */
     }
 }

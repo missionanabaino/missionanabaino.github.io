@@ -1,55 +1,94 @@
-/* Glassmorphism style for the form */
-form {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+/* Minimal and bold style for the form, inspired by Typeform */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main.dynamic-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
+    background-color: #fffff0;
+    /* Light background to make the form stand out */
+}
+
+form {
+    background: #ffffff;
+    /* Solid white background */
+    border-radius: 20px;
+    /* Rounded corners for a softer look */
+    padding: 40px;
+    /* Spacious padding for a better layout */
+    width: 100%;
+    /* Full width */
+    max-width: 600px;
+    /* Max width to maintain form readability */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center align the text for a bold statement */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: rgba(255, 255, 255, 0.8);
+    width: calc(100% - 20px);
+    /* Full width minus padding */
+    padding: 15px;
+    /* Comfortable padding */
+    margin: 10px 0;
+    /* Space out elements */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid #ddd;
+    /* Light border */
+    font-size: 18px;
+    /* Larger font size for boldness */
+    box-sizing: border-box;
+    /* Include padding and border in element's width */
 }
 
 button[type="submit"] {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    /* Bold color for the button */
+    color: #ffffff;
+    /* White text for contrast */
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    /* Generous padding for a larger button */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Large font size for emphasis */
     cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-top: 20px;
+    /* Space above the button */
     transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
 button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #003d82;
+    /* Darker shade on hover for interaction feedback */
 }
 
-/* Adjust the main section for better alignment and presentation */
-.main.dynamic-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        /* Less padding on smaller screens */
+    }
 
-/* Enhance the visual hierarchy and spacing */
-h2,
-h3 {
-    color: #000;
-    margin-bottom: 20px;
-}
-
-p {
-    color: #333;
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button[type="submit"] {
+        font-size: 16px;
+        /* Slightly smaller font size on smaller screens */
+    }
 }
