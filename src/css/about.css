@@ -55,3 +55,33 @@
     background-color: rgba(255, 255, 255, 0.2);
     color: #000;
 }
+
+
+#sub-heading-0 {
+    text-align: center;
+    /* Adjust the font size as needed */
+    color: #007bff;
+    /* Adjust the color as needed */
+    font-weight: bold;
+    font-size: 300px !important;
+    margin: 40px 0;
+    /* Adds space above and below the section */
+    font-family: 'Barlow', sans-serif;
+    /* Adjust the font family as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Optional: Adds a background color */
+    padding: 20px;
+    /* Optional: Adds padding inside the section */
+    border-radius: 10px;
+    /* Optional: Rounds the corners */
+    max-width: 80%;
+    /* Optional: Restricts the maximum width */
+    margin-left: auto;
+    /* Centers the section horizontally */
+    margin-right: auto;
+    /* Centers the section horizontally */
+}
+
+#sub-heading-0 h1 {
+    font-size: 92px;
+}
