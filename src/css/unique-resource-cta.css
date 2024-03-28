@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #67b26f, #4ca2cd);
-    color: #fff;
+    background: linear-gradient(135deg, #b7ebff, #cda84c);
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
@@ -21,7 +21,7 @@
 
 #unique-resource-cta .unique-resource-button {
     background-color: #fff;
-    color: #67b26f;
+    color: #000000;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -30,7 +30,7 @@
 }
 
 #unique-resource-cta .unique-resource-button:hover {
-    background-color: #4ca2cd;
+    background-color: #000000;
     color: #fff;
 }
 
