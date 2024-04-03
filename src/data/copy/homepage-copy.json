@@ -1,0 +1,107 @@
+{
+  "mainHeading": "Not Your Typical Network",
+  "mainParagraph": "Set up perciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+  "learnMoreButton": "/src/pages/about.html",
+  "imageSrc": "./src/assets/MAWEBSITE_HOMEPAGE_DOODLE_1.png",
+  "aboutSection": {
+    "heading": "Get Some Skin in the Game",
+    "paragraphs": [
+      "Description of the Post Christendom Church Planting initiative...",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      "1914 translation by H. Rackham But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+      "Section 1.10.33 of de Finibus Bonorum et MalorumAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    ]
+  },
+  "2024PlanSection": {
+    "heading": "Our 2024 Plan",
+    "videoSrc": "https://www.youtube.com/embed/xQ2GITSXyKM",
+    "infographicSrc": "./src/assets/MA_2024_FundsRaised.png",
+    "paragraphs": [
+      "As we approach 2024, our goal is to significantly impact post-Christendom communities by planting churches dedicated to spreading the Total Christ message. We've been blessed with a strong start, having raised $120,000 of our $360,000 goal, thanks to the generous support of our community and a matching grant that doubles our impact once we reach the halfway mark.",
+      "Our mission extends beyond financial contributions; we're building a devoted prayer team to intercede for the ayer team to intercede for the success of these church plants. Currently, 504 committed individuals are lifting up this cause, and we invite you to join this vital part of our journey.",
+      "Your support, whether through prayer, financial contributions, or both, is crucial. Every donation brings us closer to our goal, and every prayer strengthens our resolve. Together, we can plant seeds of faith in fertile ground, nurturing communities centered around the Total Christ vision."
+    ],
+    "howToGetInvolved": [
+      {
+        "method": "Donate",
+        "description": "Every contribution, large or small, helps us reach our financial goal. Remember, we're just $40,000 away from unlocking an additional $180,000 through our matching grant."
+      },
+      {
+        "method": "Pray",
+        "description": "Join our prayer team and commit to regular prayer for the success of our church plants and the communities they will serve."
+      },
+      {
+        "method": "Spread the Word",
+        "description": "Share our mission with friends and family who might be interested in supporting our cause."
+      }
+    ],
+    "donateButtonLink": "https://secure.acceptiva.com/?cst=364ba0",
+    "joinPrayerTeamButtonLink": "https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=us21.admin.mailchimp.com"
+  },
+  "updatesSection": {
+    "heading": "Updates from our Church Planters",
+    "updates": [
+      {
+        "imageSrc": "https://via.placeholder.com/300x200",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "readMoreLink": "./src/assets/templates/pastor_update_template.html"
+      },
+      {
+        "imageSrc": "https://via.placeholder.com/300x200",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "readMoreLink": "./src/assets/templates/pastor_update_template.html"
+      },
+      {
+        "imageSrc": "https://via.placeholder.com/300x200",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "readMoreLink": "./src/assets/templates/pastor_update_template.html"
+      }
+    ]
+  },
+  "totalChristTheovisionSection": {
+    "heading": "Unique Vision for Total Christ",
+    "paragraphs": [
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      "1914 translation by H. Rackham \"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?\"",
+      "Section 1.leasure?",
+      "Section 1.10.33 of de Finibus Bonorum et Malorum At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat"
+    ]
+  },
+  "resourcesSection": {
+    "heading": "Resources",
+    "description": "Articles, Classes, ETC from churches and beyond",
+    "resourceLink": "src/pages/resources.html"
+  },
+  "callToActionSection": {
+    "heading": "Join Our Community",
+    "paragraph": "Be a part of our mission to support church planters around the world. Get involved today!",
+    "buttons": [
+      {
+        "text": "Donate",
+        "link": "https://secure.acceptiva.com/?cst=364ba0"
+      },
+      {
+        "text": "Join Prayer Team",
+        "link": "https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=admin.typeform.com"
+      },
+      {
+        "text": "Subscribe",
+        "link": "./subscribe.html"
+      },
+      {
+        "text": "Contact Us",
+        "link": "./contact.html"
+      }
+    ]
+  },
+  "footer": {
+    "logoSrc": "./src/assets/Mission Anabaino.png",
+    "buttons": [
+      "Button 1",
+      "Button 2",
+      "Button 3",
+      "Button 4"
+    ],
+    "accountButton": "Account"
+  }
+}
