@@ -1,0 +1,53 @@
+{
+  "title": "About Mission Anabaino | Network for Church Planting",
+  "description": "Mission Anabaino (MA) is a unique network offering resources, support, and community for church planters and their initiatives. It embodies the mission 'I am ascending' (Greek anabaino, cf. Jn. 20:17), operating as both a church planting network and theological collaborative. MA is dedicated to the 'greater things' Christ envisioned for his ascension ministry, ensuring Christ's saving presence is mediated through the church in every place a Total Christ church exists.",
+  "sections": [
+    {
+      "id": "sub-heading-1",
+      "title": "What is Mission Anabaino?",
+      "content": "Mission Anabaino is mission 'I am ascending' (Greek anabaino, cf. Jn. 20:17). As both a church planting network and theological collaborative, we exist in pursuit of the 'greater things' that Christ envisioned for his ascension ministry wherein Christ's saving presence is mediated through the church in every place at the same time where a Total Christ church exists."
+    },
+    {
+      "id": "sub-heading-2",
+      "title": "Theological Formation",
+      "content": "Description of the Post Christendom Church Planting initiative..."
+    },
+    {
+      "id": "sub-heading-3",
+      "title": "Post Christendom Engagement",
+      "content": "Description of the Post Christendom Church Planting initiative..."
+    },
+    {
+      "id": "sub-heading-4",
+      "title": "Deconstruction",
+      "content": "Description of the Post Christendom Church Planting initiative..."
+    },
+    {
+      "id": "sub-heading-5",
+      "title": "Theological Collaboration",
+      "content": "Description of the Post Christendom Church Planting initiative..."
+    }
+  ],
+  "callToAction": {
+    "title": "Join Our Community",
+    "description": "Be a part of our mission to support church planters around the world. Get involved today!",
+    "buttons": [
+      {
+        "text": "Donate",
+        "link": "./donate.html"
+      },
+      {
+        "text": "Join Prayer Team",
+        "link": "./join-prayer-team.html"
+      },
+      {
+        "text": "Subscribe",
+        "link": "./subscribe.html"
+      },
+      {
+        "text": "Contact Us",
+        "link": "./contact.html"
+      }
+    ]
+  }
+}
