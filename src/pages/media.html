@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media | Network for Church Planting</title>
+        <link rel="stylesheet" href="../css/global_styles.css">
+        <link rel="stylesheet" href="../css/homepage.css">
+        <link rel="stylesheet" href="../css/top-nav.css">
+        <!-- Added CSS for top navigation -->
+        <!-- Reuse for basic styling -->
+        <link rel="stylesheet" href="../css/media.css">
+        <!-- New CSS file for media page specific styles -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <!-- TOP NAV -->
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="index.html">
+                    <img src="./src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo"></a>
+            </div>
+
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="article_template.html">Support</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="media-container">
+            <h1>Media Library</h1>
+            <div class="media-grid">
+                <!-- Example Media Item -->
+                <div class="media-item">
+                    <a href="https://www.youtube.com/watch?v=xQ2GITSXyKM"
+                        target="_blank">
+                        <img src="https://via.placeholder.com/300x200"
+                            alt="Media Thumbnail">
+                        <p>Media Title Here</p>
+                    </a>
+                </div>
+                <!-- Add more media items here -->
+            </div>
+        </main>
+
+        <footer>
+            <!-- Footer content from index.html -->
+        </footer>
+
+        <script src="./src/scripts/function_navigation.js"></script>
+        <script src="./src/scripts/media-LoadMedia.js"></script>
+    </body>
+</html>

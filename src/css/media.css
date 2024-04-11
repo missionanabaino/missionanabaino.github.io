@@ -1,0 +1,27 @@
+.media-container {
+    padding: 20px;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.media-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.media-item p {
+    margin-top: 10px;
+    text-align: center;
+}
