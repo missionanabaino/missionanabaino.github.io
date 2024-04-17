@@ -46,6 +46,41 @@
         <div class="dropdown">
             <h2 class="dropbtn">Total Christ Resources</h2>
             <div class="dropdown-content" style="text-align:left;">
+                <div class="dropbtn" onclick="toggleDropdown()">The Five Marks:</div>
+                <div class="dropdown-content" id="fiveMarksDropdown" style="display:none; text-align:left;">
+                    <ol>
+                        <li>Gospel Centered ("High Gospel" / Covenant Word)
+                            <ul>
+                                <li>Transforming Grace, by Jerry Bridges</li>
+                                <li>Putting Amazing Back into Grace, by Michael Horton</li>
+                                <li>The Gospel Driven Life, by Michael Horton</li>
+                                <li>The Gospel as Center, Ed. by Tim Keller and D. A. Carson</li>
+                                <li>The Centrality of the Gospel, by Tim Keller</li>
+                                <li>Gospel Centered Ministry, by Tim Keller and D. A. Carson</li>
+                                <li>The Freedom of Self-Forgetfulness, by Tim Keller</li>
+                                <li>A Case for Gospel Centered and Ecclesial Ethics, by Preston Graham, Jr.</li>
+                                <li>From Fear to Freedom, by Rose Marie Miller</li>
+                                <li>The Prodigal God, by Tim Keller</li>
+                                <li>Spiritual Depression, by Martyn Lloyd-Jones</li>
+                                <li>Part 1 and 2, The Center Church, by Tim Keller</li>
+                                <li>“Introductory Essay” to John Owen’s Death of Death in the Death of Christ, by J.I. Packer</li>
+                                <li>“The Gospel of Paul and the Gospel of the Kingdom", in God’s Power to Save, ed. Chris Green</li>
+                                <li>The Gospel in a Pluralist Society, by Lesslie Newbigin</li>
+                                <li>Dynamics of Spiritual Life: An Evangelical Theology of Renewal, by Richard F. Lovelace</li>
+                                <li>The Gospel in Life Study Guide, by Tim Keller</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <header class="blog-header" id="q1_featured_container">
+            <!-- Featured Article -->
+            <div class="featured-article">
+                <div class="article-content">
+                    <h1>The 5 Points of Church Planting</h1>
                 <p>The Five Marks:</p>
                 <ol>
                     <li>Gospel Centered ("High Gospel" / Covenant Word)
@@ -175,7 +210,16 @@
                 </div>
 
             </footer>
-
+            <script>
+                function toggleDropdown() {
+    var dropdown = document.getElementById("fiveMarksDropdown");
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+            </script>
             <script src="../scripts/article_manager.js"></script>
             <script src="../scripts/function_navigation.js"></script>
         </body>

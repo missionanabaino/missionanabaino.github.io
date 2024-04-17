@@ -193,3 +193,29 @@ input[type="checkbox"] {
 .call-to-action .cta-button:hover {
     background-color: #004494;
 }
+
+.full-screen-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full screen height */
+    text-align: center; /* Center text */
+}
+
+.full-screen-center .content-wrapper {
+    /* Adjust this as needed for your design */
+}
+
+/* Ensure body and html have no margin or padding to truly cover full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* This might already be in your CSS file, but ensure .dropdown-content starts as hidden */
+.dropdown-content {
+    display: none;
+    /* Add other styling here */
+}
