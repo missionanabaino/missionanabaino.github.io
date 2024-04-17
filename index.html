@@ -11,12 +11,13 @@
       content="Church Planting, Community Support, Resources, Networking">
     <title>Mission Anabaino Network for Church Planting</title>
     <link rel="stylesheet" href="./src/css/global_styles.css">
-    <link rel="stylesheet" href="./src/css/homepage.css">
+    <link rel="stylesheet" href="./src/css/global-references.css">
     <link rel="stylesheet" href="./src/css/top-nav.css">
     <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/unique-cta.css">
     <link rel="stylesheet" href="./src/css/unique-resource-cta.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   </head>
   <body>
@@ -60,29 +61,7 @@
           <p>Since you found us then you already know we are a Church
             Planting Network. Yes, we are invested in planting
             churches by</p>
-          <ul>
-            <li>
-              recruiting, assessing and developing Church planting
-              apprenticeships,
-            </li>
-            <li>
-              encouraging, coaching and supporting church
-              planters,
-            </li>
-            <li>
-              fostering a church planting culture both in our MA
-              affiliated anchor churches and the
-              churches we plant,
-            </li>
-            <li>
-              Developing theological vision for the long-haul of
-              planting and leading a church.
-            </li>
-            <li>
-              cultivating and allocating financial and other
-              fiscal resources.
-            </li>
-          </ul>
+         
           <!--a href="/src/pages/about.html"><button>Learn
                             More</button></a-->
         </div>
@@ -90,6 +69,32 @@
           <img src="./src/assets/MAWEBSITE_HOMEPAGE_DOODLE_1.png">
         </div>
       </div>
+    </section>
+    <section id="home-2">
+      <ul
+      style="list-style-type: circle; padding-left: 20px; text-align: left;">
+      <li>
+        Recruiting, assessing and developing Church planting
+        apprenticeships,
+      </li>
+      <li>
+        Encouraging, coaching and supporting church
+        planters,
+      </li>
+      <li>
+        Fostering a church planting culture both in our MA
+        affiliated anchor churches and the
+        churches we plant,
+      </li>
+      <li>
+        Developing theological vision for the long-haul of
+        planting and leading a church.
+      </li>
+      <li>
+        Cultivating and allocating financial and other
+        fiscal resources.
+      </li>
+    </ul>
     </section>
     <div id="blaBla_0">
       <div id="section-left-header">
@@ -170,8 +175,9 @@
 
     </section>
     <section id="blaBla_2" class="dynamic-display">
+      <h2>In summary, MA wants to plant churches</h2>
       <p>
-        In summary, MA wants to plant churches. But we also want to be
+        But we also want to be
         an active collaborative in the re-discovery of WHAT the church
         IS by nature in relation to Christ as both our covenantal head
         and our temple presence in and through the local church! We call
@@ -204,39 +210,45 @@
       </p>
 
     </section>
-    <div class="references">
-      <h3>References</h3>
-      <ol>
-        <li>Grk. for “I ascend, am ascending” taken from John 20:17 as
-          related to the “greater things” envisioned by Christ through
-          church planting during his Ascension ministry in the last
-          days per John 17-21.</li>
-        <li>According to the Pew Research Center’s Religious Landscape
-          Study. It is proclaimed that “New England is the least
-          religious place in America.” In yet another more recent Pew
-          study entitled “The Top Ten Most Post-Christian city regions
-          in America, the top 8 of the top 10 were ALL in New England
-          including the Hartford/New Haven context (the last two were
-          Santa Barbara CA and Seattle WA).</li>
-        <li>C.f. Stefan Paas in his Pilgrims and Priests, Christian
-          Mission in a Post-Christian Society.</li>
-        <li>Lesslie Newbigin, The Household of God.</li>
-        <li>Lesslie Newbigin, The Gospel in a Pluralistic Society, p.
-          120.</li>
-      </ol>
-    </div>
+    <div class="references-container">
+      <div class="references">
+        <h3>References <i id="dropdownIcon" class="fas fa-chevron-down" style="cursor: pointer;"></i></h3>
+        <div id="referenceDetails" style="display: none; overflow: hidden; transition: max-height 0.5s ease-out;">
+          <ol style="text-align: left;">
+            <li>Grk. for “I ascend, am ascending” taken from John 20:17 as related to the “greater things” envisioned by Christ through church planting during his Ascension ministry in the last days per John 17-21.</li>
+            <li>According to the Pew Research Center’s Religious Landscape Study. It is proclaimed that “New England is the least religious place in America.” In yet another more recent Pew study entitled “The Top Ten Most Post-Christian city regions in America, the top 8 of the top 10 were ALL in New England including the Hartford/New Haven context (the last two were Santa Barbara CA and Seattle WA).</li>
+            <li>C.f. Stefan Paas in his Pilgrims and Priests, Christian Mission in a Post-Christian Society.</li>
+            <li>Lesslie Newbigin, The Household of God.</li>
+            <li>Lesslie Newbigin, The Gospel in a Pluralistic Society, p. 120.</li>
+          </ol>
+        </div>
+      </div>
+  </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdownIcon = document.getElementById('dropdownIcon');
+        const referenceDetails = document.getElementById('referenceDetails');
 
+        dropdownIcon.addEventListener('click', function() {
+          const isHidden = referenceDetails.style.maxHeight === '0px';
+
+          if (isHidden) {
+            referenceDetails.style.display = 'block';
+            referenceDetails.style.maxHeight = referenceDetails.scrollHeight + 'px';
+            dropdownIcon.classList.remove('fa-chevron-down');
+            dropdownIcon.classList.add('fa-chevron-up');
+          } else {
+            referenceDetails.style.maxHeight = '0';
+            dropdownIcon.classList.remove('fa-chevron-up');
+            dropdownIcon.classList.add('fa-chevron-down');
+          }
+        });
+      });
+      </script>
     <!-- Parallax Section for Map of Churches -->
     <!--div id="churches-map-parallax" class="parallax"></div -->
 
-    <section id="unique-resource-cta">
-      <h2>Resources</h2>
-      <!-- Links to resources -->
-      <p>Articles, Classes, ETC from churches and beyond</p>
-      <a href="src/pages/resources.html"
-        class="unique-resource-button">Link to
-        Resource</a>
-    </section>
+
     <!-- CALL TO ACTION -->
     <section id="unique-cta" class="call-to-action">
       <div class="cta-content">
@@ -250,10 +262,16 @@
             href="https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=admin.typeform.com"
             class="cta-button">Join
             Prayer Team</a>
-          <a href="./subscribe.html" class="cta-button">Our Church
-            Plants</a>
-          <a href="./contact.html" class="cta-button">Contact Us</a>
+   
+          <a href="./contact.html" class="cta-button">Contact</a>
         </div>
+        <br>
+        <h2>Resources</h2>
+        <!-- Links to resources -->
+        <p>Articles, Classes, ETC from churches and beyond</p>
+        <a href="src/pages/resources.html"
+    class="cta-button">Resource Page</a>
+        <a href="src/pages/media.html" class="cta-button">Media Page</a>
       </div>
     </section>
 
@@ -263,7 +281,8 @@
           alt="Mission Anabaino Logo"
           class="footer-logo">
 
-        <button class="account-button">Account</button>
+        <a href="./src/pages/account.html"><button class="account-button">Account</button></a>
+        <a href="#"><button class="account-button">Give</button></a>
       </div>
 
     </footer>
