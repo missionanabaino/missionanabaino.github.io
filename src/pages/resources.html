@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/resource-list.css">
         <link rel="stylesheet" href="../css/top-nav.css">
         <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <!-- Add your CSS links here -->
     </head>
     <body>
@@ -40,20 +41,49 @@
             </div>
 
         </nav>
-        <section id="perm-resource-list-a" class="full-screen-center">
-            <div class="content-wrapper">
-                <h2>Readings Course in Missional Ecclesiology</h2>
-                <div class="dropdown">
-                    <h2 class="dropbtn">Total Christ Resources</h2>
-                    <div class="dropdown-content" style="text-align:left;">
-                        <div class="dropbtn" onclick="toggleDropdown()">The Five
-                            Marks:</div>
-                        <div class="dropdown-content" id="fiveMarksDropdown"
-                            style="display:none; text-align:left;">
-                            <ol>
-                                <li>Gospel Centered ("High Gospel" / Covenant
-                                    Word)
-                                    <ul>
+
+        <style>
+            .roman {
+    list-style-type: upper-roman;
+}
+
+.dropdown-content {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0s linear 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    max-height: 500px; /* Adjust as needed */
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.dropbtn:hover .dropdown-icon,
+.dropbtn:focus .dropdown-icon {
+    transform: rotate(180deg);
+}
+        </style>
+   <section id="perm-resource-list-a" class="full-screen-center">
+    <div class="content-wrapper">
+        <h2>Readings Course in Missional Ecclesiology</h2>
+        <div class="dropdown">
+            <h2 class="dropbtn">Total Christ Resources <i class="fas fa-chevron-down dropdown-icon"></i></h2>
+            <div class="dropdown-content" style="text-align:left; display:none;" id="fiveMarksDropdown">
+                    <ol class="roman">
+                        <li>Gospel Centered ("High Gospel" / Covenant Word)
+                            <ul>
                                         <li>Transforming Grace, by Jerry
                                             Bridges</li>
                                         <li>Putting Amazing Back into Grace, by
@@ -125,16 +155,29 @@
 
         </footer>
         <script>
-                function toggleDropdown() {
-    var dropdown = document.getElementById("fiveMarksDropdown");
-    if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
-    }
-}
+            let hoverTimeout;
+            
+            function toggleDropdown() {
+                var dropdown = document.getElementById("fiveMarksDropdown");
+                if (dropdown.classList.contains("show")) {
+                    dropdown.classList.remove("show");
+                } else {
+                    dropdown.classList.add("show");
+                }
+            }
+            
+            const dropbtn = document.querySelector('.dropbtn');
+            dropbtn.onclick = toggleDropdown; // Handle click to toggle dropdown
+            
+            dropbtn.onmouseover = () => {
+                hoverTimeout = setTimeout(() => { // Start a delay
+                    toggleDropdown(); // Show dropdown after delay
+                }, 2000); // 2000 milliseconds = 2 seconds
+            };
+            
+            dropbtn.onmouseout = () => {
+                clearTimeout(hoverTimeout); // Cancel the delay if user moves away
+            };
             </script>
-        <script src="../scripts/article_manager.js"></script>
-        <script src="../scripts/function_navigation.js"></script>
     </body>
 </html>
