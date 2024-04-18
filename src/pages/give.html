@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Donate to Mission Anabaino</title>
+        <link rel="stylesheet" href="../css/global_styles.css">
+        <link rel="stylesheet" href="../css/top-nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <style>
+            .content-container-a {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ensures text scales responsively and remains readable */
+h1 {
+    font-size: calc(1.5rem + 1.5vw);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Adjusts the form elements for better responsiveness */
+form {
+    width: 100%;
+    max-width: 500px; /* Adjust based on preference */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="number"],
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.cta-button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #000000; /* Example primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-button:hover {
+    color: whitesmoke;
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+        </style>
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="../index.html">
+                    <img src="../assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo">
+                </a>
+            </div>
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BODY -->
+
+        <section class="content-container-a">
+            <h1>Support Our Mission</h1>
+            <p>Your contributions help us plant churches and spread the
+                gospel.</p>
+            <form action="https://secure.acceptiva.com/?cst=364ba0"
+                method="post">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="5"
+                    placeholder="$5 minimum">
+                <label for="frequency">Donation Frequency:</label>
+                <select id="frequency" name="frequency">
+                    <option value="one-time">One-Time</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <a href="https://secure.acceptiva.com/?cst=364ba0"
+                    style="min-width: 100%;"><button type="submit"
+                        class="cta-button">Donate Now</button></a>
+            </form>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <img src="../assets/Mission Anabaino.png"
+                    alt="Mission Anabaino Logo" class="footer-logo">
+                <a href="give.html"><button
+                        class="account-button">Give</button></a>
+            </div>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="../scripts/function_navigation.js"></script>
+    </body>
+</html>
