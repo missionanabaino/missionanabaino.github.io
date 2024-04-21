@@ -1,0 +1,53 @@
+.call-to-action {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.call-to-action h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.call-to-action form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.call-to-action input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.call-to-action .cta-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #434343;
+}
+
+.h2-call {
+    font-size: 26px;
+}
+
+.p-call {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 90%;
+    max-width: 50ch;
+}

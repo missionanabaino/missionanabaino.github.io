@@ -1,5 +1,12 @@
-nav {
-    background-color: white!important;
+#index-nav {
+    background-color: yellow !important;
+}
+
+.nav-nav {
+    background-color: green !important;
+    position: relative;
+    z-index: 30;
+    width: 100%;
 }
 
 /* Style the hamburger icon */
@@ -33,7 +40,7 @@ nav {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #000000;
     margin: 6px 0;
     transition: 0.4s;
 }

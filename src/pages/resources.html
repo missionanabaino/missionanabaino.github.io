@@ -5,15 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mission Anabaino - Resources</title>
         <link rel="stylesheet" href="../css/resource-index.css">
-        <link rel="stylesheet" href="../css/resource-list.css">
+        <!-- link rel="stylesheet" href="../css/resource-list.css" -->
         <link rel="stylesheet" href="../css/top-nav.css">
         <link rel="stylesheet" href="../css/footer.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/call-to-action.css">
+        <link rel="stylesheet" href="../css/dropdown.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <!-- Add your CSS links here -->
     </head>
     <body>
         <!-- TOP NAV -->
-        <nav id="index-nav">
+        <nav id="index-nav" class="nav-nav">
             <div id="logo" class="fixed-top-right">
                 <a href="../../index.html"><img
                         src="../assets/Mission Anabaino.png"
@@ -43,141 +46,148 @@
         </nav>
 
         <style>
-            .roman {
-    list-style-type: upper-roman;
+.resource-page-splash {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.dropdown-content {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0s linear 0.5s;
-    max-height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.dropdown-content.show {
-    opacity: 1;
-    max-height: 500px; /* Adjust as needed */
-    visibility: visible;
-    transition-delay: 0s;
-}
-
-.dropdown-icon {
-    transition: transform 0.3s ease;
-}
-
-.dropbtn:hover .dropdown-icon,
-.dropbtn:focus .dropdown-icon {
-    transform: rotate(180deg);
-}
-        </style>
-   <section id="perm-resource-list-a" class="full-screen-center">
-    <div class="content-wrapper">
-        <h2>Readings Course in Missional Ecclesiology</h2>
-        <div class="dropdown">
-            <h2 class="dropbtn">Total Christ Resources <i class="fas fa-chevron-down dropdown-icon"></i></h2>
-            <div class="dropdown-content" style="text-align:left; display:none;" id="fiveMarksDropdown">
-                    <ol class="roman">
-                        <li>Gospel Centered ("High Gospel" / Covenant Word)
-                            <ul>
-                                        <li>Transforming Grace, by Jerry
-                                            Bridges</li>
-                                        <li>Putting Amazing Back into Grace, by
-                                            Michael Horton</li>
-                                        <li>The Gospel Driven Life, by Michael
-                                            Horton</li>
-                                        <li>The Gospel as Center, Ed. by Tim
-                                            Keller and D. A. Carson</li>
-                                        <li>The Centrality of the Gospel, by Tim
-                                            Keller</li>
-                                        <li>Gospel Centered Ministry, by Tim
-                                            Keller and D. A. Carson</li>
-                                        <li>The Freedom of Self-Forgetfulness,
-                                            by Tim Keller</li>
-                                        <li>A Case for Gospel Centered and
-                                            Ecclesial Ethics, by Preston Graham,
-                                            Jr.</li>
-                                        <li>From Fear to Freedom, by Rose Marie
-                                            Miller</li>
-                                        <li>The Prodigal God, by Tim Keller</li>
-                                        <li>Spiritual Depression, by Martyn
-                                            Lloyd-Jones</li>
-                                        <li>Part 1 and 2, The Center Church, by
-                                            Tim Keller</li>
-                                        <li>“Introductory Essay” to John Owen’s
-                                            Death of Death in the Death of
-                                            Christ, by J.I. Packer</li>
-                                        <li>“The Gospel of Paul and the Gospel
-                                            of the Kingdom", in God’s Power to
-                                            Save, ed. Chris Green</li>
-                                        <li>The Gospel in a Pluralist Society,
-                                            by Lesslie Newbigin</li>
-                                        <li>Dynamics of Spiritual Life: An
-                                            Evangelical Theology of Renewal, by
-                                            Richard F. Lovelace</li>
-                                        <li>The Gospel in Life Study Guide, by
-                                            Tim Keller</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </div>
+    </style>
+        <section class="resource-page-splash">
+            <h1>Resources </h1>
+        </section>
+        <section id="perm-resource-list-a" class="full-screen-center">
+            <div class="content-wrapper">
+                <div class="dropdown" id="total-christ-resource-list">
+                    <h2 class="dropbtn">Total Christ Resources <i
+                            class="fas fa-chevron-down dropdown-icon"></i></h2>
+                    <div class="dropdown-content"
+                        style="text-align:left;">
+                        <ol class="roman" id="total-christ-resource-list">
+                            <li>Gospel Centered ("High Gospel" / Covenant Word)
+                                <ul>
+                                    <li>Transforming Grace, by Jerry
+                                        Bridges</li>
+                                    <li>Putting Amazing Back into Grace, by
+                                        Michael Horton</li>
+                                    <li>The Gospel Driven Life, by Michael
+                                        Horton</li>
+                                    <li>The Gospel as Center, Ed. by Tim
+                                        Keller and D. A. Carson</li>
+                                    <li>The Centrality of the Gospel, by Tim
+                                        Keller</li>
+                                    <li>Gospel Centered Ministry, by Tim
+                                        Keller and D. A. Carson</li>
+                                    <li>The Freedom of Self-Forgetfulness,
+                                        by Tim Keller</li>
+                                    <li>A Case for Gospel Centered and
+                                        Ecclesial Ethics, by Preston Graham,
+                                        Jr.</li>
+                                    <li>From Fear to Freedom, by Rose Marie
+                                        Miller</li>
+                                    <li>The Prodigal God, by Tim Keller</li>
+                                    <li>Spiritual Depression, by Martyn
+                                        Lloyd-Jones</li>
+                                    <li>Part 1 and 2, The Center Church, by
+                                        Tim Keller</li>
+                                    <li>“Introductory Essay” to John Owen’s
+                                        Death of Death in the Death of
+                                        Christ, by J.I. Packer</li>
+                                    <li>“The Gospel of Paul and the Gospel
+                                        of the Kingdom", in God’s Power to
+                                        Save, ed. Chris Green</li>
+                                    <li>The Gospel in a Pluralist Society,
+                                        by Lesslie Newbigin</li>
+                                    <li>Dynamics of Spiritual Life: An
+                                        Evangelical Theology of Renewal, by
+                                        Richard F. Lovelace</li>
+                                    <li>The Gospel in Life Study Guide, by
+                                        Tim Keller</li>
+                                </ul>
+                            </li>
+                            <li>Cat 2</li>
+                            <li>Cat 3</li>
+                            <li>Cat 4</li>
+                        </ol>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="dropdown">
+                    <h2 class="dropbtn">New Dropdown Title <i
+                            class="fas fa-chevron-down dropdown-icon"></i></h2>
+                    <div class="dropdown-content"
+                        style="text-align:left; display:none;">
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section>
-            <div class="call-to-action">
-                <h2>Stay Connected with Mission Anabaino</h2>
-                <p>Subscribe to our newsletter for the latest updates,
-                    resources, and opportunities to get involved.</p>
-                <form action="subscribe.html" method="post">
-                    <input type="email" name="email"
-                        placeholder="Enter your email" required>
-                    <button type="submit" class="cta-button">Subscribe</button>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-container">
-                <a href="../../index.html">
-                    <img src="../../src/assets/Mission Anabaino.png"
-                        alt="Mission Anabaino Logo"
-                        class="footer-logo"></a>
+            </section>
 
-                <a href="../pages/give.html"><button
-                        class="account-button">Give</button></a>
-            </div>
+            <section>
+                <div class="call-to-action">
+                    <h2>Stay Connected with Mission Anabaino</h2>
+                    <p>Subscribe to our newsletter for the latest updates,
+                        resources, and opportunities to get involved.</p>
+                    <form action="subscribe.html" method="post">
+                        <input type="email" name="email"
+                            placeholder="Enter your email" required>
+                        <button type="submit"
+                            class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-container">
+                    <a href="../../index.html">
+                        <img src="../../src/assets/Mission Anabaino.png"
+                            alt="Mission Anabaino Logo"
+                            class="footer-logo"></a>
 
-        </footer>
-        <script>
-            let hoverTimeout;
+                    <a href="../pages/give.html"><button
+                            class="account-button">Give</button></a>
+                </div>
+
+            </footer>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const dropdownButtons = document.querySelectorAll('.dropbtn');
             
-            function toggleDropdown() {
-                var dropdown = document.getElementById("fiveMarksDropdown");
-                if (dropdown.classList.contains("show")) {
-                    dropdown.classList.remove("show");
-                } else {
-                    dropdown.classList.add("show");
-                }
-            }
+                    // Function to toggle dropdown
+                    function toggleDropdown(dropdown) {
+                        const isOpen = dropdown.classList.contains('show');
+                        closeAllDropdowns(); // Close all dropdowns first
+                        if (!isOpen) {
+                            dropdown.classList.add('show');
+                        }
+                    }
             
-            const dropbtn = document.querySelector('.dropbtn');
-            dropbtn.onclick = toggleDropdown; // Handle click to toggle dropdown
+                    // Close all dropdowns
+                    function closeAllDropdowns() {
+                        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                            dropdown.classList.remove('show');
+                        });
+                    }
             
-            dropbtn.onmouseover = () => {
-                hoverTimeout = setTimeout(() => { // Start a delay
-                    toggleDropdown(); // Show dropdown after delay
-                }, 2000); // 2000 milliseconds = 2 seconds
-            };
+                    // Event listeners for dropdown buttons
+                    dropdownButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            const dropdownContent = this.nextElementSibling;
+                            toggleDropdown(dropdownContent);
+                        });
+                    });
             
-            dropbtn.onmouseout = () => {
-                clearTimeout(hoverTimeout); // Cancel the delay if user moves away
-            };
+                    // Close dropdowns when clicking outside
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn, .dropbtn *')) { // Ensure click isn't on the button or any of its children
+                            closeAllDropdowns();
+                        }
+                    }
+                });
             </script>
-    </body>
-</html>
+
+        </body>
+    </html>

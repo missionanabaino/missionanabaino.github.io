@@ -1,8 +1,8 @@
 [
   {
-    "title": "Media Title Here",
+    "title": "Welcome to Mission Anabaino - 2023 Pledge",
     "thumbnail": "https://via.placeholder.com/300x200",
-    "url": "https://www.youtube.com/watch?v=xQ2GITSXyKM"
+    "url": "./src/assets/video-thumbnails"
   },
   {
     "title": "Another Media Title",

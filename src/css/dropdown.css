@@ -1,0 +1,37 @@
+        .roman {
+            list-style-type: upper-roman;
+        }
+
+        .dropdown-content {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            /* Initial state */
+            opacity: 0;
+            /* Initial state for smooth transition */
+            max-height: 0;
+            /* Initial state for smooth transition */
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+
+        }
+
+        .dropdown-content.show {
+            display: block;
+            /* Display the content */
+            opacity: 1;
+            max-height: 500px;
+            /* Adjust as needed */
+            visibility: visible;
+        }
+
+        .dropdown-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .dropbtn:hover .dropdown-icon,
+        .dropbtn:focus .dropdown-icon {
+            transform: rotate(180deg);
+        }
