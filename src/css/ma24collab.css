@@ -7,3 +7,12 @@
     /* You can adjust the height as needed */
     width: 100%;
 }
+
+.ma24collab-responsive {
+    width: 100%;
+    /* Makes the image use the full width of the containing element */
+    height: auto;
+    /* Keeps the aspect ratio of the image */
+    max-width: 400px;
+    /* Optionally, limits the size to a maximum width */
+}
