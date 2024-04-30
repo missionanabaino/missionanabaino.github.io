@@ -1,0 +1,9 @@
+.ma24collab-header-splash {
+    background-image: url('../assets/ma-collab-24/MissionA_COllab24_1.jpg');
+    /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    /* You can adjust the height as needed */
+    width: 100%;
+}
