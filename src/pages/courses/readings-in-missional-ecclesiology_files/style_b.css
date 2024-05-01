@@ -1,0 +1,774 @@
+/*------------------------------------------------------------------------------
+	Design Style 69 > 'B' Stylesheet
+	Handcrafted by Church Plant Media
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+	Typography 'B' Styles
+------------------------------------------------------------------------------*/
+
+.link-filter h1, 
+.link-filter h2, 
+.link-filter h3, 
+.link-filter h4, 
+.link-filter h5, 
+.link-filter h6 {
+	color: #474746;
+}
+
+.link-filter {
+	color: #474746;
+}
+
+.link-filter a {
+	color: #f32706;
+    text-decoration: underline;
+}
+
+.link-filter a:hover {
+    color: #A8230E;
+}
+
+.link-filter blockquote {
+	color: #7a7a7a;
+}
+
+input:focus, a:focus { 
+	outline-color: #fff; 
+}
+
+a.button,
+input[type="submit"] {
+    border-right: 1px solid #d22205;
+    border-bottom: 1px solid #d22205;
+    background: #f32706;
+    color: #fff;
+}
+
+a.button:hover,
+input[type="submit"]:hover {
+    background: #fa5c43;
+}
+
+/*------------------------------------------------------------------------------
+	Backgrounds 'B' Styles
+------------------------------------------------------------------------------*/
+
+body {
+	background: #dbdad8;
+}
+
+/*------------------------------------------------------------------------------
+	Header & Logo 'B' Styles
+------------------------------------------------------------------------------*/
+
+header {
+	background: #fff;
+    border-bottom: 1px solid #dbdbda;
+}
+
+.logo {
+	background: url(../img/b/logo.png);
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .logo {
+		background: url(../img/69b.png) no-repeat;
+		background-size: 280px auto;
+		top: 30px;
+	}
+}
+
+.social a.map-icon,
+.social a.search-icon {
+	background-image: url(../img/b/social-sprites.png);
+}
+
+.social .map-icon {
+	background-position: -84px 0;
+}
+
+.social .search-icon {
+	background-position: -112px 0;
+}
+
+.social a {
+	color:#d8d8d8;
+}
+
+.social a:hover {
+	color:#f32706;
+}
+
+.services,
+.services a {
+	color: #5e5e5e;
+}
+
+.hero-carousel-nav li a {
+    background: url(../img/b/arrows.png) no-repeat;
+}
+
+/*------------------------------------------------------------------------------
+	Top Navigation 'B' Styles
+------------------------------------------------------------------------------*/
+
+header #nav li a {
+	color: #363636;
+	text-shadow: 0;
+}
+
+header #nav li a:hover,
+header #nav li.current a {
+	color: #f32706;
+	text-shadow: 0;
+}
+
+/*------------------------------------------------------------------------------
+	Dropdown Navigation 'B' Styles
+------------------------------------------------------------------------------*/
+
+header #nav li ul {
+    background: rgba(71,71,70,.93);
+}
+
+header #nav li ul:after {
+    border-bottom: 9px solid rgba(71,71,70,.93);
+}
+
+header #nav li ul li a,
+header #nav li.current ul li a {
+    color: #fff;
+}
+
+header #nav li ul li a:hover {
+    color: #fff;
+    background: rgba(243,39,6,1);
+}
+
+/*------------------------------------------------------------------------------
+	Side Navigation 'B' Styles
+------------------------------------------------------------------------------*/
+
+#side_nav {
+	background: #fff;
+	border: 1px solid #d1d0ce;
+	-webkit-box-shadow: 0px 0px 3px #d1d0ce;
+	box-shadow: 0px 1px 3px #d1d0ce;
+}
+
+#side_nav_toplevel {
+	color: #474746;
+	border-bottom: 1px solid #d1d0ce;
+	-webkit-box-shadow: 0px 1px 3px #f4f4f3;
+	box-shadow: 0px 1px 0px #f4f4f3;
+}
+
+#side_nav_toplevel:hover {
+	color: #696968;
+}
+
+.side_nav_level1 li {
+    border-bottom: 1px solid #dcdbd9;
+}
+
+.side_nav_level1 li li,
+.side_nav_level1 li:last-child {
+    border-bottom: none;
+}
+
+.side_nav_level1 li a {
+	color: #484848;
+}
+
+.side_nav_level1 li.current > a,
+.side_nav_level1 li a:hover {
+	color: #f32706;
+}
+
+.side_nav_level1 li li.current a {
+	background: url(../img/b/current-arrow.png) no-repeat 228px 11px;
+}
+
+/*------------------------------------------------------------------------------
+	Homepage View 'B' Styles
+------------------------------------------------------------------------------*/
+
+#mid {
+	background: url(../img/b/mid-bg.jpg);
+}
+
+.slogan {
+	color: #e0e0e0;
+}
+
+.slogan p:first-child {
+	color: #fff;
+	text-shadow: #6e6d6c 0 1px;
+}
+
+.quicklinks span {
+    background: url(../img/b/ql-fill.png) no-repeat;
+}
+
+.quicklinks h4 a {
+	color: #fff;
+}
+
+.quicklinks div:hover h4 a {
+	color: #f32706;
+}
+
+.quicklinks p {
+	color: #a0a0a0;
+}
+
+#content {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #dbdbda;
+}
+
+.event-widget,
+.sermon-widget {
+	background: url(../img/b/widget-bg.png) no-repeat 0 0;
+}
+
+.tweet-widget {
+	background: url(../img/b/tweet-bg.png) no-repeat 0 0;
+}
+
+.event-widget h3,
+.sermon-widget h3,
+.tweet-widget h3 {
+	color: #454341;
+}
+
+.view-all-btn {
+	background: url(../img/b/view-all-btn.png) no-repeat 0 0;
+}
+
+.listen-btn {
+	background: url(../img/b/listen-btn.png) no-repeat 0 0;
+}
+
+#home .follow-btn {
+	background: url(../img/b/follow-btn.png) no-repeat 0 0;
+}
+
+.event-date {
+	color: #464544;
+}
+
+.event-info a,
+.sermon-wrap a {
+	color: #f32706;
+}
+
+.event-info a:hover,
+.sermon-wrap a:hover {
+	color: #a8230e;
+}
+
+.event-info p,
+.sermon-wrap p {
+	color: #605f5d;
+}
+
+.tweet {
+	color: #605e5c;
+}
+
+.tweet a {
+	color: #f32706;
+}
+
+/*------------------------------------------------------------------------------
+	Subpage View 'B' Styles
+------------------------------------------------------------------------------*/
+
+.page-title {
+	color: #363636;
+}
+
+.title-border {
+	background: url(../img/b/title-border.png) no-repeat 0 0;
+}
+
+.tweet-border {
+	background: url(../img/b/tweet-border.png) no-repeat 0 0;
+}
+
+.side-tweets h3 {
+	color: #474746;
+}
+
+.side-tweets .tweet {
+    color: #606060;
+}
+
+.follow-btn {
+	background: url(../img/b/side-follow-btn.png) no-repeat 0 0;
+}
+
+/*------------------------------------------------------------------------------
+	Full-width View 'B' Styles
+------------------------------------------------------------------------------*/
+
+.full .title-border {
+	background: url(../img/b/title-border-full.png);
+}
+
+/*------------------------------------------------------------------------------
+	Blog View 'B' Styles
+------------------------------------------------------------------------------*/
+
+.blog-feed-btn {
+	background: url(../img/b/blog-feed-btn.png) no-repeat 0 0;
+}
+
+.blog-line {
+	background: url(../img/b/blog-line-bg.png) no-repeat 0 0;
+}
+
+.blog-date {
+	color: #363636;
+}
+
+.blog-wrap h2 a {
+	color: #363636;
+}
+
+.blog-wrap h2 a:hover {
+    color: #606060;
+}
+
+.blog-wrap a {
+    color: #f32706;
+}
+
+.blog-wrap a:hover {
+    color: #A8230E;
+}
+
+.blog-wrap .blog-meta {
+    color: #7d7d7d;
+}
+
+.blog-share {
+	background: url(../img/b/share-bg.png) no-repeat 0 -97px;
+}
+
+.blog-share:hover {
+	background-position: 0 3px;
+}
+
+.post-title {
+	color: #363636;
+}
+
+.blog-share-btn {
+	background: url(../img/b/blog-share-btn.png) no-repeat;
+}
+
+.blog-header a {
+    color: #f32706;
+}
+
+.blog-header a:hover {
+    color: #A8230E;
+}
+
+#comments h4,
+.comment-form h4,
+.no-comments {
+	color: #363636;
+}
+
+.comment-top {
+	background: url(../img/b/comment-top.png) no-repeat 0 0;
+}
+
+.comment-btm {
+	background: url(../img/b/comment-btm.png) no-repeat 0 0;
+}
+
+.comment,
+.comment-fields {
+	background: url(../img/b/comment-fill.png) repeat-y 0 0;
+}
+
+.comment,
+.comment a {
+	color: #828080;
+}
+
+.comment-fields label {
+    color: #5e5e5d;
+}
+
+input#comment-name,
+input#comment-email {
+    background: url(../img/b/input-bg.png) no-repeat 0 0;
+    color: #474746;
+}
+
+textarea#comment-comment {
+    background: url(../img/b/textarea-bg.png) no-repeat 0 0;
+    color: #474746;
+}
+
+input#comment-submit {
+    background: url(../img/b/comment-submit-btn.png) no-repeat 0 0;
+}
+
+/*------------------------------------------------------------------------------
+	Events View 'B' Styles
+------------------------------------------------------------------------------*/
+
+#cal-tab a,
+#list-tab a {
+	background: url(../img/b/event-tabs.png) no-repeat;
+}
+
+#cal-tab.current a {
+	background-position: 0 0; 
+}
+
+#cal-tab a {
+	background-position: 0 -48px; 
+}
+
+#list-tab.current a {
+	background-position: -126px 0px; 
+}
+
+#list-tab a {
+	background-position: -126px -48px; 
+}
+
+#pmonth,
+#nmonth {
+	background: url(../img/b/month-switch.png) no-repeat;
+}
+
+table.calendar caption {
+	background: #414141;
+}
+
+table.calendar caption span.currentMonth {
+	color: #fff;
+	text-shadow: #312317 0 1px 0;
+}
+
+table.calendar thead {
+	background: #fff;
+	border: 1px solid #e2e1df;
+}
+
+table.calendar th {
+	color: #a6a6a5;
+}
+
+table.calendar td {
+	color: #9d9b94;
+	background: #ffffff;
+	border: 1px solid #e2e1df;
+}
+
+table.calendar td span a {
+	color: #9d9b94;
+	text-decoration: none;
+}
+
+table.calendar td li a {
+	color: #42413d;
+}
+
+table.calendar td li a:hover {
+	color: #e63d0e;
+}
+
+.month-label {
+	background-color: #363636;
+}
+
+.month-label dt {
+	color: #fff;
+}
+
+#list-view .day {
+	color: #444443;
+}
+
+#list-view .title a,
+.day-title {
+	color: #f32706;
+}
+
+#list-view .time,
+#list-view .pipebar,
+.day-time {
+	color: #363636;
+}
+
+#list-view .category {
+	color: #888888;
+}
+
+#event-categories {
+    background: #fff;
+    border: 1px solid #d1d0ce;
+    -webkit-box-shadow: 0px 0px 3px #d1d0ce;
+    box-shadow: 0px 1px 3px #d1d0ce;
+    color: #777777;
+}
+
+#event-categories h3 {
+    color: #434343;
+}
+
+#event-categories li {
+    color: #434343;
+}
+
+.event-title {
+	color: #363636;
+}
+
+.event-back-btn {
+	background: url(../img/b/event-back-btn.png) no-repeat;
+}
+
+.event-meta {
+	color: #474746;
+}
+
+.event-meta a {
+	color: #f32706;
+    text-decoration: underline;
+}
+
+.event-meta a:hover {
+    color: #A8230E;
+}
+
+.google-map iframe {
+    border: 1px solid #dad8d2;
+}
+
+.event-map-btn {
+	background: url(../img/b/event-map-btn.png) no-repeat;
+}
+
+.category-btn {
+    background: url(../img/b/category-btn.png) no-repeat;
+}
+
+.category-btn:hover {
+    opacity: .85;
+}
+
+.category-box p,
+.category-box li {
+    color: #43413c;
+}
+
+/*------------------------------------------------------------------------------
+	Sermons View 'B' Styles
+------------------------------------------------------------------------------*/
+
+.sermon-feed-btn {
+    background: url(../img/b/sermon-feed-btn.png) no-repeat;
+}
+
+#series-tab a,
+#sermon-tab a {
+    background: url(../img/b/sermon-tabs.png) no-repeat;
+}
+
+.podcast #series-tab a,
+.podcast #sermon-tab a {
+	color:#fff;
+	background:#c9c9c9;
+	border:1px solid #a7a39a;
+}
+
+.podcast li.current a {
+	background:#ec2c20;
+}
+
+#sermon-switch.podcast li.current a:after {
+	border-top-color:#ec2c20;
+}
+
+#series-tab.current a {
+    background-position: 0 0;
+}
+
+#series-tab a {
+    background-position: 0 -48px;
+}
+
+#sermon-tab.current a {
+    background-position: -126px 0px;
+}
+
+#sermon-tab a {
+    background-position: -126px -48px;
+}
+
+#sermon-switch.podcast li.current a {
+	background:#ec2c20;
+	border:1px solid #ba0904;
+}
+
+#sermon-series a img {
+    border: 1px solid #e9e9e9;
+}
+
+.sermon-data .sermon-title {
+    color: #474746;
+}
+
+.sermon-data .sermon-title:hover,
+.sermon-data {
+    color: #7d7d7d;
+}
+
+.sermon-data a {
+    color: #f32706;
+}
+
+.sermon-data a:hover {
+    color: #c81f03;
+}
+
+.sermon-line {
+    background: url(../img/b/sermon-line.png) no-repeat 0 0;
+}
+
+.sermon-listen-btn {
+    background: url(../img/b/sermon-listen-btn.png) no-repeat 0 0;
+}
+
+.sermon-media a {
+    background: url(../img/b/sermon-sprites.png) no-repeat 0 0;
+}
+
+.sermon-media .watch {
+    background-position: 0 3px;
+}
+
+.sermon-media .watch:hover {
+    background-position: 0 -17px;
+}
+
+#ajax-view .series-content h2 {
+    color: #363636;
+}
+
+#ajax-view .series-content p {
+    color: #484848;
+}
+
+/*------------------------------------------------------------------------------
+	Search 'B' Styles
+------------------------------------------------------------------------------*/
+
+.search-box {
+    background: url(../img/b/search-box-bg.png) no-repeat;
+}
+
+#search .search-input {
+    background: url(../img/b/search-input-bg.png) no-repeat;
+    color: #363636;
+}
+
+#search .search-submit {
+    background: url(../img/b/search-btn.png) no-repeat;
+}
+
+.search-instance h3 a {
+    color: #F32706;
+}
+
+.search-instance h3 a:hover {
+    color: #C81F03;
+}
+
+.search-results-view .right h3 {
+    color: #363636;
+}
+
+.search-results-view .right h3 strong {
+    color: #F32706;
+}
+
+.search-results-view .right p {
+    color: #474746;
+}
+
+/*------------------------------------------------------------------------------
+	Sorting Selectors 'B' Styles
+------------------------------------------------------------------------------*/
+
+.sorting {
+	background: #fff;
+	border: 1px solid #d1d0ce;
+	-webkit-box-shadow: 0px 0px 3px #d1d0ce;
+	box-shadow: 0px 1px 3px #d1d0ce;
+}
+
+.sorting span.select {
+	background: url(../img/b/sorting-dropdown.png) no-repeat 0 0;
+	color: #424242;
+}
+
+.sorting h4 {
+    color: #474746;
+}
+
+/*------------------------------------------------------------------------------
+	Pagination 'B' Styles
+------------------------------------------------------------------------------*/
+
+#pagination a {
+	background: url(../img/b/page-sprites.png) -58px 0;
+	color: #f32706;
+}
+
+#pagination .current {
+	color: #fff;
+}
+
+/*------------------------------------------------------------------------------
+	Footer 'B' Styles
+------------------------------------------------------------------------------*/
+
+footer {
+	background: #fff;
+}
+
+footer #nav li a {
+	color: #434343;
+}
+
+footer #nav li a:hover,
+footer #nav li.current a {
+	color: #f32706;
+}
+
+.site-author,
+.site-author a {
+    color: #848381;
+}
+
+.site-author a:hover {
+    color: #f32706;
+}
+
+/*------------------------------------------------------------------------------
+	Maintenance & Updates
+------------------------------------------------------------------------------*/
