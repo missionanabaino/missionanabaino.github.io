@@ -91,26 +91,73 @@ section {
     /* Centers the section horizontally */
     margin-right: auto;
     /* Centers the section horizontally */
+    position: relative;
+    /* Added to position the h1 */
 }
 
-#sub-heading-0 h1,
-h2 {
-    font-size: 92px;
-    line-height: 95%;
 
+h2 {
+    font-size: 32px;
+    line-height: 95%;
+}
+
+h1 {
+    text-align: center;
+    /* Centers the text horizontally */
+    position: relative;
+    /* Positions the h1 absolutely within its relative container */
+    width: 100%;
+    /* Ensures it spans the full width of its container */
+    top: 50%;
+    /* Positions the top edge of the element at the middle of its container */
+    font-size: 5.5rem;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Makes the font bold */
+    z-index: 10;
+    /* Ensures it's on top of other content */
 }
 
 .slideshow-container {
-    max-width: 100%;
+    width: 100%;
     position: relative;
-    margin: auto;
+    /* Ensures the positioning of the arrows relative to the container */
+    height: auto;
+    /* Adjust this based on your content or keep it auto */
+    overflow: hidden;
+    /* Keeps all contained elements within the slideshow */
+    margin-bottom: 20px;
+    /* Adjust the space as needed */
+    margin-top: 52px;
 }
 
 .mySlides {
     display: none;
-    animation: fadeEffect 1.5s;
-    height: 300px;
-    /* You can adjust the height */
+    /* Ensures that only the active slide is shown */
+    width: 100%;
+    height: auto;
+    /* Adjust height or keep it responsive */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    /* Centers the buttons vertically */
+    z-index: 10;
+    /* Ensures the buttons are above the slides */
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+    /* Adjust based on your design */
+}
+
+.next {
+    right: 10px;
+    /* Adjust based on your design */
 }
 
 .fade {
@@ -126,34 +173,6 @@ h2 {
     to {
         opacity: 1
     }
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */

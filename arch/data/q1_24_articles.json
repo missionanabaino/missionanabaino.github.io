@@ -1,0 +1,82 @@
+[
+    {
+        "title": "The Church Question: Is the Church an Essential Element of the Gospel?",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "author": "Preston Graham",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Sermon"],
+        "topics": ["Salvation", "Understanding the Gospel"],
+        "speakers": ["Preston Graham"]
+    },
+    {
+        "title": "Exploring the Depths of Grace in Modern Theology",
+        "summary": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices...",
+        "author": "Anna Schmidt",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Series"],
+        "topics": ["Grace", "Sin"],
+        "speakers": []
+    },
+    {
+        "title": "The Intersection of Faith and Science in the 21st Century",
+        "summary": "Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...",
+        "author": "John Doe",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Sermon", "Series"],
+        "topics": ["Faith", "Science"],
+        "speakers": []
+    },
+    {
+        "title": "Rediscovering Ancient Practices in Contemporary Worship",
+        "summary": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero...",
+        "author": "Maria Gonzalez",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Series"],
+        "topics": ["Worship", "Ancient Practices"],
+        "speakers": []
+    },
+    {
+        "title": "The Role of Community in Spiritual Growth",
+        "summary": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante...",
+        "author": "Ahmed Al-Farsi",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Sermon"],
+        "topics": ["Community", "Spiritual Growth"],
+        "speakers": []
+    },
+    {
+        "title": "Innovative Approaches to Modern Preaching",
+        "summary": "Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi...",
+        "author": "Mike Brunjes",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Workshop"],
+        "topics": ["Preaching", "Innovation"],
+        "speakers": ["Mike Brunjes"]
+    },
+    {
+        "title": "The Dynamics of Church Leadership in the Digital Age",
+        "summary": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus...",
+        "author": "Tolivar Williams",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Conference"],
+        "topics": ["Leadership", "Digital Transformation"],
+        "speakers": ["Tolivar Williams"]
+    },
+    {
+        "title": "Documenting Faith: A Cinematic Journey",
+        "summary": "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula...",
+        "author": "Ken Burns",
+        "url": "../data/articles/article_template_b1.html",
+        "featuredImage": "https://via.placeholder.com/150",
+        "types": ["Documentary"],
+        "topics": ["Faith", "Cinema"],
+        "speakers": ["Ken Burns"]
+    }
+]
