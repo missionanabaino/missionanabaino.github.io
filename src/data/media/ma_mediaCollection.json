@@ -2,11 +2,17 @@
   {
     "title": "Welcome to Mission Anabaino - 2023 Pledge",
     "thumbnail": "https://via.placeholder.com/300x200",
-    "url": "./src/assets/video-thumbnails"
+    "url": "https://www.youtube.com/watch?v=sVRevP1eFpg"
   },
   {
-    "title": "Another Media Title",
+    "title": "2023 Mission Goal",
     "thumbnail": "https://via.placeholder.com/300x200",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "url": "https://www.youtube.com/watch?v=xQ2GITSXyKM"
+  },
+  {
+    "title": "A Word from Church Planter - Rev. Jeremy A. McKeen",
+    "thumbnail": "https://via.placeholder.com/300x200",
+    "url": "https://youtu.be/aObNOY-7JnU?feature=shared"
   }
+
 ]
