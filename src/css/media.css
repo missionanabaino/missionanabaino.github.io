@@ -1,20 +1,16 @@
-.media-container {
-    padding: 20px;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-}
-
 .media-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centers the videos */
+    /* Centers the videos vertically */
+    justify-content: center;
+    /* Centers the container horizontally */
     width: 100%;
     /* Takes full width */
+    max-width: 560px;
+    /* Maximum width of the media items */
+    margin: 0 auto;
+    /* Centers the .media-list horizontally */
 }
 
 .media-item {
@@ -24,12 +20,9 @@
     /* Adds space between videos */
 }
 
-.media-item {
-    transition: transform 0.3s ease;
-}
-
 .media-item:hover {
     transform: scale(1.05);
+    /* Scales up the video on hover */
 }
 
 .media-link {
