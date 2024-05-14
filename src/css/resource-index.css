@@ -183,3 +183,42 @@ body {
     display: none;
     /* Add other styling here */
 }
+
+.additional-links {
+    display: flex;
+    flex-direction: column;
+    /* Stack links vertically */
+    max-width: 600px;
+    /* Set a max-width for the container */
+    margin: 20px auto;
+    /* Center the container on the page */
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background for the link area */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.additional-links a {
+    color: #333;
+    /* Dark grey color for text */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 8px 16px;
+    /* Padding for each link */
+    margin: 4px 0;
+    /* Space between links */
+    display: block;
+    /* Make each link a block to occupy full width */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.additional-links a:hover {
+    background-color: #0056b3;
+    /* Change background on hover */
+    color: #ffffff;
+    /* Change text color on hover */
+}
