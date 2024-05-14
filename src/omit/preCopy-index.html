@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description"
+            content="A unique network offering resources, support, and community for church planters and their initiatives.">
+        <meta name="keywords"
+            content="Church Planting, Community Support, Resources, Networking">
+        <title>Network for Church Planting</title>
+        <link rel="stylesheet" href="./src/css/global_styles.css">
+        <link rel="stylesheet" href="./src/css/homepage.css">
+        <link rel="stylesheet" href="./src/css/top-nav.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
+        <link rel="stylesheet" href="./src/css/unique-cta.css">
+        <link rel="stylesheet" href="./src/css/unique-resource-cta.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+
+        <!-- TOP NAV -->
+        <nav id="index-nav">
+            <div id="logo" class="fixed-top-right">
+                <a href="#">
+                    <img src="./src/assets/Mission Anabaino.png"
+                        alt="Mission Anabaino Logo"></a>
+            </div>
+
+            <div id="hamburger" class="fixed-top-right"
+                onclick="toggleOverlay()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="overlayMenu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleOverlay()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="./src/pages/about.html">About</a>
+                    <a href="./src/pages/article_template.html">Support</a>
+                    <a href="./src/pages/resources.html">Resources</a>
+                    <a href="./src/pages/contact.html">Contact</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- BODY -->
+
+        <section id="home">
+            <div class="content-container">
+                <div class="content-left">
+                    <h1>Not Your Typical Network</h1>
+                    <p>Set up perciatis unde omnis iste natus error sit
+                        voluptatem
+                        accusantium doloremque laudantium, totam rem
+                        aperiam.</p>
+                    <a href="/src/pages/about.html"><button>Learn
+                            More</button></a>
+                </div>
+                <div class="content-right">
+                    <img src="./src/assets/MAWEBSITE_HOMEPAGE_DOODLE_1.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="dynamic-display">
+            <h2>Get Some Skin in the Game</h2>
+            <p>Description of the Post Christendom Church Planting
+                initiative...</p>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p>1914 translation by H. Rackham
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            <p>Section 1.10.33 of "de Finibus Bonorum et Malorum"
+                "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+        </section>
+
+        <!-- Parallax Section for Map of Churches -->
+        <div id="churches-map-parallax" class="parallax"></div>
+
+        <!-- Dynamic Grid for Church Logos -->
+        <div id="churches-logo-grid" class="logo-grid">
+            <!-- Sample church logos -->
+            <div class="logo-item"><img
+                    src="https://via.placeholder.com/150?text=Church+Logo+1"
+                    alt="Church Logo 1"></div>
+            <div class="logo-item"><img
+                    src="https://via.placeholder.com/150?text=Church+Logo+2"
+                    alt="Church Logo 2"></div>
+            <div class="logo-item"><img
+                    src="https://via.placeholder.com/150?text=Church+Logo+3"
+                    alt="Church Logo 3"></div>
+            <div class="logo-item"><img
+                    src="https://via.placeholder.com/150?text=Church+Logo+4"
+                    alt="Church Logo 4"></div>
+            <!-- Add more logos as needed -->
+        </div>
+
+        <section id="2024plan" class="dynamic-display">
+            <h2>Our 2024 Plan</h2>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/xQ2GITSXyKM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h3>Join Our Mission</h3>
+            <div class="infographic-container">
+                <img src="./src/assets/MA_2024_FundsRaised.png"
+                    alt="2024 Plan Infographic" class="responsive-infographic">
+            </div>
+            <p>As we approach 2024, our goal is to significantly impact
+                post-Christendom communities by planting churches dedicated to
+                spreading
+                the Total Christ message. We've been blessed with a strong
+                start, having
+                raised $120,000 of our $360,000 goal, thanks to the generous
+                support of
+                our community and a matching grant that doubles our impact once
+                we reach
+                the halfway mark.</p>
+            <p>Our mission extends beyond financial contributions; we're
+                building a
+                devoted prayer team to intercede for the success of these church
+                plants.
+                Currently, 504 committed individuals are lifting up this cause,
+                and we
+                invite you to join this vital part of our journey.</p>
+            <p>Your support, whether through prayer, financial contributions, or
+                both,
+                is crucial. Every donation brings us closer to our goal, and
+                every
+                prayer strengthens our resolve. Together, we can plant seeds of
+                faith in
+                fertile ground, nurturing communities centered around the Total
+                Christ
+                vision.</p>
+            <h4>How You Can Get Involved</h4>
+            <ul class="dynamic-display">
+                <li><strong>Donate:</strong> Every contribution, large or small,
+                    helps
+                    us reach our financial goal. Remember, we're just $40,000
+                    away from
+                    unlocking an additional $180,000 through our matching
+                    grant.</li>
+                <li><strong>Pray:</strong> Join our prayer team and commit to
+                    regular
+                    prayer for the success of our church plants and the
+                    communities they
+                    will serve.</li>
+                <li><strong>Spread the Word:</strong> Share our mission with
+                    friends and
+                    family who might be interested in supporting our cause.</li>
+            </ul>
+            <a href="https://secure.acceptiva.com/?cst=364ba0"
+                target="_blank"><button>Donate
+                    Now</button></a>
+            <a
+                href="https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=us21.admin.mailchimp.com"
+                target="_blank"><button>Join Our Prayer Team</button></a>
+        </section>
+
+        <section id="updates">
+            <h2>Updates from our Church Planters</h2>
+            <div class="update-grid">
+                <!-- Update item 1 -->
+                <div class="update-item">
+                    <img src="https://via.placeholder.com/300x200"
+                        alt="Update Image 1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    <a
+                        href="./src/assets/templates/pastor_update_template.html"><button>Read
+                            the Stories</button></a>
+                </div>
+                <!-- Update item 2 -->
+                <div class="update-item">
+                    <img src="https://via.placeholder.com/300x200"
+                        alt="Update Image 2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    <!-- Placeholder for image -->
+                    <!-- Placeholder for text -->
+
+                    <a
+                        href="./src/assets/templates/pastor_update_template.html"><button>Read
+                            the Stories</button></a>
+                </div>
+                <!-- Update item 3 -->
+                <div class="update-item">
+                    <!-- Placeholder for image -->
+                    <img src="https://via.placeholder.com/300x200"
+                        alt="Update Image 3">
+                    <!-- Placeholder for text -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    <a
+                        href="./src/assets/templates/pastor_update_template.html"><button>Read
+                            the Stories</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="total-christ-theovision" class="dynamic-display">
+            <h2>Unique Vision for Total Christ</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p>1914 translation by H. Rackham
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            <p>Section 1.10.33 of "de Finibus Bonorum et Malorum" "At vero eos
+                et
+                accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium
+                voluptatum deleniti atque corrupti quos dolores et quas
+                molestias
+                excepturi sint occaecati cupiditate non provident, et similique
+                sunt in
+                culpa qui officia deserunt mollitia animi, id est laborum et
+                dolorum
+                fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                Nam
+                libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                impedit
+                quo minus id quod maxime placeat facere possimus, omnis voluptas
+                assumenda est, omnis dolor repellendus. Temporibus autem
+                quibusdam et
+                aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                et
+                voluptates repudiandae</p>
+        </section>
+
+        <section id="unique-resource-cta">
+            <h2>Resources</h2>
+            <!-- Links to resources -->
+            <p>Articles, Classes, ETC from churches and beyond</p>
+            <a href="src/pages/resources.html"
+                class="unique-resource-button">Link to
+                Resource</a>
+        </section>
+        <!-- CALL TO ACTION -->
+        <section id="unique-cta" class="call-to-action">
+            <div class="cta-content">
+                <h2>Join Our Community</h2>
+                <p>Be a part of our mission to support church planters around
+                    the world. Get involved today!</p>
+                <div class="cta-buttons">
+                    <a href="https://secure.acceptiva.com/?cst=364ba0"
+                        class="cta-button">Donate</a>
+                    <a
+                        href="https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=admin.typeform.com"
+                        class="cta-button">Join
+                        Prayer Team</a>
+                    <a href="./subscribe.html" class="cta-button">Subscribe</a>
+                    <a href="./contact.html" class="cta-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <img src="./src/assets/Mission Anabaino.png"
+                    alt="Mission Anabaino Logo"
+                    class="footer-logo">
+                <div class="footer-buttons">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                    <button>Button 4</button>
+
+                </div>
+                <button class="account-button">Account</button>
+            </div>
+
+        </footer>
+        <!-- SCRIPTS -->
+
+        <script src="./src/scripts/function_navigation.js"></script>
+    </body>
+</html>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Media | Network for Church Planting</title>
         <link rel="stylesheet" href="../css/global_styles.css">
-        <link rel="stylesheet" href="../css/homepage.css">
+ 
         <link rel="stylesheet" href="../css/top-nav.css">
         <!-- Added CSS for top navigation -->
         <!-- Reuse for basic styling -->
@@ -19,7 +19,7 @@
         <nav id="index-nav">
             <div id="logo" class="fixed-top-right">
                 <a href="#">
-                    <img src="./src/assets/Mission Anabaino.png"
+                    <img src="../src/assets/Mission Anabaino.png"
                         alt="Mission Anabaino Logo"></a>
             </div>
 
@@ -45,27 +45,63 @@
 
         </nav>
 
-        <main class="media-container">
+        <div class="media-container">
             <h1>Media Library</h1>
-            <div class="media-grid">
+            <div class="media-list">
                 <!-- Example Media Item -->
+
                 <div class="media-item">
-                    <a href="https://www.youtube.com/watch?v=xQ2GITSXyKM"
-                        target="_blank">
-                        <img src="https://via.placeholder.com/300x200"
-                            alt="Media Thumbnail">
-                        <p>Media Title Here</p>
-                    </a>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/sVRevP1eFpg?si=ntUjf14ODsbZPOxz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="media-item">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/aObNOY-7JnU?si=dRnyBqDuU0S7zfEf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="media-item">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/xQ2GITSXyKM?si=g1ciXygVyPbpKWMC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
                 </div>
                 <!-- Add more media items here -->
             </div>
         </main>
 
+        <section class="call-to-action">
+            <h2>Resources</h2>
+            <!-- Links to resources -->
+            <p>Articles, Classes, and Papers</p>
+            <a href="src/pages/resources.html"
+              class="cta-button">Resource Page</a>
+            <a href="src/pages/media.html" class="cta-button">Media Page</a>
+          </div>
+        </section>
+
         <footer>
-            <!-- Footer content from index.html -->
+          <div class="footer-container">
+            <img src="./src/assets/Mission Anabaino.png"
+              alt="Mission Anabaino Logo"
+              class="footer-logo">
+
+            <a href="./src/pages/give.html"><button
+                class="account-button">Give</button></a>
+          </div>
+
         </footer>
+        <!-- SCRIPTS -->
 
         <script src="./src/scripts/function_navigation.js"></script>
-        <script src="./src/scripts/media-LoadMedia.js"></script>
+
     </body>
 </html>
