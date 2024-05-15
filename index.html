@@ -54,6 +54,21 @@
     </nav>
 
     <!-- BODY -->
+    <style>
+      .parallax {
+  /* The image used */
+  background-image: url(""); /* This will be set via JavaScript */
+  
+  /* Full height */
+  height: 100vh; 
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    </style>
 
     <section id="home">
       <div class="content-container">
@@ -147,9 +162,9 @@
       </p>
 
     </section>
-    <div class="full-width-image" style="width: 100%; overflow: hidden;">
-      <img src="./src/assets/ma-collab-24-2/5.jpg"
-        alt="Mission Anabaino Logo">
+
+    <div class="parallax">
+      <img id="randomImage" src alt="Mission Anabaino Logo">
     </div>
     <section id="blaBla_2" class="dynamic-display">
       <h2>In summary, MA wants to plant churches</h2>
@@ -293,6 +308,7 @@
         <!-- SCRIPTS -->
 
         <script src="./src/scripts/function_navigation.js"></script>
+        <script src="./src/scripts/function-random-image.js"></script>
 
       </body>
     </html>
