@@ -3,6 +3,28 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+/* Global CSS file */
+
+.about-links-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.about-link {
+    margin-right: 10px;
+    /* Adjust this property in the second link if needed */
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-link:hover {
+    background-color: #007BFF;
+}
+
 /* Headings */
 h1,
 h2,
@@ -148,40 +170,6 @@ nav {
 
 
 
-/* BODY STYLES *
-
-
-
-#home {
-    position: relative;
-    /* Establishes a positioning context */
-text-align: left;
-padding: 50px;
-background-color: transparent;
-/* Makes the background transparent */
-color: #000;
-display: flex;
-/* Enables flexbox */
-justify-content: center;
-/* Centers the content horizontally */
-align-items: center;
-/* Centers the content vertically */
-min-height: 100vh;
-/* Ensures the section takes at least the height of the viewport */
-}
-
-
-
-#home h1 {
-    font-size: 4em;
-    /* Sets the size of the main heading */
-    margin-bottom: 0.5em;
-    /* Adds space below the heading */
-    font-weight: bold;
-    /* Makes the heading text bold */
-    line-height: 1.1;
-    /* Adjusts the spacing between lines of text */
-}
 
 #home p {
     font-size: 1.5em;
