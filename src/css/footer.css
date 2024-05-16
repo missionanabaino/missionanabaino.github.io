@@ -62,3 +62,25 @@ footer p {
     letter-spacing: 0.05em;
     /* Slight letter spacing for a modern touch */
 }
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    transition: color 0.3s;
+    margin: 5px;
+    /* Subtle border for depth */
+}
+
+.footer-link:hover {
+    color: #ccc;
+    /* Lighter shade for hover effect */
+}
+
+@media (max-width: 658px) {
+    .footer-link {
+        display: none;
+    }
+
+
+}
