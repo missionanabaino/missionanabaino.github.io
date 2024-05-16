@@ -204,8 +204,8 @@
     </section>
     <div class="references-container">
       <div class="references">
-        <h3>References <i id="dropdownIcon" class="fas fa-chevron-down"
-            style="cursor: pointer;"></i></h3>
+        <h4>References <i id="dropdownIcon" class="fas fa-chevron-down"
+            style="cursor: pointer;"></i></h4>
         <div id="referenceDetails"
           style="display: none; overflow: hidden; transition: max-height 0.5s ease-out;">
           <ol style="text-align: left;">
@@ -233,6 +233,8 @@
         </div>
       </div>
     </div>
+
+    <!-- CALL TO ACTION -
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const dropdownIcon = document.getElementById('dropdownIcon');
@@ -257,58 +259,49 @@
     <!-- Parallax Section for Map of Churches -->
     <!--div id="churches-map-parallax" class="parallax"></div -->
 
-    <!-- CALL TO ACTION -->
-    <section id="unique-cta" class="call-to-action">
-      <div class="cta-content">
-        <h2>Join Our Community</h2>
-        <p>Be a part of our mission to support church planters around
-          the world. Get involved today!</p>
-        <div class="cta-buttons">
-          <a href="https://secure.acceptiva.com/?cst=364ba0"
-            class="cta-button">Donate</a>
-          <a
-            href="https://a0vrrfi7mj3.typeform.com/to/JAlvFMZ0?typeform-source=admin.typeform.com"
-            class="cta-button">Join
-            Prayer Team</a>
+    <div class="full-width-image" style="width: 100%; overflow: hidden;">
+      <img src="./src/assets/ma-collab-24/5.jpg"
+        alt="Mission Anabaino Logo">
+    </div>
 
-          <a href="./src/pages/contact.html" class="cta-button">Contact</a>
+    <footer>
+      <div class="footer-container">
+        <img src="./src/assets/Mission Anabaino.png"
+          alt="Mission Anabaino Logo"
+          class="footer-logo">
+          <style>
+   .footer-link {
+              color: #fff;
+              text-decoration: none;
+              padding: 4px;
+              transition: color 0.3s;
+              border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for depth */
+
+            }
+            .footer-link:hover {
+              color: #ccc; /* Lighter shade for hover effect */
+            }
+            .footer-container {
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+          </style>
+        <div class="footer-links">
+      
+              <a class="footer-link" href="./src/pages/about.html">About</a>
+              <a class="footer-link" href="./src/pages/media.html">Media</a>
+              <a class="footer-link" href="./src/pages/resources.html">Resources</a>
+              <a class="footer-link" href="./src/pages/contact.html">Contact</a>
+              <a href="./src/pages/support.html"><button
+                class="account-button">Support</button></a>
+            </div>
         </div>
-        <br>
-
-      </section>
-      <div class="full-width-image" style="width: 100%; overflow: hidden;">
-        <img src="./src/assets/ma-collab-24/5.jpg"
-          alt="Mission Anabaino Logo">
       </div>
-      <section id="unique-cta" class="call-to-action">
-        <div class="cta-content">
-          <h2></h2>
 
-          <section class="call-to-action">
-            <h2>Resources</h2>
-            <!-- Links to resources -->
-            <p>Articles, Classes, and Papers</p>
-            <a href="src/pages/resources.html"
-              class="cta-button">Resource Page</a>
-            <a href="src/pages/media.html" class="cta-button">Media Page</a>
-          </div>
-        </section>
+    </footer>
+    <!-- SCRIPTS -->
 
-        <footer>
-          <div class="footer-container">
-            <img src="./src/assets/Mission Anabaino.png"
-              alt="Mission Anabaino Logo"
-              class="footer-logo">
+    <script src="./src/scripts/function_navigation.js"></script>
+    <script src="./src/scripts/function-random-image.js"></script>
 
-            <a href="./src/pages/give.html"><button
-                class="account-button">Give</button></a>
-          </div>
-
-        </footer>
-        <!-- SCRIPTS -->
-
-        <script src="./src/scripts/function_navigation.js"></script>
-        <script src="./src/scripts/function-random-image.js"></script>
-
-      </body>
-    </html>
+  </body>
+</html>
