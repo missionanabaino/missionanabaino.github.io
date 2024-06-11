@@ -94,3 +94,43 @@ p {
     line-height: 1.6;
     text-align: justify;
 }
+
+.resource-page-splash-super {
+    background-color: #f4f4f4; /* Light grey background for the section */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.resource-page-splash-super h1 {
+    color: #333; /* Dark grey color for the heading */
+    font-family: 'Georgia', serif; /* Consistent font with the article */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.resource-page-splash-super .toc p {
+    font-size: 16px; /* Slightly larger font size for introduction */
+    color: #666; /* Lighter text color */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.resource-page-splash-super .toc ul {
+    list-style-type: none; /* No bullets for the list */
+    padding: 0; /* No padding to align with the content above */
+}
+
+.resource-page-splash-super .toc li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.resource-page-splash-super .toc a {
+    color: #1a0dab; /* Link color similar to default blue */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold for better visibility */
+}
+
+.resource-page-splash-super .toc a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+}
