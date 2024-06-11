@@ -133,3 +133,7 @@ input[type="text"] {
     margin-right: 5px;
     /* Space between icon and text */
 }
+
+.highlight {
+    background-color: yellow;
+}

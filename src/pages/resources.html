@@ -62,8 +62,8 @@
     <i class="fa fa-bars"></i> Toggle Navigation
 </button>
 <nav id="navbar">
-
     <!-- Navigation links -->
+    <h3>Resource Navigation</h3>
     <a href="#ma-readings-2">MA Apprentice Readings in Missional Ecclesiology</a>
     <a href="#total-christ-resources">Total Christ Resources</a>
     <a href="#papers">Papers and Interviews</a>
@@ -500,6 +500,75 @@
                 </div>
           
               </footer>
-
+              <script>
+                let currentIndex = 0; // Current index of the highlighted item
+                let highlights = []; // Array to store references to highlighted elements
+            
+                function searchPage() {
+                    let input = document.getElementById('searchInput');
+                    let filter = input.value.toUpperCase();
+                    let body = document.body;
+                    let textNodes;
+                    let walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null, false);
+            
+                    // Remove previous highlights and reset navigation
+                    document.querySelectorAll('.highlight').forEach(function(el) {
+                        el.parentNode.replaceChild(document.createTextNode(el.textContent), el);
+                    });
+                    highlights = [];
+                    currentIndex = 0;
+            
+                    if (!filter) return; // Do not search if the search bar is empty
+            
+                    textNodes = [];
+                    while(walker.nextNode()) {
+                        textNodes.push(walker.currentNode);
+                    }
+            
+                    textNodes.forEach(function(node) {
+                        let nodeText = node.nodeValue;
+                        let startIndex = nodeText.toUpperCase().indexOf(filter);
+                        while (startIndex !== -1) {
+                            let matchingNode = node.splitText(startIndex);
+                            let endIndex = matchingNode.nodeValue.toUpperCase().indexOf(filter) + filter.length;
+                            matchingNode.splitText(endIndex);
+                            let highlightSpan = document.createElement('span');
+                            highlightSpan.className = 'highlight';
+                            highlightSpan.textContent = matchingNode.nodeValue;
+                            matchingNode.parentNode.replaceChild(highlightSpan, matchingNode);
+            
+                            highlights.push(highlightSpan); // Store reference to the highlight span
+            
+                            node = highlightSpan.nextSibling; // Continue searching in the next sibling
+                            nodeText = node.nodeValue;
+                            startIndex = nodeText.toUpperCase().indexOf(filter);
+                        }
+                    });
+            
+                    if (highlights.length > 0) {
+                        navigateToCurrentIndex(); // Navigate to the first instance
+                    }
+                }
+            
+                function navigateToCurrentIndex() {
+                    if (highlights.length === 0) return;
+                    let element = highlights[currentIndex];
+                    element.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll the element into view
+                    highlights.forEach(el => el.style.backgroundColor = ''); // Reset background color for all highlights
+                    element.style.backgroundColor = 'yellow'; // Highlight the current element
+                }
+            
+                function nextHighlight() {
+                    if (highlights.length === 0) return;
+                    currentIndex = (currentIndex + 1) % highlights.length; // Move to the next index, wrap around if necessary
+                    navigateToCurrentIndex();
+                }
+            
+                function previousHighlight() {
+                    if (highlights.length === 0) return;
+                    currentIndex = (currentIndex - 1 + highlights.length) % highlights.length; // Move to the previous index, wrap around if necessary
+                    navigateToCurrentIndex();
+                }
+            </script>
         </body>
     </html>
