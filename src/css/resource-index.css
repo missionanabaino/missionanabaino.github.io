@@ -3,92 +3,108 @@
 body {
     font-family: 'Barlow', sans-serif;
     color: #333;
-    /* Dark grey color for text, similar to the dashboard */
 }
 
-.sidebar {
+#navbar {
     position: sticky;
-    /* Changed from sticky to fixed */
     top: 0;
     left: 0;
-    /* Align sidebar to the left edge */
     width: 150px;
-    /* Set a fixed width for the sidebar */
-    height: 100vh;
-    /* Full viewport height */
     background-color: #f9f9f9;
     padding: 20px;
     color: #333;
-    text-decoration: none;
     font-size: 1.5em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    /* Ensures sidebar is on top of other content */
 }
 
 .main-content {
     margin-left: 150px;
-    /* Add margin to avoid overlap with sidebar */
-}
-
-
-.full-screen-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    /* Full width */
-    height: 100vh;
-    /* Full screen height */
-    text-align: center;
-    /* Center text */
 }
 
 .additional-links {
     display: flex;
     flex-direction: column;
-    /* Stack links vertically */
-    max-width: 600px;
-    /* Set a max-width for the container */
-    margin: 20px auto;
-    /* Center the container on the page */
-    padding: 20px;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
     background-color: #f9f9f9;
-    /* Light background for the link area */
     border-radius: 8px;
-    /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
 .additional-links a {
     color: #0645ad;
-    /* Blue color for text, similar to the dashboard */
     text-decoration: none;
-    /* Remove underline */
-    padding: 8px 16px;
-    /* Padding for each link */
-    margin: 4px 0;
-    /* Space between links */
+    padding: 4px 8px;
+    margin: 2px 0;
     display: block;
-    /* Make each link a block to occupy full width */
+    font-size: 0.8em;
     transition: background-color 0.3s, color 0.3s;
-    /* Smooth transition for hover effects */
 }
 
 .additional-links a:hover {
     background-color: #000000;
-    /* Change background on hover */
     color: #ffffff;
-    /* Change text color on hover */
 }
 
-/* Glassmorphism style for any input elements in resource index, if any */
+.resource-page-splash,
+.resource-page-splash-super {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resource-page-splash {
+    height: 20vh;
+    font-size: 30px;
+}
+
+.resource-page-splash-super {
+    height: 70vh;
+    flex-direction: column;
+}
+
+.resource-page-splash-super h1 {
+    font-size: 3rem;
+}
+
 input[type="text"] {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 10px;
     color: #333;
+}
+
+.btn-toggle-nav {
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    /* Dark text */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    padding: 8px 16px;
+    /* Padding around text and icon */
+    font-size: 16px;
+    /* Adequate text size */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.btn-toggle-nav:hover {
+    background-color: #f8f8f8;
+    /* Slightly darker background on hover */
+}
+
+.btn-toggle-nav i {
+    margin-right: 5px;
+    /* Space between icon and text */
 }
