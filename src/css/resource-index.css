@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: #333;
+    /* Dark grey color for text, similar to the dashboard */
+}
+
+.sidebar {
+    position: sticky;
+    /* Changed from sticky to fixed */
+    top: 0;
+    left: 0;
+    /* Align sidebar to the left edge */
+    width: 150px;
+    /* Set a fixed width for the sidebar */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Ensures sidebar is on top of other content */
+}
+
+.main-content {
+    margin-left: 150px;
+    /* Add margin to avoid overlap with sidebar */
+}
+
+
 .full-screen-center {
     display: flex;
     justify-content: center;
@@ -9,7 +44,6 @@
     text-align: center;
     /* Center text */
 }
-
 
 .additional-links {
     display: flex;
@@ -29,8 +63,8 @@
 }
 
 .additional-links a {
-    color: #333;
-    /* Dark grey color for text */
+    color: #0645ad;
+    /* Blue color for text, similar to the dashboard */
     text-decoration: none;
     /* Remove underline */
     padding: 8px 16px;
@@ -48,4 +82,13 @@
     /* Change background on hover */
     color: #ffffff;
     /* Change text color on hover */
+}
+
+/* Glassmorphism style for any input elements in resource index, if any */
+input[type="text"] {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    color: #333;
 }
