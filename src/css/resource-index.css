@@ -13,10 +13,31 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     color: #333;
-    font-size: 1.5em;
+    font-size: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar a {
+
+    color: #333;
+    font-size: 1em;
+    border-style: solid;
+    margin: 2px;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: transparent;
+
+}
+
+#navbar a:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .main-content {
@@ -40,7 +61,7 @@ body {
     padding: 4px 8px;
     margin: 2px 0;
     display: block;
-    font-size: 0.8em;
+    font-size: 1em;
     transition: background-color 0.3s, color 0.3s;
 }
 
