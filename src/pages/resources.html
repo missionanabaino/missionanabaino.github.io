@@ -18,11 +18,21 @@
     <body>
         <!-- TOP NAV -->
         <nav id="index-nav" class="nav-nav">
-            <div id="logo" class="fixed-top-right">
+            <div id="logo" class="fixed-top-right" style="display: none;">
                 <a href="../../index.html"><img
                         src="../assets/Mission Anabaino.png"
                         alt="Mission Anabaino Logo"></a>
             </div>
+            <script>
+                window.addEventListener('scroll', function() {
+                    var logo = document.getElementById('logo');
+                    if (window.scrollY > 50) {
+                        logo.style.display = 'none';
+                    } else {
+                        logo.style.display = 'block';
+                    }
+                });
+            </script>
 
             <div id="hamburger" class="fixed-top-right"
                 onclick="toggleOverlay()">
@@ -46,9 +56,6 @@
 
         </nav>
 
-        <style>
-
-    </style>
       
 
 
@@ -57,29 +64,133 @@
     <p>Scroll down to see a collection of resources related to Mission Anabaino.</p>
 
 </section>
+
+<!--
+    Make a dynamic search that will display all the contents of this page right below it - in its own container and search results
+    Make the search results display the title of the resource and the first paragraph of the resource
+    Make the search results display the title of the resource and the first paragraph of the resource
+    Make the search results display the title of the resource and the first paragraph of the resource
+-->
+<section class="resource-search-container" style="top: 5px;">
+    
+    <input type="text" id="search" placeholder="Search for resources">
+</section>
 <!-- Button with Font Awesome Icon -->
+
+<!-- Navigation toggle button -->
 <button id="toggleNavBtn" class="btn-toggle-nav">
     <i class="fa fa-bars"></i> Toggle Navigation
 </button>
-<nav id="navbar">
-    <!-- Navigation links -->
+
+<!-- Navigation links -->
+<nav id="navbar-a" class="navbar">
     <h3>Resource Navigation</h3>
     <a href="#ma-readings-2">MA Apprentice Readings in Missional Ecclesiology</a>
     <a href="#total-christ-resources">Total Christ Resources</a>
     <a href="#papers">Papers and Interviews</a>
     <a href="#quarterly-reports">Quarterly Reports</a>
     <a href="#additional-links">Additional Resources</a>
+    <h2>Additional Resources</h2>
+    <a href="#">Plant a Church</a>
+    <a href="#">Additional Resource 2</a>
+    <a href="#">Additional Resource 3</a>
 </nav>
+
+<!-- Include styles for the navbar -->
+<style>
+    .navbar {
+        display: none; /* Initially hide the navbar */
+        flex-direction: column;
+        background-color: #000000;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    .btn-toggle-nav {
+        background-color: #636363;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .btn-toggle-nav.toggled {
+        background-color: #2980b9;
+    }
+    .navbar.visible {
+        display: flex; /* Show the navbar when toggled */
+    }
+    .btn-toggle-nav {
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    /* Dark text */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    padding: 8px 16px;
+    /* Padding around text and icon */
+    font-size: 16px;
+    /* Adequate text size */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.btn-toggle-nav:hover {
+    background-color: #f8f8f8;
+    /* Slightly darker background on hover */
+}
+
+.btn-toggle-nav i {
+    margin-right: 5px;
+    /* Space between icon and text */
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+/* Initial hidden state of the navbar */
+#navbar {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* State of the navbar when it is visible */
+#navbar.visible {
+    max-height: 500px;
+    /* Adjust based on the content size */
+}
+
+/* Styling for the hamburger icon */
+#toggleNavBtn .fa-bars {
+    transition: transform 0.5s ease-in-out;
+    position: sticky;
+    z-index: 2000;
+}
+
+/* Rotated state for the 'X' icon */
+#toggleNavBtn.toggled .fa-bars {
+    transform: rotate(45deg);
+}
+</style>
+
+<!-- Script to toggle the navigation visibility -->
 <script>
-    document.getElementById('toggleNavBtn').addEventListener('click', function() {
-        var navbar = document.getElementById('navbar');
-        if (navbar.style.display === 'block') {
-            navbar.style.display = 'none';
-        } else {
-            navbar.style.display = 'block';
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleNavButton = document.getElementById('toggleNavBtn');
+        const navbar = document.getElementById('navbar');
+
+        toggleNavButton.addEventListener('click', function() {
+            navbar.classList.toggle('visible');
+            toggleNavButton.classList.toggle('toggled');
+        });
     });
 </script>
+
 <div class="main-content">
 
       <section id="ma-readings-2" class="resource-page-splash">
