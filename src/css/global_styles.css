@@ -370,6 +370,12 @@ button:active {
 
 .heading-1 {
     font-size: 48px;
+    text-align: center;
+}
+
+.heading-2 {
+    font-size: 36px;
+    text-align: center;
 }
 
 .center-content {
@@ -378,4 +384,28 @@ button:active {
     justify-content: center;
     height: 100%;
     flex-direction: column;
+}
+
+
+.top-splash-welcome {
+    width: 100%;
+    height: 200px;
+}
+
+.mid-splash-welcome {
+    width: 100%;
+    height: 500px;
+}
+
+#MA-COLLAB-HEAD-SPLASH {
+    margin-top: 30px;
+}
+
+.item-2-row {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    background-color: yellow;
+    width: 100%;
+
 }

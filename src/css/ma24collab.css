@@ -19,7 +19,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
     margin-bottom: 500px;
@@ -81,6 +80,7 @@
     /* Define a fixed height for the slider */
     position: relative;
     margin: auto;
+    margin-top: 200px;
 }
 
 .mySlides img {
