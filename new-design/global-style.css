@@ -1,0 +1,159 @@
+:root {
+    --primary-color: rgba(255, 215, 0, 0.7);
+    /* Gold */
+    --secondary-color: rgba(255, 223, 0, 0.7);
+    /* Slightly darker gold */
+    --text-color: rgba(51, 51, 51, 0.9);
+    --background-color: rgba(255, 255, 255, 0.95);
+    /* Almost white */
+    --max-width: 740px;
+    /* Typical Medium article width */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: #ffffff;
+    font-size: 16px;
+    /* Base font size for mobile */
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.content {
+    padding: 2rem 0;
+}
+
+.content-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-header h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.content-body {
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.content-body p {
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 20px;
+    margin: 2rem 0;
+    font-style: italic;
+    color: rgba(51, 51, 51, 0.8);
+}
+
+figure {
+    margin: 2rem -15px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(51, 51, 51, 0.7);
+    margin-top: 0.5rem;
+}
+
+.highlight {
+    background-color: rgba(255, 215, 0, 0.2);
+    padding: 2px 4px;
+}
+
+button,
+a {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        padding: 4rem 1rem;
+    }
+
+    .content-body {
+        font-size: 1.2rem;
+    }
+
+    figure {
+        margin: 2rem -20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgba(255, 255, 255, 0.9);
+        --background-color: rgba(51, 51, 51, 0.95);
+    }
+
+    body {
+        background-color: #121212;
+    }
+
+    blockquote {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    figure figcaption {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .highlight {
+        background-color: rgba(255, 215, 0, 0.3);
+    }
+}
