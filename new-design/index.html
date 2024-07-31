@@ -1,16 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="./global-style.css"> </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./global-style.css">
+        <title>Mission Anabaino</title>
+    </head>
     <body>
-        <div class="container">
-            <div class="header">
+        <header class="glass-nav">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Mission Anabaino</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home"
+                            class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#challenge"
+                            class="nav-link">Challenge</a></li>
+                    <li class="nav-item"><a href="#network"
+                            class="nav-link">Network</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">Our
+                            Story</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="splash" id="home">
+            <div class="splash-content">
                 <h1>Welcome to Mission Anabaino</h1>
                 <p>We are a Church Planting Network dedicated to fostering a new
                     kind of church in post-Christendom contexts.</p>
                 <button>Learn More</button>
             </div>
         </div>
-        <div class="content">
+
+        <div class="content" id="challenge">
             <div class="content-header">
                 <h2>The Post-Christendom Challenge</h2>
             </div>
@@ -50,8 +77,7 @@
                     <button>Get Involved</button>
                 </div>
             </div>
-            <div class="content" id="more-than-a-network">
-
+            <div class="content" id="network">
                 <div class="content">
                     <div class="content-header">
                         <h2>More than a network</h2>
@@ -105,10 +131,14 @@
                     <button>Get Involved</button>
                 </div>
             </div>
-            <div class="splash">
-                <div class="splash-header">
+            <div class="content" id="story">
+                <div class="content-header">
                     <h2>Our Story</h2>
                 </div>
+                <!-- Add your story content here -->
             </div>
-        </body>
-    </html>
+        </div>
+
+        <script src="core-logic.js"></script>
+    </body>
+</html>
