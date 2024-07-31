@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: rgba(255, 215, 0, 0.7);
-    /* Gold */
-    --secondary-color: rgba(255, 223, 0, 0.7);
-    /* Slightly darker gold */
-    --text-color: rgba(51, 51, 51, 0.9);
-    --background-color: rgba(255, 255, 255, 0.95);
-    /* Almost white */
+    --primary-color: #007bff;
+    /* Changed to a trustworthy blue */
+    --secondary-color: #0056b3;
+    /* Darker blue for contrast */
+    --text-color: #333333;
+    --background-color: #ffffff;
     --max-width: 740px;
-    /* Typical Medium article width */
-    --soft-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --soft-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -25,16 +23,20 @@ body {
     color: var(--text-color);
     background-color: #f8f8f8;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+    /* Increased from 300 for better readability */
 }
 
 .container {
-    max-width: var(--max-width);
+    max-width: 100%;
+    /* Changed from var(--max-width) for full-width on mobile */
     margin: 0 auto;
     padding: 0 15px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: var(--soft-shadow);
+    border-radius: 0;
+    /* Removed border-radius for full-width look on mobile */
+    box-shadow: none;
+    /* Removed shadow for cleaner look */
 }
 
 .header {
@@ -251,44 +253,50 @@ img {
     background-color: #fff;
 }
 
-/* Responsive styles */
+/* Improved mobile styles */
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        /* Kept consistent font size for readability */
+    }
+
     .container {
-        padding: 0 10px;
-        /* Reduced padding for mobile */
+        padding: 0 20px;
+        /* Increased padding for better spacing */
     }
 
     .header {
-        padding: 1.5rem 0.5rem;
+        padding: 2rem 0.5rem;
         /* Adjusted padding for mobile */
     }
 
     .content {
-        padding: 1.5rem 0;
-        /* Adjusted padding for mobile */
+        padding: 2rem 0;
+        /* Increased padding for better spacing */
     }
 
     .content-header h2 {
-        font-size: clamp(1.5rem, 3.5vw, 2rem);
-        /* Adjusted font size for mobile */
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        /* Adjusted for better scaling */
     }
 
     .content-body {
         font-size: 1rem;
-        /* Adjusted font size for mobile */
     }
 
     figure {
-        margin: 1.5rem -10px;
-        /* Adjusted margin for mobile */
+        margin: 2rem -20px;
+        /* Adjusted for full-width images on mobile */
     }
 
+    /* Improved mobile navigation */
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--primary-color);
+        /* Solid background for better contrast */
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         width: 100%;
@@ -303,7 +311,13 @@ img {
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
+        /* Reduced spacing between items */
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        /* Increased font size for better tappability */
     }
 
     .hamburger {
@@ -338,58 +352,91 @@ img {
         font-size: 1rem;
         /* Adjusted button size for mobile */
     }
+
+    /* Improved button styles for mobile */
+    button,
+    .cta-button {
+        width: 100%;
+        /* Full-width buttons on mobile */
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
 }
 
-/* Splash styles */
+/* Updated Splash styles */
 .splash {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('your-background-image.jpg');
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.splash::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .splash-content {
     max-width: 800px;
-    padding: 2rem;
-    background: #575757;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    z-index: 1;
 }
 
 .splash h1 {
     font-family: 'Barlow', sans-serif;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1rem;
     font-weight: 600;
     letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .splash p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
     margin-bottom: 2rem;
     font-weight: 400;
+    opacity: 0.9;
 }
 
 .splash button {
     font-family: 'Barlow', sans-serif;
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
-    background-color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
     letter-spacing: 0.5px;
-    box-shadow: var(--soft-shadow);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .splash button:hover {
-    background-color: #45a049;
+    background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -731,18 +778,20 @@ button {
     text-decoration: underline;
 }
 
-/* Consistent button styling */
+/* Refined button styles */
 .cta-button,
 button {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: #ffffff;
+    /* Changed to white for better contrast */
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 8px;
+    /* Reduced from 30px for a more modern look */
     transition: all 0.3s ease;
     box-shadow: var(--soft-shadow);
     border: none;
@@ -753,5 +802,5 @@ button {
 button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
