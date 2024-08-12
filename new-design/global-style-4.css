@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #003366;
-    --secondary-color: #0099cc;
-    --accent-color: #ff9900;
-    --background-color: #f0f5f9;
+    --primary-color: #1a4b77;
+    --secondary-color: #3d7eaa;
+    --accent-color: #5cb3ff;
+    --background-color: #e6f2ff;
     --text-color: #333333;
     --max-width: 740px;
     --soft-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.18);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(26, 75, 119, 0.37);
 }
 
 * {
@@ -23,7 +23,7 @@ body {
     font-family: 'Barlow', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, #87CEEB, #E0F6FF);
+    background: linear-gradient(135deg, #3d7eaa, #c2e0ff);
     background-attachment: fixed;
     font-size: 16px;
     font-weight: 400;
@@ -43,7 +43,7 @@ body {
 }
 
 .header,
-.content,
+
 .footer,
 #investment,
 .planter-grid,
@@ -172,11 +172,11 @@ img {
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: rgba(255, 255, 255, 0.9);
-        --background-color: rgba(0, 25, 50, 0.95);
+        --background-color: rgba(13, 37, 59, 0.95);
     }
 
     body {
-        background: linear-gradient(135deg, #001F3F, #003366);
+        background: linear-gradient(135deg, #0d253b, #1a4b77);
     }
 
     blockquote {
@@ -390,7 +390,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #87CEEB, #E0F6FF);
+    background: linear-gradient(135deg, #3d7eaa, #c2e0ff);
     background-size: cover;
     background-position: center;
     color: white;
@@ -416,7 +416,7 @@ img {
     padding: 3rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(26, 75, 119, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -717,7 +717,7 @@ button {
 }
 
 .cta-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
@@ -898,7 +898,7 @@ button:hover {
 
 .cta-button:hover,
 button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }

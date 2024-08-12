@@ -1,0 +1,20 @@
+{
+  "gallery": [
+    {
+      "src": "../src/assets/ma-collab-24-2/1.jpg",
+      "alt": "Mission Anabaino Collaboration 1"
+    },
+    {
+      "src": "../src/assets/ma-collab-24-2/2.jpg",
+      "alt": "Mission Anabaino Collaboration 2"
+    },
+    {
+      "src": "../src/assets/ma-collab-24-2/3.jpg",
+      "alt": "Mission Anabaino Collaboration 3"
+    },
+    {
+      "src": "../src/assets/ma-collab-24-2/4.jpg",
+      "alt": "Mission Anabaino Collaboration 4"
+    }
+  ]
+}
