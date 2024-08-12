@@ -293,11 +293,35 @@
                     <div class="content-body">
                         <form action="https://formspree.io/f/your-form-id"
                             method="POST" class="newsletter-form">
+                            <input type="text" name="name"
+                                placeholder="Your Name" required>
                             <input type="email" name="email"
-                                placeholder="Enter your email" required>
+                                placeholder="Your Email" required>
+                            <select name="interests" required>
+                                <option value disabled selected>Select Your
+                                    Interests</option>
+                                <option value="church-planting">Church
+                                    Planting</option>
+                                <option value="leadership">Leadership</option>
+                                <option value="missional-living">Missional
+                                    Living</option>
+                            </select>
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I agree to receive marketing emails from Mission
+                                Anabaino
+                            </label>
                             <button type="submit"
                                 class="cta-button">Subscribe</button>
                         </form>
+                        <p class="newsletter-benefits">Join our community to
+                            receive:</p>
+                        <ul class="newsletter-benefits-list">
+                            <li>Monthly updates on church planting
+                                initiatives</li>
+                            <li>Exclusive resources for missional living</li>
+                            <li>Invitations to webinars and events</li>
+                        </ul>
                     </div>
                 </section>
             </main>
