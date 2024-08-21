@@ -36,7 +36,8 @@
                         <!-- Gallery images will be inserted here dynamically -->
                     </div>
                     <h1 class="heading-1">Welcome to Mission Anabaino</h1>
-                    <p>We are a Church Planting Network dedicated to fostering a
+                    <p class="body-text">We are a Church Planting Network
+                        dedicated to fostering a
                         new kind of church in post-Christendom contexts.</p>
                     <button>Learn More</button>
                 </div>
@@ -131,8 +132,9 @@
                         </div>
                     </div>
                     <div class="content-footer">
-                        <button class="cta-button">Explore our Total Christ
-                            Vision</button>
+                        <button class="cta-button"
+                            onclick="window.location.href='total-christ-vision.html'">Explore
+                            our Total Christ Vision</button>
                         <button class="cta-button">Learn More</button>
                         <button class="cta-button">Get Involved</button>
                     </div>
@@ -344,15 +346,13 @@
             <footer class="site-footer">
                 <div class="footer-content">
                     <p>&copy; 2024 Mission Anabaino. All rights reserved.</p>
-                    <nav class="footer-nav">
-                        <a href="#home">Home</a>
-                        <a href="#challenge">Challenge</a>
-                        <a href="#network">Network</a>
-                        <a href="#story">Our Story</a>
+                    <nav class="footer-nav" id="footer-nav">
+                        <!-- Footer links will be dynamically inserted here -->
                     </nav>
                 </div>
             </footer>
             <script src="gallery-data.js"></script>
+            <script src="footer-data.js"></script>
             <script src="core-logic.js"></script>
         </body>
     </html>

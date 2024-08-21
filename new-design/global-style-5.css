@@ -990,7 +990,7 @@ button:hover {
 
 .heading-1 {
     line-height: 1.1;
-    color: #be5252;
+    color: white;
     z-index: 3;
     font-family: 'Barlow', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);

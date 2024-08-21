@@ -27,4 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
             submenu.classList.toggle('active');
         });
     });
+
+
+    const footerLinks = [
+        { text: "Home", href: "#home" },
+        { text: "Challenge", href: "the-challenge.html" },
+        { text: "Total Christ Vision", href: "total-christ-vision.html" },
+        { text: "Our Story", href: "#story" }
+    ];
+
+    // Function to populate footer links
+    function populateFooterLinks() {
+        const footerNav = document.getElementById('footer-nav');
+        footerLinks.forEach(link => {
+            const anchor = document.createElement('a');
+            anchor.href = link.href;
+            anchor.textContent = link.text;
+            footerNav.appendChild(anchor);
+        });
+    }
+
+    // Call the function when the DOM is fully loaded
+    populateFooterLinks();
 });
