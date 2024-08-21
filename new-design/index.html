@@ -35,10 +35,13 @@
                     <div id="rotating-gallery" class="rotating-gallery">
                         <!-- Gallery images will be inserted here dynamically -->
                     </div>
-                    <h1>Welcome to Mission Anabaino</h1>
-                    <p>We are a Church Planting Network dedicated to fostering a
+                    <h1 class="splash-head">Welcome to <br>Mission Anabaino</h1>
+                    <p class="body-text">We are a Church Planting Network
+                        dedicated to fostering a
                         new kind of church in post-Christendom contexts.</p>
-                    <button>Learn More</button>
+                    <button
+                        onclick="window.location.href='./the-challenge.html'">Learn
+                        More</button>
                 </div>
             </section>
 
@@ -131,10 +134,10 @@
                         </div>
                     </div>
                     <div class="content-footer">
-                        <button class="cta-button">Explore our Total Christ
-                            Vision</button>
-                        <button class="cta-button">Learn More</button>
-                        <button class="cta-button">Get Involved</button>
+                        <button class="cta-button"
+                            onclick="window.location.href='total-christ-vision.html'">Explore
+                            our Total Christ Vision</button>
+
                     </div>
                 </section>
 
@@ -287,7 +290,7 @@
 
                 <section class="content" id="story">
                     <div class="content-header">
-                        <h2>Our Story</h2>
+                        <h2 class="heading-2">Our Story</h2>
                     </div>
                     <div class="content-body">
                         <p>Mission Anabaino (MA) seeks to fulfill the
@@ -344,15 +347,13 @@
             <footer class="site-footer">
                 <div class="footer-content">
                     <p>&copy; 2024 Mission Anabaino. All rights reserved.</p>
-                    <nav class="footer-nav">
-                        <a href="#home">Home</a>
-                        <a href="#challenge">Challenge</a>
-                        <a href="#network">Network</a>
-                        <a href="#story">Our Story</a>
+                    <nav class="footer-nav" id="footer-nav">
+                        <!-- Footer links will be dynamically inserted here -->
                     </nav>
                 </div>
             </footer>
             <script src="gallery-data.js"></script>
+            <script src="footer-data.js"></script>
             <script src="core-logic.js"></script>
         </body>
     </html>

@@ -30,10 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const footerLinks = [
-        { text: "Home", href: "#home" },
+        { text: "Home", href: "index.html" },
         { text: "Challenge", href: "the-challenge.html" },
         { text: "Total Christ Vision", href: "total-christ-vision.html" },
-        { text: "Our Story", href: "our-story.html" }
+        { text: "Our Story", href: "our-story.html" },
+        { text: "Get Involved", href: "get-involved.html"}
     ];
 
     // Function to populate footer links
