@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "Home", href: "#home" },
         { text: "Challenge", href: "the-challenge.html" },
         { text: "Total Christ Vision", href: "total-christ-vision.html" },
-        { text: "Our Story", href: "#story" }
+        { text: "Our Story", href: "our-story.html" }
     ];
 
     // Function to populate footer links
