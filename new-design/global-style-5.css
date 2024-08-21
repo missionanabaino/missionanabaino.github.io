@@ -358,9 +358,7 @@ img {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .splash h1 {
-        font-size: 2rem;
-    }
+
 
     .splash p {
         font-size: 1rem;
@@ -447,14 +445,7 @@ button:hover {
     z-index: 1;
 }
 
-.splash h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 1rem;
-    font-weight: 600;
-    letter-spacing: -1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 .splash p {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
@@ -996,6 +987,18 @@ button:hover {
 
 
 /*TYPOGRAPHY */
+
+.heading-1 {
+    line-height: 1.1;
+    color: #be5252;
+    z-index: 3;
+    font-family: 'Barlow', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .heading-2 {
     line-height: 90%;
