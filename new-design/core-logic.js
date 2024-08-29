@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
     const footerLinks = [
         { text: "Home", href: "index.html" },
         { text: "Challenge", href: "the-challenge.html" },
@@ -48,6 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Call the function when the DOM is fully loaded
+    // Function to populate top nav links
+    function populateTopNavLinks() {
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.innerHTML = ''; // Clear existing links
+        footerLinks.forEach(link => {
+            const li = document.createElement('li');
+            li.className = 'nav-item';
+            const anchor = document.createElement('a');
+            anchor.href = link.href;
+            anchor.className = 'nav-link';
+            anchor.textContent = link.text;
+            li.appendChild(anchor);
+            navMenu.appendChild(li);
+        });
+    }
+
+    // Call the functions when the DOM is fully loaded
     populateFooterLinks();
+    populateTopNavLinks();
 });
