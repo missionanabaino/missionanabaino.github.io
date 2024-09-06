@@ -33,7 +33,12 @@
             <section class="splash" id="home">
                 <div class="splash-content">
                     <div id="rotating-gallery" class="rotating-gallery">
-                        <!-- Gallery images will be inserted here dynamically -->
+                        <img class="gallery-image" src="image1.jpg"
+                            alt="Image 1">
+                        <img class="gallery-image" src="image2.jpg"
+                            alt="Image 2" style="display:none;">
+                        <img class="gallery-image" src="image3.jpg"
+                            alt="Image 3" style="display:none;">
                     </div>
                     <h1 class="splash-head">Welcome to <br>Mission Anabaino</h1>
                     <p class="body-text">We are a Church Planting Network
@@ -44,6 +49,19 @@
                         More</button>
                 </div>
             </section>
+            <script>
+                let currentIndex = 0;
+                const images = document.querySelectorAll('.gallery-image');
+                const totalImages = images.length;
+
+                function showNextImage() {
+                    images[currentIndex].style.display = 'none';
+                    currentIndex = (currentIndex + 1) % totalImages;
+                    images[currentIndex].style.display = 'block';
+                }
+
+                setInterval(showNextImage, 3000); // Rotate every 3 seconds
+            </script>
 
             <section class="content" id="challenge">
                 <div class="content-header">
@@ -109,7 +127,7 @@
                                 activities.</p>
                         </div>
                         <div class="column">
-                            <img src="../src/assets/ma-collab-24/2.jpg"
+                            <img src="../src/assets/ma-collab-24/3.jpg"
                                 alt="Post-Christendom Expertise">
                             <h3 class="heading-3">Post-Christendom
                                 Expertise</h3>
@@ -146,37 +164,39 @@
                 </section>
 
                 <section class="content" id="investment">
-                    <div class="submenu-splash">
-                        <h2 class="centered-heading">Our Investment in Church
+                    <div class="content-header">
+                        <h2 class="heading-2">Our Investment in Church
                             Planting</h2>
                     </div>
-                    <div class="investment-grid">
-                        <div class="investment-text">
-                            <div class="investment-item">
-                                <span class="number">1</span>
-                                <h3>Recruiting and Developing</h3>
-                                <p>We recruit, assess, and develop church
-                                    planting apprenticeships to build a strong
-                                    foundation.</p>
-                            </div>
-                            <div class="investment-item">
-                                <span class="number">2</span>
-                                <h3>Supporting Planters</h3>
-                                <p>We encourage, coach, and support church
-                                    planters throughout their journey.</p>
-                            </div>
-                            <div class="investment-item">
-                                <span class="number">3</span>
-                                <h3>Fostering Culture</h3>
-                                <p>We foster a church planting culture in our MA
-                                    affiliated anchor churches and planted
-                                    churches.</p>
-                            </div>
+                    <div class="content-body three-column-grid">
+                        <div class="column">
+                            <img src="../src/assets/ma-collab-24/5.jpg"
+                                alt="Recruiting and Developing">
+                            <h3 class="heading-3">Recruiting and Developing</h3>
+                            <p>We recruit, assess, and develop church planting
+                                apprenticeships to build a strong
+                                foundation.</p>
                         </div>
-                        <div class="investment-image">
-                            <img src="../src/assets/ma-collab-24/8.jpg"
-                                alt="Investment in church planting">
+                        <div class="column">
+                            <img src="../src/assets/ma-collab-24/3.jpg"
+                                alt="Supporting Planters">
+                            <h3 class="heading-3">Supporting Planters</h3>
+                            <p>We encourage, coach, and support church planters
+                                throughout their journey.</p>
                         </div>
+                        <div class="column">
+                            <img src="../src/assets/ma-collab-24/6.jpg"
+                                alt="Fostering Culture">
+                            <h3 class="heading-3">Fostering Culture</h3>
+                            <p>We foster a church planting culture in our MA
+                                affiliated anchor churches and planted
+                                churches.</p>
+                        </div>
+                    </div>
+                    <div class="content-footer">
+                        <button class="cta-button"
+                            onclick="window.location.href='total-christ-vision.html'">Explore
+                            our Total Christ Vision</button>
                     </div>
                 </section>
 
