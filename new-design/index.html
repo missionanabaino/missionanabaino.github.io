@@ -36,42 +36,19 @@
                 </div>
             </nav>
         </header> -->
-
+        <section class="full-width-splash" id="home">
+            <img src="../src/assets/ma-collab-24/1.jpg"
+                alt="Full Width Background" class="full-width-background">
+            <div class="splash-overlay">
+                <h1>Welcome to Mission Anabaino - 2024</h1>
+                <p>We are a Church Planting Network dedicated to fostering a new
+                    kind of church in post-Christendom contexts.</p>
+                <button class="cta-button"
+                    onclick="window.location.href='./the-challenge.html'">Learn
+                    More</button>
+            </div>
+        </section>
         <main class="content-container">
-
-            <section class="splasha" id="home">
-                <div class="splash-contenta">
-                    <div id="rotating-gallery" class="rotating-gallery">
-                        <img class="gallery-image" src="image1.jpg"
-                            alt="Image 1">
-                        <img class="gallery-image" src="image2.jpg"
-                            alt="Image 2" style="display:none;">
-                        <img class="gallery-image" src="image3.jpg"
-                            alt="Image 3" style="display:none;">
-                    </div>
-                    <h1 class="splash-head">Welcome to <br>Mission Anabaino</h1>
-                    <p class="body-text">We are a Church Planting Network
-                        dedicated to fostering a
-                        new kind of church in post-Christendom contexts.</p>
-                    <button class="cta-button"
-                        onclick="window.location.href='./the-challenge.html'">Learn
-                        More</button>
-                </div>
-            </section>
-            <script>
-                let currentIndex = 0;
-                const images = document.querySelectorAll('.gallery-image');
-                const totalImages = images.length;
-
-                function showNextImage() {
-                    images[currentIndex].style.display = 'none';
-                    currentIndex = (currentIndex + 1) % totalImages;
-                    images[currentIndex].style.display = 'block';
-                }
-
-                setInterval(showNextImage, 3000); // Rotate every 3 seconds
-            </script>
-
             <section class="content" id="challenge">
                 <div class="content-header">
                     <h2 class="heading-2">The Post-Christendom Challenge</h2>
