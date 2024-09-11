@@ -1,0 +1,167 @@
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Background color of the nav bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: adds a shadow for better visibility */
+}
+
+/* Top Navigation Styles */
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.879);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 166, 255, 0.3);
+    padding: 6.5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* Hide main navigation on screens smaller than 750px */
+@media (max-width: 750px) {
+    .main-navigation {
+        display: none;
+    }
+}
+
+.main-navigation a {
+    color: #fffffff3;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 19px;
+    /* Adjust the font size as needed */
+    margin: 0 12.5px;
+    /* Space out the navigation items */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+.main-navigation a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 2.5px rgb(255, 255, 255);
+
+}
+
+.main-nav-active {
+    color: #ffffff;
+    text-shadow: 0 0 2.5px rgb(255, 255, 255);
+}
+
+.full-monte {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Ensure mobile navigation is functional below 750px */
+@media (max-width: 750px) {
+    .mobile-navigation {
+        right: 0;
+        /* Adjust as necessary for initial hidden state */
+    }
+
+    .mobile-navigation.active {
+        right: 0;
+        /* Ensure it slides in when active */
+    }
+}
+
+.mobile-navigation.active {
+    right: 0;
+}
+
+.mobile-nav-header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+#mobile-menu-logo {
+    width: 80px;
+    height: auto;
+}
+
+
+.mobile-nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-link {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    height: 50px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.mobile-menu-link:hover {
+    background-color: #f5f5f5;
+}
+
+.hamburger-menu-button-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 4050;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#closeMobileMenuButton {
+    font-size: 24px;
+    color: #333;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hamburger-menu-button-container,
+    .mobile-navigation {
+        display: none;
+    }
+}
