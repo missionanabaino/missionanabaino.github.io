@@ -247,6 +247,36 @@ nav a:hover {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* Ensuring mobile menu visibility and stacking */
+.mobile-navigation {
+    z-index: 1000;
+    /* High z-index to ensure it appears above other content */
+    background-color: var(--background-color);
+    /* Ensure it has a background */
+    width: 100%;
+    /* Full width */
+    position: fixed;
+    /* Fixed position to stay in place */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for transforming */
+}
+
+/* Hide the menu initially */
+.mobile-navigation {
+    transform: translateY(-100%);
+    /* Move it out of view */
+}
+
+/* Show the menu when active */
+.mobile-navigation.active {
+    transform: translateY(0);
+    /* Bring into view */
+}
+
 /* Logo placement */
 .logo {
     margin-right: auto;

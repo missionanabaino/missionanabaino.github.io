@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beautiful Responsive Navbar</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .brand {
+            flex-grow: 1; /* Allows the brand to take necessary space */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: #333; /* Dark grey text */
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1a73e8; /* Subtle blue for hover */
+        }
+
+        /* Logo Section */
+        .brand a {
+            font-size: 24px;
+            font-weight: 400; /* Slightly bolder */
+            color: #333;
+            text-decoration: none;
+            padding-left: 20px;
+            
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #333;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hamburger {
+                display: block;
+                order: 2; /* Moves the hamburger to the right */
+            }
+
+            .brand {
+                order: 1; /* Keeps the logo on the left */
+            }
+
+            .menu {
+                order: 3; /* Ensures menu is positioned correctly */
+                width: 100%;
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu li a {
+                width: 100%;
+                display: block;
+                padding: 15px 0;
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <nav>
+            <div class="brand"><a href="#">Mission Anabaino</a></div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./src/pages/about.html">About</a></li>
+                <li><a href="./src/pages/support.html">Support</a></li>
+                <li><a href="./src/pages/resources.html">Resources</a></li>
+                <li><a href="./src/pages/media.html">Media</a></li>
+                <li><a href="./src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+    </body>
+</html>

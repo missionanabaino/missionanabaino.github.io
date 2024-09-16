@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./global-style-6.css">
+        <link rel="stylesheet" href="./global-style-7.css">
         <title>Mission Anabaino</title>
-        <link rel="stylesheet" href="nav-bar.css">
 
     </head>
     <body>
@@ -25,13 +24,15 @@
             </nav>
         </header>
 
-        <!-- MOBILE HAMBURGER-->
+        <!-- MOBILE HAMBURGER -->
         <div class="hamburger-menu-button-container" id="hamburgerMenu">
-            <i id="closeMobileMenuButton" class="fas fa-bars"></i>
+            <i id="hamburgerMenuButton" class="fas fa-bars"
+                onclick="toggleMobileMenu()"></i>
         </div>
 
         <!-- Mobile Navigation -->
-        <nav class="mobile-navigation" id="mobileNavigation">
+        <nav class="mobile-navigation" id="mobileNavigation"
+            style="display: none;"> <!-- Ensure this is initially hidden -->
             <div class="mobile-nav-header">
                 <button id="closeMenuButton" aria-label="Close menu">
                     <i class="fas fa-times"></i>
@@ -274,7 +275,17 @@
             </footer>
             <script src="gallery-data.js"></script>
             <script src="footer-data.js"></script>
-            <script src="core-logic.js"></script>
+            <!-- <script src="core-logic.js"></script> -->
 
+            <script>
+                function toggleMobileMenu() {
+                    var mobileNav = document.getElementById('mobileNavigation');
+                    if (mobileNav.style.display === 'block') {
+                        mobileNav.style.display = 'none';
+                    } else {
+                        mobileNav.style.display = 'block';
+                    }
+                }
+            </script>
         </body>
     </html>
