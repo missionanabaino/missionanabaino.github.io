@@ -73,6 +73,30 @@
             color: #333;
         }
 
+        /* Close button style */
+        .close-btn {
+            display: none; /* Initially hidden */
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1001; /* Higher than the menu */
+        }
+
+        /* Adjust close button to replace hamburger */
+        .close-btn {
+            display: none; /* Initially hidden */
+            cursor: pointer;
+            font-size: 30px;
+            color: #333;
+        }
+
+        /* Show close button when menu is active */
+        .menu.active + .close-btn {
+            display: block;
+        }
+
         /* Media Query for Mobile */
         @media (max-width: 768px) {
             nav ul {
@@ -90,16 +114,21 @@
             }
 
             .menu {
-                order: 3; /* Ensures menu is positioned correctly */
+                position: fixed; /* Fixed position to stay in view */
+                top: 0;
+                left: -100%; /* Start off-screen */
                 width: 100%;
-                display: none;
+                height: 100vh; /* Full screen height */
+                background-color: white; /* Background color for the menu */
+                transition: left 0.3s ease; /* Smooth transition for sliding in */
                 flex-direction: column;
+                justify-content: center; /* Center items vertically */
+                align-items: center; /* Center items horizontally */
+                z-index: 1000; /* High z-index but lower than the close button */
             }
 
             .menu.active {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                left: 0; /* Slide in */
             }
 
             .menu li {
@@ -120,7 +149,10 @@
         <nav>
             <div class="brand"><a href="#">Mission Anabaino</a></div>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="close-btn" onclick="toggleMenu()">×</div>
+            <br>
             <ul class="menu">
+                <li class="close-btn" onclick="toggleMenu()">×</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="./src/pages/about.html">About</a></li>
                 <li><a href="./src/pages/support.html">Support</a></li>
@@ -133,7 +165,11 @@
         <script>
     function toggleMenu() {
         const menu = document.querySelector('.menu');
+        const hamburger = document.querySelector('.hamburger');
+        const closeButton = document.querySelector('.close-btn');
         menu.classList.toggle('active');
+        hamburger.style.display = menu.classList.contains('active') ? 'none' : 'block';
+        closeButton.style.display = menu.classList.contains('active') ? 'block' : 'none';
     }
 </script>
 
