@@ -210,96 +210,9 @@ img {
     }
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    min-width: 100%;
-    flex-direction: row;
-    gap: 10px;
-    max-height: 45px;
-    margin: 0;
-    justify-content: center;
-    background-color: var(--background-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    /* Makes the navbar sticky */
-    top: 0;
-    /* Stick to the top of the viewport */
-    z-index: 1000;
-    /* Ensures it stays on top of other content */
-}
 
-nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    margin: 0;
-    padding: 10px 15px;
-    height: auto;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
 
-nav a:hover {
-    color: var(--secondary-color);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
 
-/* Ensuring mobile menu visibility and stacking */
-.mobile-navigation {
-    z-index: 1000;
-    /* High z-index to ensure it appears above other content */
-    background-color: var(--background-color);
-    /* Ensure it has a background */
-    width: 100%;
-    /* Full width */
-    position: fixed;
-    /* Fixed position to stay in place */
-    top: 0;
-    /* Align to the top */
-    left: 0;
-    /* Align to the left */
-    transition: transform 0.3s ease-in-out;
-    /* Smooth transition for transforming */
-}
-
-/* Hide the menu initially */
-.mobile-navigation {
-    transform: translateY(-100%);
-    /* Move it out of view */
-}
-
-/* Show the menu when active */
-.mobile-navigation.active {
-    transform: translateY(0);
-    /* Bring into view */
-}
-
-/* Logo placement */
-.logo {
-    margin-right: auto;
-    /* Pushes all other nav items to the right */
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 15px;
-    /* Consistent padding with nav links */
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-}
 
 /* Improved mobile styles */
 @media only screen and (max-width: 768px) {
@@ -331,50 +244,8 @@ nav a:hover {
         margin: 2rem -20px;
     }
 
-    /* Improved mobile navigation */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background: var(--primary-color);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
 
-    .nav-menu.active {
-        left: 0;
-    }
 
-    .nav-item {
-        margin: 1.5rem 0;
-    }
-
-    .nav-link {
-        font-size: 1.1rem;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
 
 
 
