@@ -3,36 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./global-style-5.css">
+        <link rel="stylesheet" href="global-style.css">
+        <link rel="stylesheet" href="standardNav.css">
         <title>Get Involved - Mission Anabaino</title>
     </head>
     <body>
-        <header class="glass-nav">
-            <nav class="navbar">
-                <a href="index.html" class="nav-logo">Mission Anabaino</a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html"
-                            class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="index.html#challenge"
-                            class="nav-link">Challenge</a></li>
-                    <li class="nav-item"><a href="index.html#network"
-                            class="nav-link">Network</a></li>
-                    <li class="nav-item"><a href="index.html#story"
-                            class="nav-link">Our Story</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
+        <nav>
+            <div class="brand"><a href="index.html">Mission Anabaino</a></div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="close-btn" onclick="toggleMenu()">×</div>
+            <ul class="menu">
+                <li class="close-btn" onclick="toggleMenu()">×</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-ma.html">About</a></li>
+                <li><a href="get-involved.html">Support</a></li>
+                <li><a href="./src/pages/resources.html">Resources</a></li>
+                <li><a href="./src/pages/media.html">Media</a></li>
+                <li><a href="./src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
         <main class="content-container">
             <section class="content" id="get-involved">
-                <div class="submenu-splash">
-                    <h1 class="centered-heading">Get Involved</h1>
-                </div>
+                <h1>Get Involved</h1>
                 <div class="cta-grid">
                     <div class="cta-text">
                         <div class="cta-section">
@@ -57,7 +50,7 @@
                     </div>
                     <div class="cta-image">
                         <img
-                            src="https://placehold.co/600x400?text=Church+Planting+Community"
+                            src="./src/assets/ma-collab-24/1.jpg"
                             alt="Church planting community">
                     </div>
                 </div>
