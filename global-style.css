@@ -112,6 +112,13 @@ body {
     margin-bottom: 2rem;
 }
 
+.content-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 blockquote {
     border-left: 3px solid var(--secondary-color);
     padding-left: 20px;
